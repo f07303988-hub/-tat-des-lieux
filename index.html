@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>État des lieux numérique</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="État des lieux">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --navy:#1F4E79;
+    --navy-dark:#163A5C;
+    --bg:#F4F6F8;
+    --card:#FFFFFF;
+    --border:#E1E5EA;
+    --text:#20262E;
+    --muted:#6B7480;
+    --good:#2E9E5B;
+    --mid:#E0A72A;
+    --bad:#D64545;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-tap-highlight-color:transparent;
+  }
+  #app{max-width:520px;margin:0 auto;min-height:100vh;background:var(--bg);padding-bottom:90px;}
+
+  header.topbar{
+    background:var(--navy);color:#fff;padding:16px 18px;
+    position:sticky;top:0;z-index:20;
+    display:flex;align-items:center;gap:10px;
+  }
+  header.topbar .back{
+    background:none;border:none;color:#fff;font-size:20px;padding:4px 8px;cursor:pointer;
+    display:none;
+  }
+  header.topbar .back.show{display:inline-block;}
+  header.topbar h1{font-size:17px;margin:0;font-weight:600;flex:1;}
+  header.topbar .sub{font-size:12px;opacity:.85;margin-top:2px;}
+  .help-btn{
+    background:rgba(255,255,255,.15);border:none;color:#fff;font-size:15px;font-weight:700;
+    width:30px;height:30px;border-radius:50%;cursor:pointer;flex-shrink:0;display:none;
+  }
+  .help-btn.show{display:inline-block;}
+
+  .help-content{padding-bottom:10px;}
+  .help-block{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:12px;
+  }
+  .help-block h3{margin:0 0 6px;font-size:14.5px;font-weight:600;color:var(--navy);}
+  .help-block p{margin:0;font-size:13.5px;line-height:1.5;color:var(--text);}
+
+  .screen{display:none;padding:16px;}
+  .screen.active{display:block;}
+
+  .fab{
+    position:fixed;left:50%;transform:translateX(-50%);bottom:22px;
+    max-width:520px;width:calc(100% - 32px);
+    background:var(--navy);color:#fff;border:none;border-radius:14px;
+    padding:15px;font-size:16px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.18);
+    z-index:30;cursor:pointer;display:none;
+  }
+  .fab.show{display:block;}
+  .fab:active{background:var(--navy-dark);}
+
+  .empty{text-align:center;color:var(--muted);padding:60px 20px;}
+  .empty i{font-size:40px;display:block;margin-bottom:10px;}
+
+  .record-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  .record-card .info{flex:1;min-width:0;}
+  .record-card .name{font-weight:600;font-size:15px;margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .record-card .meta{font-size:12.5px;color:var(--muted);margin:0;}
+  .badge{
+    font-size:11px;font-weight:700;padding:4px 9px;border-radius:20px;white-space:nowrap;
+  }
+  .badge.entree{background:#E3F0E9;color:var(--good);}
+  .badge.sortie{background:#FBE9E9;color:var(--bad);}
+  .statut-pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;}
+  .statut-attente{background:#FBF1DD;color:#8A6413;}
+  .statut-cloture{background:#E3F0E9;color:var(--good);}
+  .statut-litige{background:#FBE9E9;color:var(--bad);}
+  .del-btn{background:none;border:none;color:var(--muted);font-size:18px;padding:6px;cursor:pointer;}
+  .record-actions{display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
+  .dup-btn{background:none;border:1px solid var(--navy);color:var(--navy);font-size:10.5px;font-weight:700;padding:4px 8px;border-radius:10px;cursor:pointer;white-space:nowrap;}
+
+  .section{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    margin-bottom:12px;overflow:hidden;
+  }
+  .section-head{
+    padding:14px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;
+  }
+  .section-head h3{margin:0;font-size:15px;font-weight:600;color:var(--navy);}
+  .section-head .chev{transition:transform .2s;color:var(--muted);font-size:14px;}
+  .section.open .chev{transform:rotate(180deg);}
+  .section-body{display:none;padding:0 16px 16px;}
+  .section.open .section-body{display:block;}
+  .section-progress{font-size:11.5px;color:var(--muted);font-weight:500;}
+
+  label{display:block;font-size:12.5px;color:var(--muted);margin:12px 0 5px;font-weight:600;}
+  label:first-child{margin-top:0;}
+  input[type=text], input[type=number], input[type=date], input[type=time], textarea, select{
+    width:100%;border:1px solid var(--border);border-radius:9px;padding:10px 11px;
+    font-size:15px;background:#fff;color:var(--text);font-family:inherit;
+  }
+  textarea{resize:vertical;min-height:60px;}
+  input:focus, textarea:focus, select:focus{outline:2px solid var(--navy);outline-offset:1px;}
+
+  .type-toggle{display:flex;gap:8px;margin-bottom:14px;}
+  .type-toggle button{
+    flex:1;padding:12px;border-radius:10px;border:1.5px solid var(--border);background:#fff;
+    font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .type-toggle button.active.entree{border-color:var(--good);background:#E3F0E9;color:var(--good);}
+  .type-toggle button.active.sortie{border-color:var(--bad);background:#FBE9E9;color:var(--bad);}
+  .global-progress{font-size:12.5px;color:var(--muted);text-align:center;font-weight:600;margin:0 0 10px;}
+
+  .elem-row{border-top:1px solid var(--border);padding:12px 0;}
+  .elem-row:first-child{border-top:none;padding-top:4px;}
+  .elem-row .elem-name{font-weight:600;font-size:14px;margin-bottom:8px;}
+  .state-btns{display:flex;gap:6px;margin-bottom:8px;}
+  .state-btns button{
+    flex:1;padding:9px 0;border-radius:8px;border:1.5px solid var(--border);background:#fff;
+    font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .state-btns button.sel-bon{border-color:var(--good);background:#E3F0E9;color:var(--good);}
+  .state-btns button.sel-moyen{border-color:var(--mid);background:#FBF1DD;color:#8A6413;}
+  .state-btns button.sel-mauvais{border-color:var(--bad);background:#FBE9E9;color:var(--bad);}
+  .elem-row textarea{min-height:40px;font-size:13.5px;}
+
+  .fenetre-section{border-top:1px solid var(--border);padding:14px 0 4px;margin-top:6px;}
+  .fenetre-label{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:10px;}
+  .fenetre-hint{display:block;font-weight:400;font-size:11px;margin-top:2px;}
+  .fenetre-add-row{display:flex;gap:8px;margin-top:6px;}
+  .fenetre-add-row select{flex:1;border:1px solid var(--border);border-radius:9px;padding:10px 8px;font-size:14px;background:#fff;color:var(--text);}
+  .fenetre-add-row button{
+    background:var(--navy);color:#fff;border:none;border-radius:9px;padding:0 16px;font-size:13.5px;font-weight:600;cursor:pointer;white-space:nowrap;
+  }
+  .fenetre-empty{font-size:13px;color:var(--muted);margin:4px 0 0;}
+  .fen-del{flex:0 0 auto !important;padding:9px 12px !important;color:var(--bad) !important;border-color:var(--border) !important;background:#fff !important;}
+
+  .photo-section{border-top:1px solid var(--border);padding:14px 0 4px;margin-top:6px;}
+  .photo-label{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:8px;}
+  .photo-grid{display:flex;flex-wrap:wrap;gap:8px;}
+  .photo-thumb{position:relative;width:76px;height:76px;border-radius:9px;overflow:hidden;border:1px solid var(--border);}
+  .photo-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-del{
+    position:absolute;top:3px;right:3px;background:rgba(0,0,0,.55);color:#fff;border:none;
+    border-radius:50%;width:20px;height:20px;font-size:11px;line-height:20px;text-align:center;padding:0;cursor:pointer;
+  }
+  .photo-add{
+    width:76px;height:76px;border-radius:9px;border:1.5px dashed var(--border);
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--navy);
+    cursor:pointer;background:#fff;text-align:center;
+  }
+  .photo-add input{display:none;}
+  .photo-ts{
+    position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);color:#fff;
+    font-size:9px;line-height:1.3;padding:2px 4px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+
+  .backup-reminder{font-size:12px;text-align:center;margin-bottom:12px;}
+  .backup-reminder .backup-ok{color:var(--muted);}
+  .backup-reminder .backup-warn{color:var(--bad);font-weight:700;}
+  .search-bar{margin-bottom:12px;}
+  .search-bar input[type=text]{margin-bottom:8px;}
+  .filter-chips{display:flex;gap:6px;flex-wrap:wrap;}
+  .filter-chip{
+    padding:7px 13px;border-radius:20px;border:1.5px solid var(--border);background:#fff;
+    font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .filter-chip.active{border-color:var(--navy);background:var(--navy);color:#fff;}
+  .problem-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;}
+  .problem-chip.none{background:#E3F0E9;color:var(--good);}
+  .problem-chip.some{background:#FBE9E9;color:var(--bad);}
+  .lock-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;background:#FBF1DD;color:#8A6413;}
+  .version-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;background:#E5E9F0;color:var(--navy);}
+  .no-results{text-align:center;color:var(--muted);padding:30px 20px;font-size:14px;}
+
+  .mat-row{border-top:1px solid var(--border);padding:12px 0;}
+  .backup-bar{display:flex;flex-direction:column;gap:8px;margin-top:24px;padding-top:16px;border-top:1px solid var(--border);}
+  .btn-backup{
+    display:block;text-align:center;background:none;border:1px solid var(--border);color:var(--muted);
+    font-size:13px;font-weight:600;padding:11px;border-radius:10px;cursor:pointer;
+  }
+  .mat-row:first-child{border-top:none;padding-top:4px;}
+  .mat-row .mat-name{font-weight:600;font-size:14px;margin-bottom:8px;}
+  .mat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .mat-grid label{margin:0 0 4px;}
+  .vaisselle-toggle{padding-bottom:14px;margin-bottom:10px;border-bottom:1px solid var(--border);}
+  .checkbox-label{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;}
+  .checkbox-label input[type=checkbox]{width:19px;height:19px;flex-shrink:0;}
+  .config-intro{font-size:13px;color:var(--muted);margin:2px 0 14px;}
+  .config-room-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;}
+  .config-room-card textarea{min-height:110px;font-size:13.5px;}
+  .config-room-remove{background:none;border:none;color:var(--bad);font-size:13px;font-weight:600;padding:10px 0 0;cursor:pointer;}
+  .config-window-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .config-mat-row{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;}
+  .config-mat-row input[type=text]{flex:1;}
+  .config-mat-row label{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted);white-space:nowrap;margin:0;}
+  .config-mat-row input[type=checkbox]{width:17px;height:17px;}
+  .config-mat-remove{background:none;border:none;color:var(--bad);font-size:16px;padding:2px 4px;cursor:pointer;}
+  .lock-overlay{
+    position:fixed;inset:0;background:var(--navy);z-index:1000;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .lock-overlay.hidden{display:none;}
+  .lock-card{background:#fff;border-radius:var(--radius);padding:28px 24px;max-width:320px;width:100%;text-align:center;}
+  .lock-icon{font-size:34px;margin-bottom:6px;}
+  .lock-card h2{margin:0 0 4px;font-size:19px;color:var(--navy);}
+  .lock-card p{margin:0 0 16px;color:var(--muted);font-size:13px;}
+  .lock-card input{
+    width:100%;text-align:center;font-size:28px;letter-spacing:14px;padding:12px;
+    border:1.5px solid var(--border);border-radius:10px;margin-bottom:6px;
+  }
+  .lock-error{color:var(--bad)!important;font-size:13px!important;min-height:18px;margin-bottom:12px!important;}
+  .lock-or{color:var(--muted)!important;font-size:12.5px!important;margin:0 0 14px!important;}
+  .lock-card .hidden{display:none;}
+  .app-modal-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1100;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .app-modal-overlay.hidden{display:none;}
+  .app-modal-card{background:#fff;border-radius:var(--radius);padding:22px;max-width:340px;width:100%;}
+  .app-modal-message{font-size:14.5px;color:var(--text);white-space:pre-line;margin:0 0 18px;line-height:1.5;}
+  .app-modal-actions{display:flex;gap:10px;}
+  .app-modal-actions button{flex:1;padding:12px;border-radius:10px;font-size:14.5px;font-weight:600;border:none;cursor:pointer;}
+  .app-modal-actions.alert-only #appModalCancelBtn{display:none;}
+  .ecart-slot{min-height:20px;margin:8px 0 4px;}
+  .ecart{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;}
+  .ecart-ok{background:#E3F0E9;color:var(--good);}
+  .ecart-bad{background:#FBE9E9;color:var(--bad);}
+  .ecart-info{background:#FBF1DD;color:#8A6413;}
+
+  .sig-box{
+    border:1.5px dashed var(--border);border-radius:10px;background:#fff;
+    touch-action:none;width:100%;height:150px;display:block;
+  }
+  .sig-actions{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
+  .sig-actions button{
+    background:none;border:none;color:var(--navy);font-size:13px;font-weight:600;padding:6px 0;cursor:pointer;
+  }
+  .sig-label{font-weight:600;font-size:13.5px;margin:16px 0 6px;}
+  .sig-label:first-child{margin-top:0;}
+
+  .save-bar{
+    position:sticky;bottom:0;background:var(--bg);padding:14px 0 4px;display:flex;flex-wrap:wrap;gap:10px;
+  }
+  .save-bar button{
+    flex:1 1 calc(50% - 5px);padding:14px;border-radius:12px;font-size:15px;font-weight:600;border:none;cursor:pointer;
+  }
+  .save-bar button#doneBtn{flex-basis:100%;}
+  .save-bar button.hidden{display:none;}
+  .btn-lock{background:#8A6413;color:#fff;flex-basis:100%;}
+  .locked-banner{
+    background:#FBF1DD;color:#8A6413;border:1px solid #EAD9AE;border-radius:10px;
+    padding:11px 14px;font-size:13px;font-weight:600;margin-bottom:14px;
+  }
+  .locked-banner.hidden{display:none;}
+  #screen-form.form-locked .section-body,
+  #screen-form.form-locked .type-toggle,
+  #screen-form.form-locked #f_statut{
+    pointer-events:none;opacity:.6;
+  }
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:active{background:var(--navy-dark);}
+  .btn-secondary{background:#fff;color:var(--navy);border:1.5px solid var(--navy) !important;}
+
+  .toast{
+    position:fixed;left:50%;bottom:100px;transform:translateX(-50%);
+    background:#20262E;color:#fff;padding:10px 18px;border-radius:30px;font-size:13.5px;
+    opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;
+  }
+  .toast.show{opacity:1;}
+
+  .status-pill{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:10px;}
+  .status-complete{background:#E3F0E9;color:var(--good);}
+  .status-progress{background:#FBF1DD;color:#8A6413;}
+
+  @media print{
+    body *{visibility:hidden;}
+  }
+
+  .export-overlay{
+    position:fixed;inset:0;background:#fff;z-index:200;
+    display:flex;flex-direction:column;
+  }
+  .export-bar{
+    display:flex;gap:10px;padding:12px 16px;background:var(--navy);
+    padding-top:calc(12px + env(safe-area-inset-top));
+  }
+  .export-bar button{
+    flex:1;padding:12px;border-radius:10px;border:none;font-size:14px;font-weight:600;cursor:pointer;
+  }
+  .export-bar #exportCloseBtn{background:#fff;color:var(--navy);}
+  .export-bar #exportPrintBtn{background:var(--navy-dark);color:#fff;border:1.5px solid #fff;}
+  .export-frame{flex:1;width:100%;border:none;background:#fff;}
+</style>
+</head>
+<body>
+<div id="adminPinOverlay" class="lock-overlay hidden">
+  <div class="lock-card">
+    <div class="lock-icon">🔐</div>
+    <h2>Code administrateur</h2>
+    <p>Requis pour accéder à la Configuration</p>
+    <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="adminPinInput" placeholder="••••" autocomplete="off">
+    <p class="lock-error" id="adminPinError"></p>
+    <button type="button" id="adminPinConfirmBtn" class="btn-primary" style="width:100%;margin-bottom:10px;">Valider</button>
+    <button type="button" id="adminPinCancelBtn" class="btn-secondary" style="width:100%;">Annuler</button>
+  </div>
+</div>
+<div id="appModalOverlay" class="app-modal-overlay hidden">
+  <div class="app-modal-card">
+    <p id="appModalMessage" class="app-modal-message"></p>
+    <div class="app-modal-actions">
+      <button type="button" id="appModalCancelBtn" class="btn-secondary">Annuler</button>
+      <button type="button" id="appModalOkBtn" class="btn-primary">OK</button>
+    </div>
+  </div>
+</div>
+<div id="lockOverlay" class="lock-overlay">
+  <div class="lock-card">
+    <div class="lock-icon">🔒</div>
+    <h2>Code d'accès</h2>
+    <p id="lockAppName">État des lieux numérique</p>
+
+    <button type="button" id="lockBiometricBtn" class="btn-primary hidden" style="width:100%;margin-bottom:14px;">👆 Déverrouiller avec Face ID / empreinte</button>
+    <p id="lockBiometricError" class="lock-error"></p>
+    <p id="lockOrPin" class="lock-or hidden">— ou entrez votre code —</p>
+
+    <div id="lockPinBlock">
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="lockInput" placeholder="••••" autocomplete="off">
+      <p class="lock-error" id="lockError"></p>
+      <button type="button" id="lockUnlockBtn" class="btn-primary" style="width:100%;">Déverrouiller</button>
+    </div>
+  </div>
+</div>
+<div id="app">
+
+  <header class="topbar">
+    <button class="back" id="backBtn" aria-label="Retour">‹</button>
+    <div style="flex:1">
+      <h1 id="screenTitle">État des lieux numérique</h1>
+      <div class="sub" id="screenSub">États des lieux numériques</div>
+    </div>
+    <button class="help-btn show" id="helpBtn" aria-label="Aide">?</button>
+    <button class="help-btn show" id="configBtn" aria-label="Configuration">⚙</button>
+  </header>
+
+  <!-- ÉCRAN LISTE -->
+  <div class="screen active" id="screen-list">
+    <div class="backup-reminder" id="backupReminder"></div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Rechercher par nom, objet...">
+      <div class="filter-chips">
+        <button type="button" class="filter-chip active" data-filter="tous">Tous</button>
+        <button type="button" class="filter-chip" data-filter="entree">Entrée</button>
+        <button type="button" class="filter-chip" data-filter="sortie">Sortie</button>
+        <button type="button" class="filter-chip" data-filter="problemes">Avec points signalés</button>
+      </div>
+    </div>
+    <div id="recordList"></div>
+    <div class="backup-bar">
+      <button type="button" class="btn-backup" id="backupExportBtn">Sauvegarder toutes les données</button>
+      <label class="btn-backup" id="backupImportLabel">Restaurer une sauvegarde
+        <input type="file" accept="application/json" id="backupImportInput" style="display:none">
+      </label>
+    </div>
+  </div>
+
+  <!-- ÉCRAN AIDE -->
+  <div class="screen" id="screen-help">
+    <div class="help-content">
+      <div class="help-block">
+        <h3>1. Créer un état des lieux</h3>
+        <p>Depuis l'écran d'accueil, appuyez sur le bouton bleu « + Nouvel état des lieux » en bas de l'écran. Choisissez ensuite « État d'entrée » ou « État de sortie » en haut du formulaire.</p>
+      </div>
+      <div class="help-block">
+        <h3>2. Créer l'état de sortie à partir d'une entrée</h3>
+        <p>Sur l'écran d'accueil, chaque état d'entrée affiche un bouton « ➜ Sortie ». Il crée directement l'état de sortie avec les mêmes informations (locataire, date, clés, quantités de matériel prévues), sans tout ressaisir.</p>
+      </div>
+      <div class="help-block">
+        <h3>3. Remplir les sections</h3>
+        <p>Chaque section (Informations générales, Grande salle, Petite salle...) s'ouvre en appuyant dessus. Pour chaque élément, appuyez sur <b>Bon</b>, <b>Moyen</b> ou <b>Mauvais</b>. Un champ d'observation apparaît automatiquement si vous choisissez Moyen ou Mauvais. Le compteur sous les boutons Entrée/Sortie indique combien de sections sont complètes.</p>
+      </div>
+      <div class="help-block">
+        <h3>4. Ajouter des photos</h3>
+        <p>Dans chaque pièce, appuyez sur « + Photo » pour prendre une photo d'une dégradation. La date et l'heure sont enregistrées automatiquement avec chaque photo. Appuyez sur ✕ pour supprimer une photo.</p>
+      </div>
+      <div class="help-block">
+        <h3>5. Signaler une fenêtre abîmée</h3>
+        <p>Pour la Grande salle et la Petite salle, choisissez le numéro de la fenêtre ou porte-fenêtre concernée dans le menu déroulant puis appuyez sur « + Signaler ». Les fenêtres non signalées sont considérées en bon état.</p>
+      </div>
+      <div class="help-block">
+        <h3>6. Mobilier et matériel</h3>
+        <p>Indiquez la quantité prévue et la quantité constatée pour chaque objet (tables, chaises, vaisselle...). Un écart s'affiche automatiquement s'il manque des éléments.</p>
+      </div>
+      <div class="help-block">
+        <h3>7. Signatures</h3>
+        <p>Faites signer avec le doigt directement sur l'écran, pour la commune et pour le locataire. Appuyez sur « Effacer la signature » pour recommencer.</p>
+      </div>
+      <div class="help-block">
+        <h3>8. Terminer un état des lieux</h3>
+        <p>Appuyez sur <b>Terminer</b> pour enregistrer. <b>Exporter / imprimer</b> ouvre un aperçu dans l'appli avec un bouton « ✕ Fermer » pour revenir, et un bouton « Imprimer / PDF ». <b>Envoyer par email</b> envoie un résumé rapide par mail.</p>
+      </div>
+      <div class="help-block">
+        <h3>9. Retrouver un état des lieux</h3>
+        <p>Sur l'écran d'accueil, utilisez la barre de recherche ou les filtres (Tous / Entrée / Sortie / Avec points signalés) pour retrouver un document. Appuyez sur une fiche pour la rouvrir, ou sur ✕ pour la supprimer.</p>
+      </div>
+      <div class="help-block">
+        <h3>10. Sauvegarder vos données</h3>
+        <p>Un message en haut de l'écran d'accueil indique depuis combien de temps vous n'avez pas sauvegardé (il passe en rouge après 14 jours). Appuyez régulièrement sur « Sauvegarder toutes les données » pour télécharger un fichier de secours. En cas de problème sur le téléphone, utilisez « Restaurer une sauvegarde » pour tout récupérer.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÉCRAN CONFIGURATION -->
+  <div class="screen" id="screen-config">
+    <div class="config-room-card">
+      <label>Nom de l'application</label>
+      <input type="text" id="configAppNameInput" placeholder="Ex : Salle des fêtes — Pasly">
+      <button type="button" class="btn-secondary" id="configAppNameSaveBtn" style="width:100%;margin-top:10px;">Modifier le nom</button>
+    </div>
+    <div class="config-room-card">
+      <label>Nom de la commune (pour les documents exportés)</label>
+      <input type="text" id="configCommuneNameInput" placeholder="Ex : Pasly">
+      <label>Nom de la salle (pour les documents exportés)</label>
+      <input type="text" id="configSalleNameInput" placeholder="Ex : Salle des fêtes" style="margin-top:10px;">
+      <button type="button" class="btn-secondary" id="configCommuneNameSaveBtn" style="width:100%;margin-top:10px;">Modifier ces noms</button>
+    </div>
+    <div class="config-room-card">
+      <label>Code utilisateur — accès à l'application (4 chiffres)</label>
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="configPinInput" placeholder="0000">
+      <button type="button" class="btn-secondary" id="configPinSaveBtn" style="width:100%;margin-top:10px;">Modifier le code utilisateur</button>
+      <p class="config-intro" style="margin:14px 0 6px;">Ce code reste toujours disponible, même si Face ID / empreinte est activé ci-dessous.</p>
+      <label class="checkbox-label" style="margin-top:10px;">
+        <input type="checkbox" id="configBiometricToggle">
+        Utiliser Face ID / empreinte digitale en plus du code
+      </label>
+      <p id="configBiometricStatus" class="config-intro" style="margin:8px 0 0;"></p>
+    </div>
+    <div class="config-room-card">
+      <label>Code administrateur — accès à cette page de Configuration (4 chiffres)</label>
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="configAdminPinInput" placeholder="0000">
+      <button type="button" class="btn-secondary" id="configAdminPinSaveBtn" style="width:100%;margin-top:10px;">Modifier le code administrateur</button>
+      <p class="config-intro" style="margin:10px 0 0;">Distinct du code utilisateur. Requis pour modifier les pièces, le matériel et les réglages ci-dessous — Face ID / empreinte ne donne jamais accès à cette page.</p>
+    </div>
+    <p class="config-intro">Modifiez les pièces suivies dans l'état des lieux : nom, éléments à vérifier, et suivi des fenêtres/portes-fenêtres pour les grandes surfaces.</p>
+    <div id="configRoomsList"></div>
+    <button type="button" class="btn-secondary" id="configAddRoomBtn" style="width:100%;margin-top:6px;">+ Ajouter une pièce</button>
+
+    <p class="config-intro" style="margin-top:26px;">Modifiez la liste du mobilier et matériel suivi (avec quantité prévue/constatée). Cochez "Vaisselle" pour les articles qui doivent disparaître quand la vaisselle n'est pas incluse dans la location.</p>
+    <div id="configMaterielList"></div>
+    <button type="button" class="btn-secondary" id="configAddMaterielBtn" style="width:100%;margin-top:6px;">+ Ajouter un article</button>
+
+    <div class="save-bar">
+      <button class="btn-secondary" id="configCancelBtn">Annuler</button>
+      <button class="btn-primary" id="configSaveBtn">Enregistrer la configuration</button>
+    </div>
+  </div>
+
+  <!-- ÉCRAN FORMULAIRE -->
+  <div class="screen" id="screen-form">
+    <div class="type-toggle">
+      <button type="button" data-type="entree" id="btnEntree">État d'entrée</button>
+      <button type="button" data-type="sortie" id="btnSortie">État de sortie</button>
+    </div>
+
+    <div class="locked-banner hidden" id="lockedBanner">🔒 Document verrouillé<span id="lockedBannerDate"></span> — toute modification créera une nouvelle version</div>
+    <p id="lockedEntreeSortieHint" class="locked-banner hidden" style="background:#E3F0E9;color:#2E9E5B;">➜ Pour créer l'état de sortie : retournez à la liste (flèche retour), puis appuyez sur "➜ Sortie" sur cette entrée.</p>
+
+    <div class="section open" data-key="infos">
+      <div class="section-head"><h3 data-title="Informations générales">Informations générales</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <label>Nom / organisme locataire</label>
+        <input type="text" id="f_nom" placeholder="Nom de l'association ou de la famille">
+        <label>Téléphone</label>
+        <input type="text" id="f_tel" placeholder="06 12 34 56 78">
+        <label>Objet de la location</label>
+        <input type="text" id="f_objet" placeholder="Mariage, assemblée générale...">
+        <label>Date de la location</label>
+        <input type="date" id="f_date">
+        <label>Heure</label>
+        <input type="time" id="f_heure">
+        <label>Représentant de la commune</label>
+        <input type="text" id="f_representant" placeholder="Nom du représentant">
+        <label>Statut du dossier</label>
+        <select id="f_statut">
+          <option value="attente">En attente de sortie</option>
+          <option value="cloture">Clôturé</option>
+          <option value="litige">Litige en cours</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="roomSectionsContainer"></div>
+
+    <div class="section" data-key="materiel">
+      <div class="section-head"><h3 data-title="Mobilier et matériel">Mobilier et matériel</h3><span class="chev">▾</span></div>
+      <div class="section-body" id="body-materiel"></div>
+    </div>
+
+    <div class="section" data-key="cles">
+      <div class="section-head"><h3 data-title="Clés et accès">Clés et accès</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <label>Nombre de clés remises</label>
+        <input type="number" id="f_cles" min="0">
+        <label>Nombre de badges remis</label>
+        <input type="number" id="f_badges" min="0">
+        <label>Code d'accès / alarme communiqué</label>
+        <input type="text" id="f_code">
+      </div>
+    </div>
+
+    <div class="section" data-key="obs">
+      <div class="section-head"><h3 data-title="Observations générales">Observations générales</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <textarea id="f_obsGenerales" placeholder="Remarques complémentaires..." style="min-height:90px"></textarea>
+      </div>
+    </div>
+
+    <div class="section" data-key="signatures">
+      <div class="section-head"><h3 data-title="Signatures">Signatures</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <div class="sig-label" id="sigCommuneLabel">Pour la commune</div>
+        <canvas class="sig-box" id="sigCommune"></canvas>
+        <div class="sig-actions"><button type="button" data-clear="sigCommune">Effacer la signature</button></div>
+
+        <div class="sig-label">Le locataire / l'organisateur</div>
+        <canvas class="sig-box" id="sigLocataire"></canvas>
+        <div class="sig-actions"><button type="button" data-clear="sigLocataire">Effacer la signature</button></div>
+      </div>
+    </div>
+
+    <div class="global-progress" id="globalProgress"></div>
+    <div class="save-bar">
+      <button class="btn-secondary" id="exportBtn">Exporter / imprimer</button>
+      <button class="btn-secondary" id="emailBtn">Résumé par email</button>
+      <button class="btn-primary" id="doneBtn">Terminer</button>
+      <button class="btn-lock hidden" id="clotureBtn">🔒 Clôturer l'état des lieux</button>
+      <button class="btn-secondary hidden" id="newVersionBtn" style="flex-basis:100%;">Créer une nouvelle version pour modifier</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DEFAULT_ROOMS_CONFIG = [
+  { key:'grande', label:'Grande salle', items:["Sol","Murs","Plafond","Éclairage","Prises électriques","Chauffage","Issues de secours / signalétique"], windows:{ fenetres:15, portesFenetres:4 } },
+  { key:'petite', label:'Petite salle', items:["Sol","Murs","Plafond","Éclairage","Prises électriques","Chauffage","Issues de secours / signalétique"], windows:{ fenetres:10, portesFenetres:2 } },
+  { key:'cuisine', label:'Cuisine / office', items:["Sol","Murs","Plafond","Plan de travail","Évier / robinetterie","Four / plaques de cuisson","Réfrigérateur","Hotte aspirante","Micro-ondes 1","Micro-ondes 2","Rangements"], windows:null },
+  { key:'sanitaires', label:'Sanitaires', items:["Sol","Murs","Lavabos / robinetterie","WC","Miroirs","Distributeurs (savon, essuie-mains)"], windows:null },
+  { key:'exterieurs', label:'Extérieurs / abords', items:["Parking","Accès / voirie","Espaces verts","Éclairage extérieur","Poubelles / conteneurs"], windows:null }
+];
+
+function showConfirm(message){
+  return new Promise((resolve)=>{
+    const overlay = document.getElementById('appModalOverlay');
+    const actions = overlay.querySelector('.app-modal-actions');
+    actions.classList.remove('alert-only');
+    document.getElementById('appModalMessage').textContent = message;
+    overlay.classList.remove('hidden');
+    const okBtn = document.getElementById('appModalOkBtn');
+    const cancelBtn = document.getElementById('appModalCancelBtn');
+    function cleanup(result){
+      overlay.classList.add('hidden');
+      okBtn.removeEventListener('click', onOk);
+      cancelBtn.removeEventListener('click', onCancel);
+      resolve(result);
+    }
+    function onOk(){ cleanup(true); }
+    function onCancel(){ cleanup(false); }
+    okBtn.addEventListener('click', onOk);
+    cancelBtn.addEventListener('click', onCancel);
+  });
+}
+
+function showAlert(message){
+  return new Promise((resolve)=>{
+    const overlay = document.getElementById('appModalOverlay');
+    const actions = overlay.querySelector('.app-modal-actions');
+    actions.classList.add('alert-only');
+    document.getElementById('appModalMessage').textContent = message;
+    overlay.classList.remove('hidden');
+    const okBtn = document.getElementById('appModalOkBtn');
+    function onOk(){
+      overlay.classList.add('hidden');
+      okBtn.removeEventListener('click', onOk);
+      resolve();
+    }
+    okBtn.addEventListener('click', onOk);
+  });
+}
+
+let appPin = '0000';
+let appName = '';
+let communeName = '';
+let salleName = '';
+
+async function loadAppName(){
+  try{
+    const v = await idbGet('meta', 'appName');
+    appName = (typeof v === 'string' && v.trim()) ? v.trim() : '';
+  }catch(e){ appName = ''; }
+}
+async function saveAppName(newName){
+  appName = newName;
+  try{ await idbPut('meta', newName, 'appName'); }catch(e){}
+}
+
+async function loadCommuneAndSalleName(){
+  try{
+    const c = await idbGet('meta', 'communeName');
+    communeName = (typeof c === 'string' && c.trim()) ? c.trim() : '';
+  }catch(e){ communeName = ''; }
+  try{
+    const s = await idbGet('meta', 'salleName');
+    salleName = (typeof s === 'string' && s.trim()) ? s.trim() : '';
+  }catch(e){ salleName = ''; }
+}
+async function saveCommuneAndSalleName(newCommune, newSalle){
+  communeName = newCommune;
+  salleName = newSalle;
+  try{ await idbPut('meta', newCommune, 'communeName'); }catch(e){}
+  try{ await idbPut('meta', newSalle, 'salleName'); }catch(e){}
+}
+
+async function loadPin(){
+  try{
+    const v = await idbGet('meta', 'appPin');
+    appPin = (typeof v === 'string' && /^\d{4}$/.test(v)) ? v : '0000';
+  }catch(e){ appPin = '0000'; }
+}
+async function savePin(newPin){
+  appPin = newPin;
+  try{ await idbPut('meta', newPin, 'appPin'); }catch(e){}
+}
+
+let adminPin = '0000';
+let adminUnlockedThisSession = false;
+
+async function loadAdminPin(){
+  try{
+    const v = await idbGet('meta', 'adminPin');
+    adminPin = (typeof v === 'string' && /^\d{4}$/.test(v)) ? v : '0000';
+  }catch(e){ adminPin = '0000'; }
+}
+async function saveAdminPin(newPin){
+  adminPin = newPin;
+  try{ await idbPut('meta', newPin, 'adminPin'); }catch(e){}
+}
+
+// --- Numéro d'état des lieux (EDL-AAAA-NNNN), séquentiel sur cet appareil ---
+async function nextEdlNumber(){
+  let counter = 0;
+  try{
+    const v = await idbGet('meta', 'edlCounter');
+    counter = (typeof v === 'number' && v >= 0) ? v : 0;
+  }catch(e){ counter = 0; }
+  counter += 1;
+  try{ await idbPut('meta', counter, 'edlCounter'); }catch(e){}
+  const year = new Date().getFullYear();
+  return `EDL-${year}-${String(counter).padStart(4,'0')}`;
+}
+
+// --- Biométrie (Face ID / empreinte) via WebAuthn, en complément du code PIN ---
+let biometricEnabled = false;
+let biometricCredentialId = null;
+
+function bufToBase64(buf){
+  return btoa(String.fromCharCode(...new Uint8Array(buf)));
+}
+function base64ToBuf(b64){
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+  return bytes.buffer;
+}
+
+async function isBiometricAvailable(){
+  try{
+    if(!window.PublicKeyCredential || !PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable) return false;
+    return await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
+  }catch(e){ return false; }
+}
+
+async function loadBiometricState(){
+  try{
+    const en = await idbGet('meta', 'biometricEnabled');
+    biometricEnabled = en === true;
+  }catch(e){ biometricEnabled = false; }
+  try{
+    const cred = await idbGet('meta', 'biometricCredentialId');
+    biometricCredentialId = (typeof cred === 'string' && cred) ? cred : null;
+  }catch(e){ biometricCredentialId = null; }
+  if(!biometricCredentialId) biometricEnabled = false;
+}
+
+async function registerBiometric(){
+  const challenge = crypto.getRandomValues(new Uint8Array(32));
+  const userId = crypto.getRandomValues(new Uint8Array(16));
+  const cred = await navigator.credentials.create({
+    publicKey: {
+      challenge,
+      rp: { name: appName || 'État des lieux numérique' },
+      user: { id: userId, name: 'agent-mairie', displayName: 'Agent' },
+      pubKeyCredParams: [{ type: 'public-key', alg: -7 }, { type: 'public-key', alg: -257 }],
+      authenticatorSelection: { authenticatorAttachment: 'platform', userVerification: 'required' },
+      timeout: 60000,
+    }
+  });
+  if(!cred) throw new Error('Aucun identifiant créé');
+  biometricCredentialId = bufToBase64(cred.rawId);
+  biometricEnabled = true;
+  try{ await idbPut('meta', biometricCredentialId, 'biometricCredentialId'); }catch(e){}
+  try{ await idbPut('meta', true, 'biometricEnabled'); }catch(e){}
+}
+
+async function disableBiometric(){
+  biometricEnabled = false;
+  biometricCredentialId = null;
+  try{ await idbPut('meta', false, 'biometricEnabled'); }catch(e){}
+  try{ await idbPut('meta', '', 'biometricCredentialId'); }catch(e){}
+}
+
+async function verifyBiometric(){
+  if(!biometricCredentialId) return false;
+  const challenge = crypto.getRandomValues(new Uint8Array(32));
+  try{
+    const assertion = await navigator.credentials.get({
+      publicKey: {
+        challenge,
+        allowCredentials: [{ id: base64ToBuf(biometricCredentialId), type: 'public-key' }],
+        userVerification: 'required',
+        timeout: 60000,
+      }
+    });
+    return !!assertion;
+  }catch(e){
+    return false;
+  }
+}
+
+let roomsConfig = [];
+let ROOMS = {};
+let ROOM_LABELS = {};
+let WINDOW_CONFIG = {};
+
+function rebuildRoomMaps(){
+  ROOMS = {}; ROOM_LABELS = {}; WINDOW_CONFIG = {};
+  roomsConfig.forEach(rm=>{
+    ROOMS[rm.key] = rm.items;
+    ROOM_LABELS[rm.key] = rm.label;
+    if(rm.windows) WINDOW_CONFIG[rm.key] = rm.windows;
+  });
+}
+
+async function loadRoomsConfig(){
+  try{
+    const val = await idbGet('meta', 'roomsConfig');
+    roomsConfig = Array.isArray(val) && val.length ? val : JSON.parse(JSON.stringify(DEFAULT_ROOMS_CONFIG));
+  }catch(e){
+    roomsConfig = JSON.parse(JSON.stringify(DEFAULT_ROOMS_CONFIG));
+  }
+  rebuildRoomMaps();
+}
+async function saveRoomsConfigToDB(){
+  try{ await idbPut('meta', roomsConfig, 'roomsConfig'); }catch(e){}
+  rebuildRoomMaps();
+}
+
+function fenetreOptions(room){
+  const cfg = WINDOW_CONFIG[room];
+  if(!cfg) return [];
+  const opts = [];
+  for(let i=1;i<=cfg.fenetres;i++) opts.push('Fenêtre '+i);
+  for(let i=1;i<=cfg.portesFenetres;i++) opts.push('Porte-fenêtre '+i);
+  return opts;
+}
+const DEFAULT_MATERIEL_CONFIG = [
+  { name:"Tables", vaisselle:false, defaultQty:'' },
+  { name:"Chaises", vaisselle:false, defaultQty:'' },
+  { name:"Grandes assiettes", vaisselle:true, defaultQty:'' },
+  { name:"Petites assiettes", vaisselle:true, defaultQty:'' },
+  { name:"Verres", vaisselle:true, defaultQty:'' },
+  { name:"Couteaux", vaisselle:true, defaultQty:'' },
+  { name:"Fourchettes", vaisselle:true, defaultQty:'' },
+  { name:"Petites cuillères", vaisselle:true, defaultQty:'' },
+  { name:"Grandes cuillères", vaisselle:true, defaultQty:'' },
+  { name:"Extincteurs", vaisselle:false, defaultQty:'' }
+];
+let materielConfig = [];
+let MATERIEL = [];
+let VAISSELLE_ITEMS = [];
+let MATERIEL_DEFAULT_QTY = {};
+
+function rebuildMaterielMaps(){
+  MATERIEL = materielConfig.map(m=>m.name);
+  VAISSELLE_ITEMS = materielConfig.filter(m=>m.vaisselle).map(m=>m.name);
+  MATERIEL_DEFAULT_QTY = {};
+  materielConfig.forEach(m=>{ MATERIEL_DEFAULT_QTY[m.name] = (m.defaultQty !== undefined ? m.defaultQty : ''); });
+}
+async function loadMaterielConfig(){
+  try{
+    const val = await idbGet('meta', 'materielConfig');
+    materielConfig = Array.isArray(val) && val.length ? val : JSON.parse(JSON.stringify(DEFAULT_MATERIEL_CONFIG));
+  }catch(e){
+    materielConfig = JSON.parse(JSON.stringify(DEFAULT_MATERIEL_CONFIG));
+  }
+  rebuildMaterielMaps();
+}
+async function saveMaterielConfigToDB(){
+  try{ await idbPut('meta', materielConfig, 'materielConfig'); }catch(e){}
+  rebuildMaterielMaps();
+}
+const MAX_PHOTO_DIM = 900;
+const JPEG_QUALITY = 0.6;
+
+let currentRecord = null;
+let index = [];
+let currentScreen = 'list';
+
+function uid(){ return 'edl_' + Date.now() + '_' + Math.random().toString(36).slice(2,8); }
+
+function blankRecord(){
+  const r = { id: uid(), type: 'entree', createdAt: new Date().toISOString(),
+    infos:{nom:'',tel:'',objet:'',date:'',heure:'',representant:'',statut:'attente'},
+    etats:{}, photos:{}, fenetres:{}, materiel:{}, vaisselleIncluse:true, cles:{cles:'',badges:'',code:''},
+    obsGenerales:'', signatures:{commune:null, locataire:null},
+    locked:false, lockedAt:null, version:1, previousVersionId:null, edlNumber:null
+  };
+  Object.keys(ROOMS).forEach(room=>{ r.photos[room] = []; });
+  Object.keys(ROOMS).forEach(room=>{
+    r.etats[room] = ROOMS[room].map(name=>({name, etat:'', obs:''}));
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{ r.fenetres[room] = []; });
+  MATERIEL.forEach(name=>{ r.materiel[name] = {prevue: (MATERIEL_DEFAULT_QTY[name] !== undefined ? String(MATERIEL_DEFAULT_QTY[name]) : ''), constatee:'', etat:'', obs:''}; });
+  return r;
+}
+
+function duplicateToSortie(src){
+  const r = blankRecord();
+  r.type = 'sortie';
+  r.edlNumber = src.edlNumber || null;
+  r.infos = Object.assign({}, src.infos, { statut: 'attente' });
+  r.vaisselleIncluse = src.vaisselleIncluse;
+  r.cles = Object.assign({}, src.cles);
+  Object.keys(r.materiel).forEach(name=>{
+    if(src.materiel[name]) r.materiel[name].prevue = src.materiel[name].prevue;
+  });
+  return r;
+}
+
+// --- Couche de stockage : IndexedDB (bien plus de capacité que localStorage) ---
+const DB_NAME = 'edl_db';
+const DB_VERSION = 1;
+let dbPromise = null;
+
+function openDB(){
+  if(dbPromise) return dbPromise;
+  dbPromise = new Promise((resolve, reject)=>{
+    if(!window.indexedDB){ reject(new Error('IndexedDB non supporté')); return; }
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = (e)=>{
+      const db = e.target.result;
+      if(!db.objectStoreNames.contains('records')) db.createObjectStore('records', { keyPath: 'id' });
+      if(!db.objectStoreNames.contains('meta')) db.createObjectStore('meta');
+    };
+    req.onsuccess = ()=> resolve(req.result);
+    req.onerror = ()=> reject(req.error);
+  });
+  return dbPromise;
+}
+function idbGet(storeName, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const req = db.transaction(storeName, 'readonly').objectStore(storeName).get(key);
+    req.onsuccess = ()=> resolve(req.result);
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+function idbPut(storeName, value, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const store = db.transaction(storeName, 'readwrite').objectStore(storeName);
+    const req = key!==undefined ? store.put(value, key) : store.put(value);
+    req.onsuccess = ()=> resolve();
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+function idbDelete(storeName, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const req = db.transaction(storeName, 'readwrite').objectStore(storeName).delete(key);
+    req.onsuccess = ()=> resolve();
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+
+async function migrateFromLocalStorageIfNeeded(){
+  let raw;
+  try{ raw = localStorage.getItem('edl_index'); }catch(e){ return; }
+  if(!raw) return;
+  let oldIndex;
+  try{ oldIndex = JSON.parse(raw); }catch(e){ oldIndex = []; }
+  const list = Array.isArray(oldIndex) ? oldIndex : [];
+  const newIndex = [];
+  for(const meta of list){
+    try{
+      const raw2 = localStorage.getItem('rec_'+meta.id);
+      if(!raw2) continue;
+      const rec = ensureRecordShape(JSON.parse(raw2));
+      await idbPut('records', rec);
+      newIndex.push({ id:rec.id, type:rec.type, nom:rec.infos.nom||'Sans nom', objet:rec.infos.objet||'', date:rec.infos.date||'', statut: rec.infos.statut||'attente', createdAt:rec.createdAt, nbProblemes: countProblemes(rec) });
+    }catch(e){}
+  }
+  if(newIndex.length){
+    index = newIndex;
+    await saveIndex();
+  }
+  try{
+    list.forEach(m=> localStorage.removeItem('rec_'+m.id));
+    localStorage.removeItem('edl_index');
+  }catch(e){}
+  if(newIndex.length) showToast('Données migrées vers un stockage plus performant');
+}
+
+function ensureRecordShape(rec){
+  if(!rec) return rec;
+  if(!rec.etats) rec.etats = {};
+  if(!rec.photos) rec.photos = {};
+  if(!rec.fenetres) rec.fenetres = {};
+  if(!rec.materiel) rec.materiel = {};
+  Object.keys(ROOMS).forEach(room=>{
+    if(!Array.isArray(rec.etats[room])){
+      rec.etats[room] = ROOMS[room].map(name=>({name, etat:'', obs:''}));
+    }
+    if(!Array.isArray(rec.photos[room])) rec.photos[room] = [];
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    if(!Array.isArray(rec.fenetres[room])) rec.fenetres[room] = [];
+  });
+  MATERIEL.forEach(name=>{
+    if(!rec.materiel[name]) rec.materiel[name] = {prevue:'',constatee:'',etat:'',obs:''};
+  });
+  if(typeof rec.vaisselleIncluse !== 'boolean') rec.vaisselleIncluse = true;
+  if(typeof rec.locked !== 'boolean') rec.locked = false;
+  if(rec.lockedAt === undefined) rec.lockedAt = null;
+  if(typeof rec.version !== 'number') rec.version = 1;
+  if(rec.previousVersionId === undefined) rec.previousVersionId = null;
+  if(!rec.edlNumber) rec.edlNumber = 'EDL-ANTÉRIEUR';
+  return rec;
+}
+
+async function loadIndex(){
+  try{
+    const val = await idbGet('meta', 'index');
+    index = Array.isArray(val) ? val : [];
+  }catch(e){ index = []; }
+}
+async function saveIndex(){
+  try{ await idbPut('meta', index, 'index'); }catch(e){}
+}
+async function loadRecord(id){
+  try{
+    const rec = await idbGet('records', id);
+    return rec ? ensureRecordShape(rec) : null;
+  }catch(e){ return null; }
+}
+function countProblemes(rec){
+  let n = 0;
+  Object.keys(ROOMS).forEach(room=>{
+    (rec.etats[room]||[]).forEach(item=>{ if(item.etat==='moyen'||item.etat==='mauvais') n++; });
+  });
+  MATERIEL.forEach(name=>{
+    const m = rec.materiel[name];
+    if(m && (m.etat==='moyen'||m.etat==='mauvais')) n++;
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    n += (rec.fenetres && rec.fenetres[room]) ? rec.fenetres[room].length : 0;
+  });
+  return n;
+}
+
+async function saveRecord(rec){
+  try{
+    await idbPut('records', rec);
+  }catch(e){
+    showToast("Échec de l'enregistrement (stockage plein ou indisponible)");
+  }
+  const meta = index.find(m=>m.id===rec.id);
+  const summary = { id:rec.id, type:rec.type, nom:rec.infos.nom||'Sans nom', objet:rec.infos.objet||'', date:rec.infos.date||'', statut: rec.infos.statut || 'attente', createdAt:rec.createdAt, nbProblemes: countProblemes(rec), version: rec.version||1, locked: !!rec.locked, edlNumber: rec.edlNumber || null };
+  if(meta){ Object.assign(meta, summary); } else { index.unshift(summary); }
+  await saveIndex();
+}
+async function deleteRecord(id){
+  index = index.filter(m=>m.id!==id);
+  await saveIndex();
+  try{ await idbDelete('records', id); }catch(e){}
+}
+
+async function getLastBackupAt(){
+  try{ return await idbGet('meta', 'lastBackupAt'); }catch(e){ return null; }
+}
+async function setLastBackupAt(iso){
+  try{ await idbPut('meta', iso, 'lastBackupAt'); }catch(e){}
+}
+function daysSince(iso){
+  if(!iso) return null;
+  return Math.floor((Date.now() - new Date(iso).getTime()) / (1000*60*60*24));
+}
+async function renderBackupReminder(){
+  const el = document.getElementById('backupReminder');
+  if(!el) return;
+  const last = await getLastBackupAt();
+  const days = daysSince(last);
+  if(days === null){
+    el.innerHTML = '<span class="backup-warn">Aucune sauvegarde effectuée — pensez à sauvegarder vos données.</span>';
+  } else if(days === 0){
+    el.innerHTML = '<span class="backup-ok">Dernière sauvegarde : aujourd\'hui</span>';
+  } else {
+    const cls = days >= 14 ? 'backup-warn' : 'backup-ok';
+    el.innerHTML = `<span class="${cls}">Dernière sauvegarde : il y a ${days} jour${days>1?'s':''}</span>`;
+  }
+}
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 1600);
+}
+
+function switchScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  document.getElementById('backBtn').classList.toggle('show', name==='form' || name==='help' || name==='config');
+  document.getElementById('helpBtn').classList.toggle('show', name==='list');
+  document.getElementById('configBtn').classList.toggle('show', name==='list');
+  const fabEl = document.querySelector('.fab');
+  if(fabEl) fabEl.classList.toggle('show', name==='list');
+  const titles = { form:"État des lieux", help:"Notice d'utilisation", config:"Configuration des pièces", list:appName };
+  document.getElementById('screenTitle').textContent = titles[name] || titles.list;
+  document.getElementById('screenSub').textContent = name==='form' ? ((currentRecord && currentRecord.edlNumber ? currentRecord.edlNumber + ' — ' : '') + (currentRecord && currentRecord.infos.nom ? currentRecord.infos.nom : "Nouveau document")) : ((name==='help'||name==='config') ? "" : "États des lieux numériques");
+  currentScreen = name;
+}
+
+let listFilter = 'tous';
+let listSearch = '';
+
+function renderList(){
+  const wrap = document.getElementById('recordList');
+  if(index.length===0){
+    wrap.innerHTML = '<div class="empty">Aucun état des lieux enregistré.<br>Appuyez sur "Nouvel état des lieux" pour commencer.</div>';
+    return;
+  }
+  let items = index.slice().sort((a,b)=> (b.date||'').localeCompare(a.date||'') || (b.createdAt||'').localeCompare(a.createdAt||''));
+  if(listFilter==='entree' || listFilter==='sortie'){
+    items = items.filter(m=>m.type===listFilter);
+  } else if(listFilter==='problemes'){
+    items = items.filter(m=>(m.nbProblemes||0)>0);
+  }
+  if(listSearch.trim()){
+    const q = listSearch.trim().toLowerCase();
+    items = items.filter(m=> (m.nom||'').toLowerCase().includes(q) || (m.objet||'').toLowerCase().includes(q));
+  }
+  if(items.length===0){
+    wrap.innerHTML = '<div class="no-results">Aucun état des lieux ne correspond à cette recherche.</div>';
+    return;
+  }
+  const statutLabel = { attente:'En attente de sortie', cloture:'Clôturé', litige:'Litige en cours' };
+  const statutClass = { attente:'statut-attente', cloture:'statut-cloture', litige:'statut-litige' };
+  wrap.innerHTML = items.map(m=>{
+    const dateStr = m.date ? new Date(m.date).toLocaleDateString('fr-FR') : 'Date non renseignée';
+    const statut = m.statut || 'attente';
+    const nb = m.nbProblemes || 0;
+    const problemeChip = nb>0
+      ? `<span class="problem-chip some">${nb} point${nb>1?'s':''} signalé${nb>1?'s':''}</span>`
+      : `<span class="problem-chip none">Aucun point signalé</span>`;
+    const lockChip = m.locked ? `<span class="lock-chip">🔒 Verrouillé</span>` : '';
+    const versionChip = (m.version && m.version > 1) ? `<span class="version-chip">Version ${m.version}</span>` : '';
+    return `<div class="record-card" data-id="${m.id}">
+      <div class="info" data-open="${m.id}">
+        <p class="name">${m.nom || 'Sans nom'}${m.objet?` — ${m.objet}`:''}</p>
+        <p class="meta">${m.edlNumber ? m.edlNumber + ' — ' : ''}${dateStr}</p>
+        <span class="statut-pill ${statutClass[statut]}">${statutLabel[statut]}</span>${problemeChip}${lockChip}${versionChip}
+      </div>
+      <div class="record-actions">
+        <span class="badge ${m.type}">${m.type==='entree'?'Entrée':'Sortie'}</span>
+        ${m.type==='entree' ? `<button class="dup-btn" data-dup="${m.id}" title="Créer l'état de sortie à partir de celui-ci">➜ Sortie</button>` : ''}
+        <button class="del-btn" data-del="${m.id}" aria-label="Supprimer">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+document.getElementById('searchInput').addEventListener('input', e=>{
+  listSearch = e.target.value;
+  renderList();
+});
+document.querySelectorAll('.filter-chip').forEach(chip=>{
+  chip.addEventListener('click', ()=>{
+    document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+    chip.classList.add('active');
+    listFilter = chip.dataset.filter;
+    renderList();
+  });
+});
+
+function setType(type){
+  currentRecord.type = type;
+  document.getElementById('btnEntree').classList.toggle('active', type==='entree');
+  document.getElementById('btnEntree').classList.toggle('entree', type==='entree');
+  document.getElementById('btnSortie').classList.toggle('active', type==='sortie');
+  document.getElementById('btnSortie').classList.toggle('sortie', type==='sortie');
+}
+
+function resizeImage(file){
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = ()=>{
+      const img = new Image();
+      img.onload = ()=>{
+        let { width, height } = img;
+        if(width > height && width > MAX_PHOTO_DIM){
+          height = Math.round(height * MAX_PHOTO_DIM / width); width = MAX_PHOTO_DIM;
+        } else if(height > MAX_PHOTO_DIM){
+          width = Math.round(width * MAX_PHOTO_DIM / height); height = MAX_PHOTO_DIM;
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', JPEG_QUALITY));
+      };
+      img.onerror = reject;
+      img.src = reader.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function photoTsLabel(ts){
+  if(!ts) return '';
+  try{
+    const d = new Date(ts);
+    return d.toLocaleDateString('fr-FR') + ' ' + d.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit'});
+  }catch(e){ return ''; }
+}
+
+function renderPhotos(room){
+  const el = document.getElementById('photos-'+room);
+  if(!el) return;
+  const photos = currentRecord.photos[room] || [];
+  el.innerHTML = photos.map((p, idx)=>{
+    const src = typeof p === 'string' ? p : p.src;
+    const ts = typeof p === 'string' ? null : p.ts;
+    const tsLabel = photoTsLabel(ts);
+    return `<div class="photo-thumb"><img src="${src}" alt="Photo dégradation">${tsLabel?`<div class="photo-ts">${tsLabel}</div>`:''}<button type="button" class="photo-del" data-photo-room="${room}" data-photo-idx="${idx}" aria-label="Supprimer la photo">✕</button></div>`;
+  }).join('') + `<label class="photo-add">
+      <span>+ Photo</span>
+      <input type="file" accept="image/*" capture="environment" data-photo-input="${room}">
+    </label>`;
+  el.querySelectorAll('[data-photo-input]').forEach(inp=>{
+    inp.addEventListener('change', async ()=>{
+      const file = inp.files && inp.files[0];
+      if(!file) return;
+      try{
+        const dataUrl = await resizeImage(file);
+        currentRecord.photos[room].push({ src: dataUrl, ts: new Date().toISOString() });
+        renderPhotos(room);
+      }catch(e){ showToast("Impossible de charger la photo"); }
+    });
+  });
+  el.querySelectorAll('[data-photo-idx]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentRecord.photos[btn.dataset.photoRoom].splice(+btn.dataset.photoIdx, 1);
+      renderPhotos(btn.dataset.photoRoom);
+    });
+  });
+}
+
+function updateProgress(room){
+  const items = currentRecord.etats[room];
+  const done = items.filter(i=>i.etat).length;
+  const el = document.querySelector(`[data-prog="${room}"]`);
+  if(el) el.textContent = `${done}/${items.length}`;
+}
+
+function renderRoom(room){
+  const el = document.getElementById('body-'+room);
+  el.innerHTML = currentRecord.etats[room].map((item, idx)=>{
+    const showObs = item.etat==='moyen' || item.etat==='mauvais' || (item.obs && item.obs.trim());
+    return `<div class="elem-row">
+      <div class="elem-name">${item.name}</div>
+      <div class="state-btns">
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="bon" class="${item.etat==='bon'?'sel-bon':''}">Bon</button>
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="moyen" class="${item.etat==='moyen'?'sel-moyen':''}">Moyen</button>
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="mauvais" class="${item.etat==='mauvais'?'sel-mauvais':''}">Mauvais</button>
+      </div>
+      ${showObs ? `<textarea placeholder="Observation (optionnel)" data-room="${room}" data-idx="${idx}" data-obs>${item.obs}</textarea>` : ''}
+    </div>`;
+  }).join('')
+  + (WINDOW_CONFIG[room] ? `<div class="fenetre-section" id="fenetres-${room}"></div>` : '')
+  + `<div class="photo-section">
+      <div class="photo-label">Photos des dégradations constatées</div>
+      <div class="photo-grid" id="photos-${room}"></div>
+    </div>`;
+  el.querySelectorAll('.state-btns button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const {room, idx, val} = btn.dataset;
+      currentRecord.etats[room][idx].etat = val;
+      renderRoom(room);
+      updateProgress(room);
+      updateGlobalProgress();
+    });
+  });
+  el.querySelectorAll('textarea[data-obs]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      currentRecord.etats[ta.dataset.room][ta.dataset.idx].obs = ta.value;
+    });
+  });
+  if(WINDOW_CONFIG[room]) renderFenetres(room);
+  renderPhotos(room);
+  updateProgress(room);
+}
+
+function renderFenetres(room){
+  const cfg = WINDOW_CONFIG[room];
+  if(!cfg) return;
+  const wrap = document.getElementById('fenetres-'+room);
+  if(!wrap) return;
+  const list = currentRecord.fenetres[room] || [];
+  const usedLabels = new Set(list.map(f=>f.label));
+  const available = fenetreOptions(room).filter(l=>!usedLabels.has(l));
+  const listHtml = list.map((f,idx)=>`
+    <div class="elem-row">
+      <div class="elem-name">${f.label}</div>
+      <div class="state-btns">
+        <button type="button" data-fen-room="${room}" data-fen-idx="${idx}" data-fen-val="moyen" class="${f.etat==='moyen'?'sel-moyen':''}">Moyen</button>
+        <button type="button" data-fen-room="${room}" data-fen-idx="${idx}" data-fen-val="mauvais" class="${f.etat==='mauvais'?'sel-mauvais':''}">Mauvais</button>
+        <button type="button" class="fen-del" data-fen-del-room="${room}" data-fen-del-idx="${idx}" aria-label="Retirer">✕</button>
+      </div>
+      <textarea placeholder="Observation" data-fen-obs-room="${room}" data-fen-obs-idx="${idx}">${f.obs||''}</textarea>
+    </div>`).join('');
+  const selectHtml = available.length
+    ? `<div class="fenetre-add-row">
+         <select id="fenetreSelect-${room}">${available.map(l=>`<option value="${l}">${l}</option>`).join('')}</select>
+         <button type="button" data-add-fenetre="${room}">+ Signaler</button>
+       </div>`
+    : (list.length ? '<p class="fenetre-empty">Toutes les fenêtres et portes-fenêtres ont été signalées.</p>' : '');
+  wrap.innerHTML = `<div class="fenetre-label">Fenêtres / portes-fenêtres avec anomalie<span class="fenetre-hint">(non listées ci-dessous = en bon état)</span></div>${listHtml}${selectHtml}`;
+
+  const addBtn = wrap.querySelector('[data-add-fenetre]');
+  if(addBtn){
+    addBtn.addEventListener('click', ()=>{
+      const sel = document.getElementById('fenetreSelect-'+room);
+      if(!sel || !sel.value) return;
+      currentRecord.fenetres[room].push({ label: sel.value, etat:'moyen', obs:'' });
+      renderFenetres(room);
+    });
+  }
+  wrap.querySelectorAll('[data-fen-val]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const {fenRoom, fenIdx, fenVal} = btn.dataset;
+      currentRecord.fenetres[fenRoom][fenIdx].etat = fenVal;
+      renderFenetres(fenRoom);
+    });
+  });
+  wrap.querySelectorAll('[data-fen-del-idx]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentRecord.fenetres[btn.dataset.fenDelRoom].splice(+btn.dataset.fenDelIdx,1);
+      renderFenetres(btn.dataset.fenDelRoom);
+    });
+  });
+  wrap.querySelectorAll('[data-fen-obs-idx]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      currentRecord.fenetres[ta.dataset.fenObsRoom][ta.dataset.fenObsIdx].obs = ta.value;
+    });
+  });
+}
+
+function ecartLabel(name){
+  const m = currentRecord.materiel[name];
+  const prevue = parseFloat(m.prevue);
+  const constatee = parseFloat(m.constatee);
+  if(isNaN(prevue) || isNaN(constatee)) return '';
+  const ecart = constatee - prevue;
+  if(ecart === 0) return '<span class="ecart ecart-ok">Complet</span>';
+  if(ecart < 0) return `<span class="ecart ecart-bad">${Math.abs(ecart)} manquant${Math.abs(ecart)>1?'s':''}</span>`;
+  return `<span class="ecart ecart-info">+${ecart} en trop</span>`;
+}
+
+function renderMateriel(){
+  const el = document.getElementById('body-materiel');
+  const inclus = currentRecord.vaisselleIncluse !== false;
+  const toggleHtml = `<div class="vaisselle-toggle">
+      <label class="checkbox-label">
+        <input type="checkbox" id="f_vaisselleIncluse" ${inclus?'checked':''}>
+        Vaisselle incluse dans cette location
+      </label>
+    </div>`;
+  const rowsHtml = MATERIEL.map(name=>{
+    const isVaisselle = VAISSELLE_ITEMS.includes(name);
+    if(isVaisselle && !inclus) return '';
+    const m = currentRecord.materiel[name];
+    return `<div class="mat-row">
+      <div class="mat-name">${name}</div>
+      <div class="mat-grid">
+        <div><label>Qté prévue</label><input type="number" min="0" data-mat="${name}" data-f="prevue" value="${m.prevue}"></div>
+        <div><label>Qté constatée</label><input type="number" min="0" data-mat="${name}" data-f="constatee" value="${m.constatee}"></div>
+      </div>
+      <div class="ecart-slot" data-ecart-slot="${name}">${ecartLabel(name)}</div>
+      <label>État</label>
+      <select data-mat="${name}" data-f="etat">
+        <option value="">—</option>
+        <option value="bon" ${m.etat==='bon'?'selected':''}>Bon</option>
+        <option value="moyen" ${m.etat==='moyen'?'selected':''}>Moyen</option>
+        <option value="mauvais" ${m.etat==='mauvais'?'selected':''}>Mauvais</option>
+      </select>
+      <label>Observations</label>
+      <textarea data-mat="${name}" data-f="obs">${m.obs}</textarea>
+    </div>`;
+  }).join('');
+  el.innerHTML = toggleHtml + rowsHtml;
+  document.getElementById('f_vaisselleIncluse').addEventListener('change', (e)=>{
+    currentRecord.vaisselleIncluse = e.target.checked;
+    renderMateriel();
+    updateGlobalProgress();
+  });
+  el.querySelectorAll('[data-mat]').forEach(inp=>{
+    const update = ()=>{
+      currentRecord.materiel[inp.dataset.mat][inp.dataset.f] = inp.value;
+      if(inp.dataset.f === 'prevue' || inp.dataset.f === 'constatee'){
+        const slot = el.querySelector(`[data-ecart-slot="${inp.dataset.mat}"]`);
+        if(slot) slot.innerHTML = ecartLabel(inp.dataset.mat);
+      }
+      if(inp.dataset.f === 'etat') updateGlobalProgress();
+    };
+    inp.addEventListener('input', update);
+    inp.addEventListener('change', update);
+  });
+}
+
+function fillInfoFields(){
+  const i = currentRecord.infos;
+  document.getElementById('f_nom').value = i.nom;
+  document.getElementById('f_tel').value = i.tel;
+  document.getElementById('f_objet').value = i.objet;
+  document.getElementById('f_date').value = i.date;
+  document.getElementById('f_heure').value = i.heure;
+  document.getElementById('f_representant').value = i.representant;
+  document.getElementById('f_statut').value = i.statut || 'attente';
+  document.getElementById('f_cles').value = currentRecord.cles.cles;
+  document.getElementById('f_badges').value = currentRecord.cles.badges;
+  document.getElementById('f_code').value = currentRecord.cles.code;
+  document.getElementById('f_obsGenerales').value = currentRecord.obsGenerales;
+}
+
+['f_nom','f_tel','f_objet','f_date','f_heure','f_representant'].forEach(id=>{
+  document.getElementById(id).addEventListener('input', e=>{
+    const key = id.replace('f_','');
+    currentRecord.infos[key] = e.target.value;
+    if(id==='f_nom') updateGlobalProgress();
+  });
+});
+document.getElementById('f_statut').addEventListener('change', e=> currentRecord.infos.statut = e.target.value);
+document.getElementById('f_cles').addEventListener('input', e=> currentRecord.cles.cles = e.target.value);
+document.getElementById('f_badges').addEventListener('input', e=> currentRecord.cles.badges = e.target.value);
+document.getElementById('f_code').addEventListener('input', e=> currentRecord.cles.code = e.target.value);
+document.getElementById('f_obsGenerales').addEventListener('input', e=> currentRecord.obsGenerales = e.target.value);
+
+document.getElementById('screen-form').addEventListener('click', (e)=>{
+  const head = e.target.closest('.section-head');
+  if(head) head.closest('.section').classList.toggle('open');
+});
+
+document.getElementById('btnEntree').addEventListener('click', ()=>setType('entree'));
+document.getElementById('btnSortie').addEventListener('click', ()=>setType('sortie'));
+
+// --- Signature pads ---
+function setupSignaturePad(canvas, getInitial){
+  const ctx = canvas.getContext('2d');
+  function resize(){
+    const rect = canvas.getBoundingClientRect();
+    if(rect.width === 0 || rect.height === 0) return;
+    const ratio = window.devicePixelRatio || 1;
+    canvas.width = rect.width * ratio;
+    canvas.height = rect.height * ratio;
+    ctx.scale(ratio, ratio);
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#20262E';
+    const init = getInitial();
+    if(init){
+      const img = new Image();
+      img.onload = ()=> ctx.drawImage(img, 0, 0, rect.width, rect.height);
+      img.src = init;
+    }
+  }
+  let drawing = false, last = null;
+  function pos(e){
+    const rect = canvas.getBoundingClientRect();
+    const t = e.touches ? e.touches[0] : e;
+    return { x: t.clientX - rect.left, y: t.clientY - rect.top };
+  }
+  function start(e){ e.preventDefault(); drawing = true; last = pos(e); }
+  function move(e){
+    if(!drawing) return;
+    e.preventDefault();
+    const p = pos(e);
+    ctx.beginPath(); ctx.moveTo(last.x,last.y); ctx.lineTo(p.x,p.y); ctx.stroke();
+    last = p;
+    canvas.dataset.dirty = '1';
+  }
+  function end(){
+    drawing = false;
+    if(canvas.dataset.dirty){ captureSignatures(); updateGlobalProgress(); updateLockUI(); }
+  }
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', move);
+  window.addEventListener('mouseup', end);
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', move, {passive:false});
+  canvas.addEventListener('touchend', end);
+  if(canvas.__sigResizeObserver) canvas.__sigResizeObserver.disconnect();
+  if('ResizeObserver' in window){
+    const ro = new ResizeObserver(()=> resize());
+    ro.observe(canvas);
+    canvas.__sigResizeObserver = ro;
+  }
+  setTimeout(resize, 50);
+  return { clear(){ ctx.clearRect(0,0,canvas.width,canvas.height); canvas.dataset.dirty=''; }, resize };
+}
+
+let padCommune, padLocataire;
+document.querySelectorAll('[data-clear]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    if(btn.dataset.clear==='sigCommune'){ padCommune.clear(); currentRecord.signatures.commune = null; }
+    else { padLocataire.clear(); currentRecord.signatures.locataire = null; }
+    updateLockUI();
+  });
+});
+
+function captureSignatures(){
+  const c1 = document.getElementById('sigCommune');
+  const c2 = document.getElementById('sigLocataire');
+  if(c1.dataset.dirty) currentRecord.signatures.commune = c1.toDataURL('image/png');
+  if(c2.dataset.dirty) currentRecord.signatures.locataire = c2.toDataURL('image/png');
+}
+
+// --- Navigation ---
+async function openRecord(id){
+  currentRecord = await loadRecord(id);
+  if(!currentRecord) return;
+  renderForm();
+  switchScreen('form');
+}
+
+function computeSectionCompletion(){
+  const results = {};
+  results.infos = !!(currentRecord.infos.nom && currentRecord.infos.nom.trim());
+  Object.keys(ROOMS).forEach(room=>{
+    const items = currentRecord.etats[room];
+    results[room] = items.length>0 && items.every(i=>i.etat);
+  });
+  const visibleMateriel = MATERIEL.filter(name=> currentRecord.vaisselleIncluse!==false || !VAISSELLE_ITEMS.includes(name));
+  results.materiel = visibleMateriel.length>0 && visibleMateriel.every(name=> currentRecord.materiel[name] && currentRecord.materiel[name].etat);
+  results.signatures = !!(currentRecord.signatures.commune && currentRecord.signatures.locataire);
+  return results;
+}
+
+function updateGlobalProgress(){
+  const el = document.getElementById('globalProgress');
+  if(!el || !currentRecord) return;
+  const res = computeSectionCompletion();
+  const keys = Object.keys(res);
+  const done = keys.filter(k=>res[k]).length;
+  el.textContent = `${done}/${keys.length} sections complétées`;
+}
+
+function renderRoomSectionsContainer(){
+  const container = document.getElementById('roomSectionsContainer');
+  container.innerHTML = roomsConfig.map(rm => `
+    <div class="section" data-key="${rm.key}">
+      <div class="section-head"><h3 data-title="${rm.label}">${rm.label}</h3><span class="section-progress" data-prog="${rm.key}"></span></div>
+      <div class="section-body" id="body-${rm.key}"></div>
+    </div>`).join('');
+}
+
+function renumberSections(){
+  document.querySelectorAll('#screen-form .section-head h3[data-title]').forEach((h3, idx)=>{
+    h3.textContent = `${idx+1}. ${h3.dataset.title}`;
+  });
+}
+
+function updateLockUI(){
+  const locked = !!currentRecord.locked;
+  document.getElementById('screen-form').classList.toggle('form-locked', locked);
+  const banner = document.getElementById('lockedBanner');
+  banner.classList.toggle('hidden', !locked);
+  const dateSpan = document.getElementById('lockedBannerDate');
+  dateSpan.textContent = (locked && currentRecord.lockedAt) ? ` le ${new Date(currentRecord.lockedAt).toLocaleDateString('fr-FR')}` : '';
+  document.getElementById('lockedEntreeSortieHint').classList.toggle('hidden', !(locked && currentRecord.type==='entree'));
+  const bothSignatures = !!(currentRecord.signatures.commune && currentRecord.signatures.locataire);
+  document.getElementById('doneBtn').classList.toggle('hidden', locked);
+  document.getElementById('clotureBtn').classList.toggle('hidden', locked || !bothSignatures);
+  document.getElementById('newVersionBtn').classList.toggle('hidden', !locked);
+}
+
+function renderForm(){
+  renderRoomSectionsContainer();
+  setType(currentRecord.type);
+  fillInfoFields();
+  document.getElementById('sigCommuneLabel').textContent = communeName ? `Pour la commune de ${communeName}` : 'Pour la commune';
+  Object.keys(ROOMS).forEach(room=>{
+    try{ renderRoom(room); }catch(e){ console.error('Erreur affichage pièce', room, e); }
+  });
+  try{ renderMateriel(); }catch(e){ console.error('Erreur affichage matériel', e); }
+  padCommune = setupSignaturePad(document.getElementById('sigCommune'), ()=>currentRecord.signatures.commune);
+  padLocataire = setupSignaturePad(document.getElementById('sigLocataire'), ()=>currentRecord.signatures.locataire);
+  updateGlobalProgress();
+  renumberSections();
+  updateLockUI();
+}
+
+function getMissingFields(){
+  const missing = [];
+  if(!currentRecord.infos.nom.trim()) missing.push('le nom du locataire');
+  if(!currentRecord.signatures.commune) missing.push('la signature de la commune');
+  if(!currentRecord.signatures.locataire) missing.push('la signature du locataire');
+  return missing;
+}
+
+document.getElementById('backBtn').addEventListener('click', async ()=>{
+  if(currentScreen === 'help' || currentScreen === 'config'){
+    switchScreen('list');
+    return;
+  }
+  captureSignatures();
+  const missing = getMissingFields();
+  if(missing.length){
+    const ok = await showConfirm(`Il manque : ${missing.join(', ')}.\n\nQuitter quand même ? L'état des lieux sera enregistré en brouillon.`);
+    if(!ok) return;
+  }
+  await saveRecord(currentRecord);
+  renderList();
+  switchScreen('list');
+});
+
+document.getElementById('helpBtn').addEventListener('click', ()=>{
+  switchScreen('help');
+});
+
+let configDraft = [];
+
+function renderConfigScreen(){
+  const wrap = document.getElementById('configRoomsList');
+  wrap.innerHTML = configDraft.map((rm, idx) => `
+    <div class="config-room-card" data-cfg-idx="${idx}">
+      <label>Nom de la pièce</label>
+      <input type="text" data-cfg-field="label" data-cfg-idx="${idx}" value="${rm.label.replace(/"/g,'&quot;')}">
+      <label>Éléments à vérifier (un par ligne)</label>
+      <textarea data-cfg-field="items" data-cfg-idx="${idx}">${rm.items.join('\n')}</textarea>
+      <label class="checkbox-label" style="margin-top:12px;">
+        <input type="checkbox" data-cfg-field="windowsToggle" data-cfg-idx="${idx}" ${rm.windows ? 'checked':''}>
+        Suivre les fenêtres / portes-fenêtres
+      </label>
+      ${rm.windows ? `
+      <div class="config-window-grid" style="margin-top:8px;">
+        <div><label>Nb de fenêtres</label><input type="number" min="0" data-cfg-field="fenetres" data-cfg-idx="${idx}" value="${rm.windows.fenetres}"></div>
+        <div><label>Nb de portes-fenêtres</label><input type="number" min="0" data-cfg-field="portesFenetres" data-cfg-idx="${idx}" value="${rm.windows.portesFenetres}"></div>
+      </div>` : ''}
+      <button type="button" class="config-room-remove" data-cfg-remove="${idx}">Supprimer cette pièce</button>
+    </div>`).join('');
+
+  wrap.querySelectorAll('[data-cfg-field="label"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].label = inp.value; });
+  });
+  wrap.querySelectorAll('[data-cfg-field="items"]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      configDraft[+ta.dataset.cfgIdx].items = ta.value.split('\n').map(s=>s.trim()).filter(Boolean);
+    });
+  });
+  wrap.querySelectorAll('[data-cfg-field="windowsToggle"]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const idx = +cb.dataset.cfgIdx;
+      configDraft[idx].windows = cb.checked ? { fenetres:10, portesFenetres:2 } : null;
+      renderConfigScreen();
+    });
+  });
+  wrap.querySelectorAll('[data-cfg-field="fenetres"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].windows.fenetres = parseInt(inp.value)||0; });
+  });
+  wrap.querySelectorAll('[data-cfg-field="portesFenetres"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].windows.portesFenetres = parseInt(inp.value)||0; });
+  });
+  wrap.querySelectorAll('[data-cfg-remove]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      if(configDraft.length <= 1){ await showAlert("Il doit rester au moins une pièce."); return; }
+      const ok = await showConfirm("Supprimer cette pièce ? Les états des lieux déjà enregistrés ne seront pas modifiés, mais cette pièce n'apparaîtra plus dans les nouveaux formulaires.");
+      if(!ok) return;
+      configDraft.splice(+btn.dataset.cfgRemove, 1);
+      renderConfigScreen();
+    });
+  });
+}
+
+let materielDraft = [];
+
+function renderConfigMaterielList(){
+  const wrap = document.getElementById('configMaterielList');
+  wrap.innerHTML = materielDraft.map((m, idx) => `
+    <div class="config-mat-row" data-matcfg-idx="${idx}">
+      <input type="text" data-matcfg-field="name" data-matcfg-idx="${idx}" value="${m.name.replace(/"/g,'&quot;')}">
+      <input type="number" min="0" data-matcfg-field="defaultQty" data-matcfg-idx="${idx}" value="${m.defaultQty!==undefined?m.defaultQty:''}" placeholder="Qté" style="width:64px;">
+      <label><input type="checkbox" data-matcfg-field="vaisselle" data-matcfg-idx="${idx}" ${m.vaisselle?'checked':''}> Vaisselle</label>
+      <button type="button" class="config-mat-remove" data-matcfg-remove="${idx}" aria-label="Supprimer">✕</button>
+    </div>`).join('');
+
+  wrap.querySelectorAll('[data-matcfg-field="name"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ materielDraft[+inp.dataset.matcfgIdx].name = inp.value; });
+  });
+  wrap.querySelectorAll('[data-matcfg-field="defaultQty"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ materielDraft[+inp.dataset.matcfgIdx].defaultQty = inp.value; });
+  });
+  wrap.querySelectorAll('[data-matcfg-field="vaisselle"]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{ materielDraft[+cb.dataset.matcfgIdx].vaisselle = cb.checked; });
+  });
+  wrap.querySelectorAll('[data-matcfg-remove]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      if(materielDraft.length <= 1){ await showAlert("Il doit rester au moins un article."); return; }
+      const ok = await showConfirm("Supprimer cet article ? Les états des lieux déjà enregistrés ne seront pas modifiés.");
+      if(!ok) return;
+      materielDraft.splice(+btn.dataset.matcfgRemove, 1);
+      renderConfigMaterielList();
+    });
+  });
+}
+
+document.getElementById('configAddMaterielBtn').addEventListener('click', ()=>{
+  materielDraft.push({ name: 'Nouvel article', vaisselle: false, defaultQty: '' });
+  renderConfigMaterielList();
+});
+
+function openConfigScreen(){
+  configDraft = JSON.parse(JSON.stringify(roomsConfig));
+  materielDraft = JSON.parse(JSON.stringify(materielConfig));
+  document.getElementById('configAppNameInput').value = appName;
+  document.getElementById('configCommuneNameInput').value = communeName;
+  document.getElementById('configSalleNameInput').value = salleName;
+  renderConfigScreen();
+  renderConfigMaterielList();
+  refreshBiometricConfigUI();
+  switchScreen('config');
+}
+
+document.getElementById('configBtn').addEventListener('click', ()=>{
+  if(adminUnlockedThisSession){
+    openConfigScreen();
+    return;
+  }
+  const overlay = document.getElementById('adminPinOverlay');
+  const input = document.getElementById('adminPinInput');
+  document.getElementById('adminPinError').textContent = '';
+  input.value = '';
+  overlay.classList.remove('hidden');
+  input.focus();
+});
+
+function tryAdminUnlock(){
+  const input = document.getElementById('adminPinInput');
+  const err = document.getElementById('adminPinError');
+  if(input.value === adminPin){
+    adminUnlockedThisSession = true;
+    document.getElementById('adminPinOverlay').classList.add('hidden');
+    input.value = '';
+    err.textContent = '';
+    openConfigScreen();
+  }else{
+    err.textContent = 'Code incorrect';
+    input.value = '';
+    input.focus();
+  }
+}
+document.getElementById('adminPinConfirmBtn').addEventListener('click', tryAdminUnlock);
+document.getElementById('adminPinInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') tryAdminUnlock();
+});
+document.getElementById('adminPinInput').addEventListener('input', (e)=>{
+  e.target.value = e.target.value.replace(/\D/g,'').slice(0,4);
+});
+document.getElementById('adminPinCancelBtn').addEventListener('click', ()=>{
+  document.getElementById('adminPinOverlay').classList.add('hidden');
+  document.getElementById('adminPinInput').value = '';
+  document.getElementById('adminPinError').textContent = '';
+});
+
+document.getElementById('configAddRoomBtn').addEventListener('click', ()=>{
+  const base = 'piece_' + Date.now().toString(36);
+  configDraft.push({ key: base, label: 'Nouvelle pièce', items: ['Sol','Murs','Plafond'], windows: null });
+  renderConfigScreen();
+});
+
+document.getElementById('configCancelBtn').addEventListener('click', ()=>{
+  switchScreen('list');
+});
+
+document.getElementById('configSaveBtn').addEventListener('click', async ()=>{
+  const invalid = configDraft.some(rm => !rm.label.trim() || rm.items.length === 0);
+  if(invalid){
+    await showAlert("Chaque pièce doit avoir un nom et au moins un élément à vérifier.");
+    return;
+  }
+  const invalidMat = materielDraft.some(m => !m.name.trim());
+  if(invalidMat){
+    await showAlert("Chaque article de matériel doit avoir un nom.");
+    return;
+  }
+  roomsConfig = configDraft;
+  await saveRoomsConfigToDB();
+  materielConfig = materielDraft;
+  await saveMaterielConfigToDB();
+  showToast('Configuration enregistrée');
+  switchScreen('list');
+});
+
+
+document.getElementById('doneBtn').addEventListener('click', async ()=>{
+  captureSignatures();
+  const missing = getMissingFields();
+  if(missing.length){
+    const ok = await showConfirm(`Il manque : ${missing.join(', ')}.\n\nTerminer quand même ?`);
+    if(!ok) return;
+  }
+  await saveRecord(currentRecord);
+  showToast('État des lieux enregistré');
+  renderList();
+  setTimeout(()=>switchScreen('list'), 400);
+});
+
+document.getElementById('clotureBtn').addEventListener('click', async ()=>{
+  captureSignatures();
+  if(!currentRecord.signatures.commune || !currentRecord.signatures.locataire){
+    await showAlert('Les deux signatures sont nécessaires avant de clôturer le document.');
+    return;
+  }
+  const ok = await showConfirm("Clôturer définitivement ce document ?\n\nIl passera en lecture seule. Toute modification ultérieure nécessitera de créer une nouvelle version.");
+  if(!ok) return;
+  currentRecord.locked = true;
+  currentRecord.lockedAt = new Date().toISOString();
+  await saveRecord(currentRecord);
+  updateLockUI();
+  renderList();
+  showToast('Document verrouillé');
+});
+
+document.getElementById('newVersionBtn').addEventListener('click', async ()=>{
+  const ok = await showConfirm("Créer une nouvelle version modifiable de ce document ?\n\nLe document verrouillé actuel sera conservé tel quel dans l'historique. Les signatures ne seront pas reportées sur la nouvelle version.");
+  if(!ok) return;
+  const newRec = JSON.parse(JSON.stringify(currentRecord));
+  newRec.id = uid();
+  newRec.createdAt = new Date().toISOString();
+  newRec.locked = false;
+  newRec.lockedAt = null;
+  newRec.version = (currentRecord.version || 1) + 1;
+  newRec.previousVersionId = currentRecord.id;
+  newRec.signatures = { commune: null, locataire: null };
+  currentRecord = newRec;
+  await saveRecord(currentRecord);
+  renderForm();
+  renderList();
+  showToast('Nouvelle version créée (v' + newRec.version + ')');
+});
+
+document.getElementById('recordList').addEventListener('click', async (e)=>{
+  const openEl = e.target.closest('[data-open]');
+  const delEl = e.target.closest('[data-del]');
+  const dupEl = e.target.closest('[data-dup]');
+  if(delEl){
+    e.stopPropagation();
+    const ok = await showConfirm('Supprimer cet état des lieux ?');
+    if(ok){
+      await deleteRecord(delEl.dataset.del);
+      renderList();
+    }
+    return;
+  }
+  if(dupEl){
+    e.stopPropagation();
+    const src = await loadRecord(dupEl.dataset.dup);
+    if(!src) return;
+    const ok = await showConfirm(`Créer l'état de sortie pour "${src.infos.nom || 'ce locataire'}" à partir de cette entrée ?`);
+    if(!ok) return;
+    currentRecord = duplicateToSortie(src);
+    if(!currentRecord.edlNumber) currentRecord.edlNumber = await nextEdlNumber();
+    renderForm();
+    switchScreen('form');
+    showToast('État de sortie créé à partir de l\'entrée');
+    return;
+  }
+  if(openEl){ openRecord(openEl.dataset.open); }
+});
+
+function buildExportHtml(r){
+  const etatLabel = {bon:'Bon', moyen:'Moyen', mauvais:'Mauvais', '':'—'};
+  const roomHtml = (roomKey, title) => {
+    const photos = r.photos[roomKey] || [];
+    const photosHtml = photos.length ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;">
+      ${photos.map(p=>{
+        const src = typeof p === 'string' ? p : p.src;
+        const ts = typeof p === 'string' ? null : p.ts;
+        const label = photoTsLabel(ts);
+        return `<div style="text-align:center;"><img src="${src}" style="width:120px;height:120px;object-fit:cover;border:1px solid #ccc;border-radius:6px;display:block;">${label?`<div style="font-size:10px;color:#6B7480;margin-top:3px;">${label}</div>`:''}</div>`;
+      }).join('')}
+    </div>` : '';
+    const fenetresList = (r.fenetres && r.fenetres[roomKey]) ? r.fenetres[roomKey] : null;
+    const fenetresHtml = fenetresList ? (fenetresList.length
+      ? `<table><tr><th>Fenêtre / porte-fenêtre</th><th>État</th><th>Observations</th></tr>
+         ${fenetresList.map(f=>`<tr><td>${f.label}</td><td>${etatLabel[f.etat]}</td><td>${f.obs||''}</td></tr>`).join('')}
+         </table>`
+      : `<p><i>Aucune fenêtre ou porte-fenêtre signalée (toutes en bon état).</i></p>`) : '';
+    return `
+    <h3>${title}</h3>
+    <table><tr><th>Élément</th><th>État</th><th>Observations</th></tr>
+    ${r.etats[roomKey].map(i=>`<tr><td>${i.name}</td><td>${etatLabel[i.etat]}</td><td>${i.obs||''}</td></tr>`).join('')}
+    </table>
+    ${fenetresList ? `<p style="margin-top:10px;"><b>Fenêtres et portes-fenêtres :</b></p>${fenetresHtml}` : ''}
+    ${photosHtml}`;
+  };
+  const matHtml = `<h3>Mobilier et matériel</h3>
+    ${r.vaisselleIncluse===false ? '<p><i>Vaisselle non incluse dans cette location.</i></p>' : ''}
+    <table><tr><th>Désignation</th><th>Qté prévue</th><th>Qté constatée</th><th>État</th><th>Observations</th></tr>
+    ${MATERIEL.filter(name=> r.vaisselleIncluse!==false || !VAISSELLE_ITEMS.includes(name)).map(name=>{const m=r.materiel[name]; return `<tr><td>${name}</td><td>${m.prevue||''}</td><td>${m.constatee||''}</td><td>${etatLabel[m.etat]||''}</td><td>${m.obs||''}</td></tr>`;}).join('')}
+    </table>`;
+  const sigHtml = `<h3>Signatures</h3>
+    <div style="display:flex;gap:20px;">
+      <div style="flex:1"><p><b>Pour la commune de ${communeName}</b></p>${r.signatures.commune?`<img src="${r.signatures.commune}" style="max-width:100%;border:1px solid #ccc">`:'<p>(non signé)</p>'}</div>
+      <div style="flex:1"><p><b>Le locataire / l'organisateur</b></p>${r.signatures.locataire?`<img src="${r.signatures.locataire}" style="max-width:100%;border:1px solid #ccc">`:'<p>(non signé)</p>'}</div>
+    </div>`;
+  return `
+    <html><head><title>${r.edlNumber || 'État des lieux'}</title>
+    <style>
+      @page { margin: 18mm 16mm; }
+      body{font-family:'Helvetica Neue',Arial,sans-serif;color:#20262E;padding:0;max-width:800px;margin:0 auto;font-size:13px;}
+      .doc-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #1F4E79;padding-bottom:14px;margin-bottom:18px;}
+      .doc-header .commune{font-size:12px;color:#6B7480;text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px;}
+      .doc-header h1{color:#1F4E79;font-size:20px;margin:0;}
+      .doc-header .type-badge{display:inline-block;margin-top:6px;padding:3px 11px;border-radius:20px;font-size:11.5px;font-weight:700;background:${r.type==='entree'?'#E3F0E9':'#FBE9E9'};color:${r.type==='entree'?'#2E9E5B':'#D64545'};}
+      .doc-header .meta-box{text-align:right;font-size:12px;color:#6B7480;}
+      .doc-header .meta-box .num{font-size:15px;font-weight:700;color:#1F4E79;font-family:monospace;}
+      h2{color:#1F4E79;font-size:15px;margin-top:4px;}
+      h3{color:#1F4E79;font-size:14px;margin-top:24px;border-bottom:1px solid #ccc;padding-bottom:4px;}
+      table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px;}
+      th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;}
+      th{background:#1F4E79;color:#fff;font-size:11.5px;}
+      p{font-size:13px;}
+      .info-table{width:100%;border-collapse:collapse;margin-bottom:4px;}
+      .info-table td{border:none;padding:3px 0;font-size:13px;}
+      .info-table td.label{color:#6B7480;width:170px;}
+      .doc-footer{margin-top:32px;padding-top:10px;border-top:1px solid #ccc;font-size:10.5px;color:#9aa2ab;text-align:center;}
+    </style></head><body>
+    <div class="doc-header">
+      <div>
+        <p class="commune">Commune de ${communeName || '[à renseigner dans Configuration]'}</p>
+        <h1>${salleName || '[nom de la salle à renseigner]'}</h1>
+        <span class="type-badge">${r.type==='entree'?'ÉTAT D’ENTRÉE':'ÉTAT DE SORTIE'}</span>
+      </div>
+      <div class="meta-box">
+        <div class="num">${r.edlNumber || '—'}</div>
+        ${r.version>1 ? `<div>Version ${r.version}</div>` : ''}
+        ${r.locked ? `<div>🔒 Verrouillé${r.lockedAt ? ' le ' + new Date(r.lockedAt).toLocaleDateString('fr-FR') : ''}</div>` : ''}
+      </div>
+    </div>
+    <table class="info-table">
+      <tr><td class="label">Locataire</td><td>${r.infos.nom||''}</td><td class="label">Téléphone</td><td>${r.infos.tel||''}</td></tr>
+      <tr><td class="label">Objet</td><td>${r.infos.objet||''}</td><td class="label">Date</td><td>${r.infos.date||''} ${r.infos.heure?'à '+r.infos.heure:''}</td></tr>
+      <tr><td class="label">Représentant de la commune</td><td colspan="3">${r.infos.representant||''}</td></tr>
+    </table>
+    ${roomsConfig.map(rm => roomHtml(rm.key, rm.label)).join('')}
+    ${matHtml}
+    <h3>Clés et accès</h3>
+    <p>Clés remises : ${r.cles.cles||''} — Badges remis : ${r.cles.badges||''} — Code communiqué : ${r.cles.code||''}</p>
+    <h3>Observations générales</h3>
+    <p>${(r.obsGenerales||'').replace(/\\n/g,'<br>')||'—'}</p>
+    ${sigHtml}
+    <div class="doc-footer">${r.edlNumber || ''} — Document généré le ${new Date().toLocaleDateString('fr-FR')} à ${new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})} via ${appName || 'État des lieux numérique'}</div>
+    </body></html>
+  `;
+}
+
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  captureSignatures();
+  const htmlDoc = buildExportHtml(currentRecord);
+  showExportOverlay(htmlDoc);
+});
+
+function showExportOverlay(htmlContent){
+  const overlay = document.createElement('div');
+  overlay.className = 'export-overlay';
+  overlay.innerHTML = `
+    <div class="export-bar">
+      <button type="button" id="exportCloseBtn">✕ Fermer</button>
+      <button type="button" id="exportPrintBtn">Imprimer / PDF</button>
+    </div>
+    <iframe id="exportFrame" class="export-frame" title="Aperçu de l'état des lieux"></iframe>
+  `;
+  document.body.appendChild(overlay);
+  const frame = overlay.querySelector('#exportFrame');
+  frame.srcdoc = htmlContent;
+  overlay.querySelector('#exportCloseBtn').addEventListener('click', ()=>{
+    overlay.remove();
+  });
+  overlay.querySelector('#exportPrintBtn').addEventListener('click', ()=>{
+    try{
+      frame.contentWindow.focus();
+      frame.contentWindow.print();
+    }catch(e){
+      showToast("Impossible de lancer l'impression sur cet appareil");
+    }
+  });
+}
+
+// --- Sauvegarde / restauration JSON ---
+document.getElementById('backupExportBtn').addEventListener('click', async ()=>{
+  const allRecords = {};
+  for(const meta of index){
+    const rec = await loadRecord(meta.id);
+    if(rec) allRecords[meta.id] = rec;
+  }
+  const payload = { exportedAt: new Date().toISOString(), index, records: allRecords };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const dateStr = new Date().toISOString().slice(0,10);
+  a.href = url;
+  a.download = `sauvegarde_etats_des_lieux_${dateStr}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  await setLastBackupAt(new Date().toISOString());
+  renderBackupReminder();
+  showToast('Sauvegarde téléchargée');
+});
+
+document.getElementById('backupImportInput').addEventListener('change', async (e)=>{
+  const file = e.target.files && e.target.files[0];
+  if(!file) return;
+  try{
+    const text = await file.text();
+    const payload = JSON.parse(text);
+    if(!payload.records || !payload.index) throw new Error('format invalide');
+    for(const [id, rec] of Object.entries(payload.records)){
+      const shaped = ensureRecordShape(rec);
+      shaped.id = shaped.id || id;
+      await idbPut('records', shaped);
+    }
+    const existingIds = new Set(index.map(m=>m.id));
+    payload.index.forEach(m=>{ if(!existingIds.has(m.id)){ index.push(m); } });
+    await saveIndex();
+    renderList();
+    showToast('Sauvegarde restaurée');
+  }catch(err){
+    showToast('Fichier de sauvegarde invalide');
+  }
+  e.target.value = '';
+});
+
+// --- Envoi par email ---
+document.getElementById('emailBtn').addEventListener('click', ()=>{
+  captureSignatures();
+  const r = currentRecord;
+  const etatLabel = {bon:'Bon', moyen:'Moyen', mauvais:'Mauvais', '':'non renseigné'};
+  const lignesPb = [];
+  Object.keys(ROOMS).forEach(room=>{
+    r.etats[room].forEach(item=>{
+      if(item.etat === 'moyen' || item.etat === 'mauvais'){
+        lignesPb.push(`- ${ROOM_LABELS[room]} / ${item.name} : ${etatLabel[item.etat]}${item.obs ? ' — ' + item.obs : ''}`);
+      }
+    });
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    (r.fenetres && r.fenetres[room] ? r.fenetres[room] : []).forEach(f=>{
+      lignesPb.push(`- ${ROOM_LABELS[room]} / ${f.label} : ${etatLabel[f.etat]}${f.obs ? ' — ' + f.obs : ''}`);
+    });
+  });
+  const sujet = `${r.edlNumber ? r.edlNumber + ' — ' : ''}État des lieux ${salleName} — ${r.infos.nom || 'sans nom'} (${r.type==='entree'?'entrée':'sortie'})`;
+  let corps = [
+    `État des lieux — ${salleName || '[nom de la salle à renseigner]'} (Commune de ${communeName || '[à renseigner]'})`,
+    `Type : ${r.type==='entree'?'Entrée':'Sortie'}`,
+    `Locataire : ${r.infos.nom || ''}`,
+    `Objet : ${r.infos.objet || ''}`,
+    `Date : ${r.infos.date || ''} à ${r.infos.heure || ''}`,
+    `Représentant de la commune : ${r.infos.representant || ''}`,
+    r.locked ? `🔒 Document verrouillé${r.lockedAt ? ' le ' + new Date(r.lockedAt).toLocaleDateString('fr-FR') : ''}${r.version>1 ? ' — Version ' + r.version : ''}` : (r.version>1 ? `Version ${r.version}` : ''),
+    '',
+    lignesPb.length ? 'Points relevés (moyen / mauvais état) :' : 'Aucun point particulier relevé (tout est en bon état).',
+    ...lignesPb,
+    '',
+    'Observations générales :',
+    r.obsGenerales || '—',
+    '',
+    "Pour le document complet avec photos et signatures, utilisez le bouton \"Exporter / imprimer\", puis choisissez Mail depuis l'aperçu pour joindre le PDF."
+  ].join('\n');
+  const MAX_BODY = 1500;
+  if(corps.length > MAX_BODY){
+    corps = corps.slice(0, MAX_BODY) + '\n\n[Message tronqué — utilisez "Exporter / imprimer" pour le document complet]';
+  }
+  const mailto = `mailto:?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+  const a = document.createElement('a');
+  a.href = mailto;
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+// --- Init ---
+(async function init(){
+  await loadPin();
+  await loadAdminPin();
+  await loadBiometricState();
+  await loadAppName();
+  await loadCommuneAndSalleName();
+  document.getElementById('lockAppName').textContent = appName || 'État des lieux numérique';
+  document.getElementById('screenTitle').textContent = appName || 'État des lieux numérique';
+  if(appName) document.getElementById('configAppNameInput').placeholder = appName;
+  if(communeName) document.getElementById('configCommuneNameInput').placeholder = communeName;
+  if(salleName) document.getElementById('configSalleNameInput').placeholder = salleName;
+  setupLockScreen();
+  await loadRoomsConfig();
+  await loadMaterielConfig();
+  await migrateFromLocalStorageIfNeeded();
+  await loadIndex();
+  renderList();
+  renderBackupReminder();
+  // create a hidden "new record" trigger via long-press on title, plus a floating button injected in list screen
+  const fab = document.createElement('button');
+  fab.className = 'fab';
+  fab.textContent = '+ Nouvel état des lieux';
+  fab.addEventListener('click', async ()=>{
+    currentRecord = blankRecord();
+    currentRecord.edlNumber = await nextEdlNumber();
+    renderForm();
+    switchScreen('form');
+  });
+  document.getElementById('app').appendChild(fab);
+  switchScreen('list');
+})();
+
+function tryUnlock(){
+  const input = document.getElementById('lockInput');
+  const err = document.getElementById('lockError');
+  if(input.value === appPin){
+    document.getElementById('lockOverlay').classList.add('hidden');
+    err.textContent = '';
+    input.value = '';
+  }else{
+    err.textContent = 'Code incorrect';
+    input.value = '';
+    input.focus();
+  }
+}
+document.getElementById('lockUnlockBtn').addEventListener('click', tryUnlock);
+document.getElementById('lockInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') tryUnlock();
+});
+document.getElementById('lockInput').addEventListener('input', (e)=>{
+  e.target.value = e.target.value.replace(/\D/g,'').slice(0,4);
+});
+
+async function tryBiometricUnlock(){
+  const errEl = document.getElementById('lockBiometricError');
+  errEl.textContent = '';
+  const ok = await verifyBiometric();
+  if(ok){
+    document.getElementById('lockOverlay').classList.add('hidden');
+  }else{
+    errEl.textContent = 'Échec — utilisez votre code d\'accès.';
+    document.getElementById('lockInput').focus();
+  }
+}
+document.getElementById('lockBiometricBtn').addEventListener('click', tryBiometricUnlock);
+
+function setupLockScreen(){
+  const bioBtn = document.getElementById('lockBiometricBtn');
+  const orEl = document.getElementById('lockOrPin');
+  if(biometricEnabled && biometricCredentialId){
+    bioBtn.classList.remove('hidden');
+    orEl.classList.remove('hidden');
+    tryBiometricUnlock();
+  }else{
+    bioBtn.classList.add('hidden');
+    orEl.classList.add('hidden');
+    document.getElementById('lockInput').focus();
+  }
+}
+
+document.getElementById('configAppNameSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configAppNameInput').value.trim();
+  if(!val){
+    await showAlert('Le nom ne peut pas être vide.');
+    return;
+  }
+  await saveAppName(val);
+  document.getElementById('lockAppName').textContent = appName;
+  if(currentScreen === 'list') document.getElementById('screenTitle').textContent = appName;
+  showToast('Nom de l\'application modifié');
+});
+
+document.getElementById('configCommuneNameSaveBtn').addEventListener('click', async ()=>{
+  const valCommune = document.getElementById('configCommuneNameInput').value.trim();
+  const valSalle = document.getElementById('configSalleNameInput').value.trim();
+  if(!valCommune || !valSalle){
+    await showAlert('Le nom de la commune et le nom de la salle ne peuvent pas être vides.');
+    return;
+  }
+  await saveCommuneAndSalleName(valCommune, valSalle);
+  showToast('Noms de la commune et de la salle modifiés');
+});
+
+document.getElementById('configPinSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configPinInput').value.trim();
+  if(!/^\d{4}$/.test(val)){
+    await showAlert('Le code doit contenir exactement 4 chiffres.');
+    return;
+  }
+  await savePin(val);
+  document.getElementById('configPinInput').value = '';
+  showToast('Code utilisateur modifié');
+});
+
+document.getElementById('configAdminPinSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configAdminPinInput').value.trim();
+  if(!/^\d{4}$/.test(val)){
+    await showAlert('Le code doit contenir exactement 4 chiffres.');
+    return;
+  }
+  await saveAdminPin(val);
+  document.getElementById('configAdminPinInput').value = '';
+  showToast('Code administrateur modifié');
+});
+
+async function refreshBiometricConfigUI(){
+  const toggle = document.getElementById('configBiometricToggle');
+  const status = document.getElementById('configBiometricStatus');
+  const available = await isBiometricAvailable();
+  toggle.checked = biometricEnabled;
+  if(!available){
+    toggle.disabled = true;
+    status.textContent = "Non disponible sur cet appareil ou ce navigateur.";
+  }else{
+    toggle.disabled = false;
+    status.textContent = biometricEnabled ? "Activé sur cet appareil." : "";
+  }
+}
+
+document.getElementById('configBiometricToggle').addEventListener('change', async (e)=>{
+  const status = document.getElementById('configBiometricStatus');
+  if(e.target.checked){
+    try{
+      await registerBiometric();
+      status.textContent = "Activé sur cet appareil.";
+      showToast('Face ID / empreinte activé');
+    }catch(err){
+      e.target.checked = false;
+      status.textContent = "Échec de l'activation — réessayez.";
+    }
+  }else{
+    await disableBiometric();
+    status.textContent = "";
+    showToast('Face ID / empreinte désactivé');
+  }
+});
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
