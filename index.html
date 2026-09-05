@@ -1,0 +1,3193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>État des lieux numérique</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="État des lieux">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --navy:#1F4E79;
+    --navy-dark:#163A5C;
+    --bg:#F4F6F8;
+    --card:#FFFFFF;
+    --border:#E1E5EA;
+    --text:#20262E;
+    --muted:#6B7480;
+    --good:#2E9E5B;
+    --mid:#E0A72A;
+    --bad:#D64545;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-tap-highlight-color:transparent;
+  }
+  #app{max-width:520px;margin:0 auto;min-height:100vh;background:transparent;padding-bottom:90px;position:relative;z-index:1;}
+  #appBgLayer{position:fixed;inset:0;z-index:0;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0;pointer-events:none;transition:opacity .2s;}
+  .auto-lock-warning{
+    position:fixed;top:0;left:0;right:0;z-index:900;
+    background:#8A6413;color:#fff;text-align:center;font-size:12.5px;font-weight:700;
+    padding:9px 16px;
+  }
+  .auto-lock-warning.hidden{display:none;}
+
+  header.topbar{
+    background:var(--navy);color:#fff;padding:16px 18px;
+    position:sticky;top:0;z-index:20;
+    display:flex;align-items:center;gap:10px;
+  }
+  header.topbar .back{
+    background:none;border:none;color:#fff;font-size:20px;padding:4px 8px;cursor:pointer;
+    display:none;
+  }
+  header.topbar .back.show{display:inline-block;}
+  header.topbar h1{font-size:17px;margin:0;font-weight:600;flex:1;}
+  header.topbar .sub{font-size:12px;opacity:.85;margin-top:2px;}
+  .help-btn{
+    background:rgba(255,255,255,.15);border:none;color:#fff;font-size:15px;font-weight:700;
+    width:30px;height:30px;border-radius:50%;cursor:pointer;flex-shrink:0;display:none;
+  }
+  .help-btn.show{display:inline-block;}
+
+  .help-content{padding-bottom:10px;}
+  .help-block{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:12px;
+  }
+  .help-block h3{margin:0 0 6px;font-size:14.5px;font-weight:600;color:var(--navy);}
+  .help-block p{margin:0;font-size:13.5px;line-height:1.5;color:var(--text);}
+
+  .screen{display:none;padding:16px;}
+  .screen.active{display:block;}
+
+  .fab{
+    position:fixed;left:50%;transform:translateX(-50%);bottom:22px;
+    max-width:520px;width:calc(100% - 32px);
+    background:var(--navy);color:#fff;border:none;border-radius:14px;
+    padding:15px;font-size:16px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.18);
+    z-index:30;cursor:pointer;display:none;
+  }
+  .fab.show{display:block;}
+  .fab:active{background:var(--navy-dark);}
+
+  .empty{text-align:center;color:var(--muted);padding:60px 20px;}
+  .empty i{font-size:40px;display:block;margin-bottom:10px;}
+
+  .record-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  .record-card .info{flex:1;min-width:0;}
+  .record-card .name{font-weight:600;font-size:15px;margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .record-card .meta{font-size:12.5px;color:var(--muted);margin:0;}
+  .badge{
+    font-size:11px;font-weight:700;padding:4px 9px;border-radius:20px;white-space:nowrap;
+  }
+  .badge.entree{background:#E3F0E9;color:var(--good);}
+  .badge.sortie{background:#FBE9E9;color:var(--bad);}
+  .badge.sortie-pending{background:#EEF0F2;color:var(--muted);}
+  .statut-pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;}
+  .statut-attente{background:#FBF1DD;color:#8A6413;}
+  .statut-cloture{background:#E3F0E9;color:var(--good);}
+  .statut-litige{background:#FBE9E9;color:var(--bad);}
+  .del-btn{background:none;border:none;color:var(--muted);font-size:18px;padding:6px;cursor:pointer;}
+  .record-actions{display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
+  .dup-btn{background:none;border:1px solid var(--navy);color:var(--navy);font-size:10.5px;font-weight:700;padding:4px 8px;border-radius:10px;cursor:pointer;white-space:nowrap;}
+
+  .section{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    margin-bottom:12px;overflow:hidden;
+  }
+  .section-head{
+    padding:14px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;
+  }
+  .section-head h3{margin:0;font-size:15px;font-weight:600;color:var(--navy);}
+  .section-head .chev{transition:transform .2s;color:var(--muted);font-size:14px;}
+  .section.open .chev{transform:rotate(180deg);}
+  .section-body{display:none;padding:0 16px 16px;}
+  .section.open .section-body{display:block;}
+  .section-progress{font-size:11.5px;color:var(--muted);font-weight:500;}
+
+  label{display:block;font-size:12.5px;color:var(--muted);margin:12px 0 5px;font-weight:600;}
+  label:first-child{margin-top:0;}
+  input[type=text], input[type=number], input[type=date], input[type=time], textarea, select{
+    width:100%;border:1px solid var(--border);border-radius:9px;padding:10px 11px;
+    font-size:15px;background:#fff;color:var(--text);font-family:inherit;
+  }
+  textarea{resize:vertical;min-height:60px;}
+  input:focus, textarea:focus, select:focus{outline:2px solid var(--navy);outline-offset:1px;}
+
+  .type-toggle{display:flex;gap:8px;margin-bottom:14px;}
+  .type-toggle button{
+    flex:1;padding:12px;border-radius:10px;border:1.5px solid var(--border);background:#fff;
+    font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .type-toggle button.active.entree{border-color:var(--good);background:#E3F0E9;color:var(--good);}
+  .type-toggle button.active.sortie{border-color:var(--bad);background:#FBE9E9;color:var(--bad);}
+  .global-progress{font-size:12.5px;color:var(--muted);text-align:center;font-weight:600;margin:0 0 10px;}
+
+  .elem-row{border-top:1px solid var(--border);padding:12px 0;}
+  .elem-row:first-child{border-top:none;padding-top:4px;}
+  .elem-row .elem-name{font-weight:600;font-size:14px;margin-bottom:8px;}
+  .state-btns{display:flex;gap:6px;margin-bottom:8px;}
+  .state-btns button{
+    flex:1;padding:9px 0;border-radius:8px;border:1.5px solid var(--border);background:#fff;
+    font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .state-btns button.sel-bon{border-color:var(--good);background:#E3F0E9;color:var(--good);}
+  .state-btns button.sel-moyen{border-color:var(--mid);background:#FBF1DD;color:#8A6413;}
+  .state-btns button.sel-mauvais{border-color:var(--bad);background:#FBE9E9;color:var(--bad);}
+  .elem-row textarea{min-height:40px;font-size:13.5px;}
+
+  .fenetre-section{border-top:1px solid var(--border);padding:14px 0 4px;margin-top:6px;}
+  .fenetre-label{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:10px;}
+  .fenetre-hint{display:block;font-weight:400;font-size:11px;margin-top:2px;}
+  .fenetre-add-row{display:flex;gap:8px;margin-top:6px;}
+  .fenetre-add-row select{flex:1;border:1px solid var(--border);border-radius:9px;padding:10px 8px;font-size:14px;background:#fff;color:var(--text);}
+  .fenetre-add-row button{
+    background:var(--navy);color:#fff;border:none;border-radius:9px;padding:0 16px;font-size:13.5px;font-weight:600;cursor:pointer;white-space:nowrap;
+  }
+  .fenetre-empty{font-size:13px;color:var(--muted);margin:4px 0 0;}
+  .fen-del{flex:0 0 auto !important;padding:9px 12px !important;color:var(--bad) !important;border-color:var(--border) !important;background:#fff !important;}
+
+  .photo-section{border-top:1px solid var(--border);padding:14px 0 4px;margin-top:6px;}
+  .photo-label{font-size:12.5px;color:var(--muted);font-weight:600;margin-bottom:8px;}
+  .photo-grid{display:flex;flex-wrap:wrap;gap:8px;}
+  .photo-thumb{position:relative;width:76px;height:76px;border-radius:9px;overflow:hidden;border:1px solid var(--border);}
+  .photo-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-del{
+    position:absolute;top:3px;right:3px;background:rgba(0,0,0,.55);color:#fff;border:none;
+    border-radius:50%;width:20px;height:20px;font-size:11px;line-height:20px;text-align:center;padding:0;cursor:pointer;
+  }
+  .photo-add{
+    width:76px;height:76px;border-radius:9px;border:1.5px dashed var(--border);
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--navy);
+    cursor:pointer;background:#fff;text-align:center;
+  }
+  .photo-add input{display:none;}
+  .photo-ts{
+    position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);color:#fff;
+    font-size:9px;line-height:1.3;padding:2px 4px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+
+  .backup-reminder{font-size:12px;text-align:center;margin-bottom:12px;}
+  .backup-reminder .backup-ok{color:var(--muted);}
+  .backup-reminder .backup-warn{color:var(--bad);font-weight:700;}
+  .search-bar{margin-bottom:12px;}
+  .search-bar input[type=text]{margin-bottom:8px;}
+  .filter-chips{display:flex;gap:6px;flex-wrap:wrap;}
+  .filter-chip{
+    padding:7px 13px;border-radius:20px;border:1.5px solid var(--border);background:#fff;
+    font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;
+  }
+  .filter-chip.active{border-color:var(--navy);background:var(--navy);color:#fff;}
+  .problem-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;}
+  .problem-chip.none{background:#E3F0E9;color:var(--good);}
+  .problem-chip.some{background:#FBE9E9;color:var(--bad);}
+  .lock-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;background:#FBF1DD;color:#8A6413;}
+  .version-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;margin-top:4px;margin-left:6px;background:#E5E9F0;color:var(--navy);}
+  .no-results{text-align:center;color:var(--muted);padding:30px 20px;font-size:14px;}
+
+  .mat-row{border-top:1px solid var(--border);padding:12px 0;}
+  .backup-bar{display:flex;flex-direction:column;gap:8px;margin-top:24px;padding-top:16px;border-top:1px solid var(--border);}
+  .app-footer{text-align:center;font-size:11.5px;color:var(--muted);margin:14px 0 4px;}
+  .btn-backup{
+    display:block;text-align:center;background:none;border:1px solid var(--border);color:var(--muted);
+    font-size:13px;font-weight:600;padding:11px;border-radius:10px;cursor:pointer;
+  }
+  .mat-row:first-child{border-top:none;padding-top:4px;}
+  .mat-row .mat-name{font-weight:600;font-size:14px;margin-bottom:8px;}
+  .mat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .mat-grid label{margin:0 0 4px;}
+  .vaisselle-toggle{padding-bottom:14px;margin-bottom:10px;border-bottom:1px solid var(--border);}
+  .checkbox-label{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;}
+  .checkbox-label input[type=checkbox]{width:19px;height:19px;flex-shrink:0;}
+  .config-intro{font-size:13px;color:var(--muted);margin:2px 0 14px;}
+  .config-room-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;}
+  .config-room-card textarea{min-height:110px;font-size:13.5px;}
+  .config-room-remove{background:none;border:none;color:var(--bad);font-size:13px;font-weight:600;padding:10px 0 0;cursor:pointer;}
+  .config-window-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .config-mat-row{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;}
+  .config-mat-row input[type=text]{flex:1;}
+  .config-mat-row label{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted);white-space:nowrap;margin:0;}
+  .config-mat-row input[type=checkbox]{width:17px;height:17px;}
+  .config-mat-remove{background:none;border:none;color:var(--bad);font-size:16px;padding:2px 4px;cursor:pointer;}
+  .lock-overlay{
+    position:fixed;inset:0;background:var(--navy);z-index:1000;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .lock-overlay.hidden{display:none;}
+  .lock-card{background:#fff;border-radius:var(--radius);padding:28px 24px;max-width:320px;width:100%;text-align:center;}
+  .lock-icon{font-size:34px;margin-bottom:6px;}
+  .lock-card h2{margin:0 0 4px;font-size:19px;color:var(--navy);}
+  .lock-card p{margin:0 0 16px;color:var(--muted);font-size:13px;}
+  .lock-card input{
+    width:100%;text-align:center;font-size:24px;letter-spacing:7px;padding:12px;
+    border:1.5px solid var(--border);border-radius:10px;margin-bottom:6px;
+  }
+  .lock-error{color:var(--bad)!important;font-size:13px!important;min-height:18px;margin-bottom:12px!important;}
+  .lock-or{color:var(--muted)!important;font-size:12.5px!important;margin:0 0 14px!important;}
+  .lock-card .hidden{display:none;}
+  .app-modal-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1100;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .app-modal-overlay.hidden{display:none;}
+  #appModalInput.hidden{display:none;}
+  .app-modal-card{background:#fff;border-radius:var(--radius);padding:22px;max-width:340px;width:100%;}
+  .app-modal-message{font-size:14.5px;color:var(--text);white-space:pre-line;margin:0 0 18px;line-height:1.5;}
+  .app-modal-actions{display:flex;gap:10px;}
+  .app-modal-actions button{flex:1;padding:12px;border-radius:10px;font-size:14.5px;font-weight:600;border:none;cursor:pointer;}
+  .app-modal-actions.alert-only #appModalCancelBtn{display:none;}
+  .ecart-slot{min-height:20px;margin:8px 0 4px;}
+  .ecart{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;}
+  .ecart-ok{background:#E3F0E9;color:var(--good);}
+  .ecart-bad{background:#FBE9E9;color:var(--bad);}
+  .ecart-info{background:#FBF1DD;color:#8A6413;}
+
+  .sig-box{
+    border:1.5px dashed var(--border);border-radius:10px;background:#fff;
+    touch-action:none;width:100%;height:150px;display:block;
+  }
+  .sig-actions{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
+  .sig-actions button{
+    background:none;border:none;color:var(--navy);font-size:13px;font-weight:600;padding:6px 0;cursor:pointer;
+  }
+  .sig-label{font-weight:600;font-size:13.5px;margin:16px 0 6px;}
+  .sig-label:first-child{margin-top:0;}
+
+  .save-bar{
+    position:sticky;bottom:0;background:var(--bg);padding:14px 0 4px;display:flex;flex-wrap:wrap;gap:10px;
+  }
+  .save-bar button{
+    flex:1 1 calc(50% - 5px);padding:14px;border-radius:12px;font-size:15px;font-weight:600;border:none;cursor:pointer;
+  }
+  .save-bar button#doneBtn{flex-basis:100%;}
+  .save-bar button.hidden{display:none;}
+  .btn-lock{background:#8A6413;color:#fff;flex-basis:100%;}
+  .locked-banner{
+    background:#FBF1DD;color:#8A6413;border:1px solid #EAD9AE;border-radius:10px;
+    padding:11px 14px;font-size:13px;font-weight:600;margin-bottom:14px;
+  }
+  .locked-banner.hidden{display:none;}
+  #screen-form.form-locked .section-body,
+  #screen-form.form-locked #f_statut{
+    pointer-events:none;opacity:.6;
+  }
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:active{background:var(--navy-dark);}
+  .btn-secondary{background:#fff;color:var(--navy);border:1.5px solid var(--navy) !important;}
+
+  .toast{
+    position:fixed;left:50%;bottom:100px;transform:translateX(-50%);
+    background:#20262E;color:#fff;padding:10px 18px;border-radius:30px;font-size:13.5px;
+    opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;
+  }
+  .toast.show{opacity:1;}
+
+  .status-pill{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:10px;}
+  .status-complete{background:#E3F0E9;color:var(--good);}
+  .status-progress{background:#FBF1DD;color:#8A6413;}
+
+  @media print{
+    body *{visibility:hidden;}
+  }
+
+  .export-overlay{
+    position:fixed;inset:0;background:#fff;z-index:200;
+    display:flex;flex-direction:column;
+  }
+  .export-bar{
+    display:flex;gap:10px;padding:12px 16px;background:var(--navy);
+    padding-top:calc(12px + env(safe-area-inset-top));
+  }
+  .export-bar button{
+    flex:1;padding:12px;border-radius:10px;border:none;font-size:14px;font-weight:600;cursor:pointer;
+  }
+  .export-bar #exportCloseBtn{background:#fff;color:var(--navy);}
+  .export-bar #exportPrintBtn{background:var(--navy-dark);color:#fff;border:1.5px solid #fff;}
+  .export-frame{flex:1;width:100%;border:none;background:#fff;}
+</style>
+</head>
+<body>
+<div id="adminPinOverlay" class="lock-overlay hidden">
+  <div class="lock-card">
+    <div class="lock-icon">🔐</div>
+    <h2>Code administrateur</h2>
+    <p>Requis pour accéder à la Configuration</p>
+    <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="adminPinInput" placeholder="••••" autocomplete="off">
+    <p class="lock-error" id="adminPinError"></p>
+    <button type="button" id="adminPinConfirmBtn" class="btn-primary" style="width:100%;margin-bottom:10px;">Valider</button>
+    <button type="button" id="adminPinCancelBtn" class="btn-secondary" style="width:100%;">Annuler</button>
+  </div>
+</div>
+<div id="appModalOverlay" class="app-modal-overlay hidden">
+  <div class="app-modal-card">
+    <p id="appModalMessage" class="app-modal-message"></p>
+    <input type="text" id="appModalInput" class="hidden" style="margin-bottom:16px;">
+    <div class="app-modal-actions">
+      <button type="button" id="appModalCancelBtn" class="btn-secondary">Annuler</button>
+      <button type="button" id="appModalOkBtn" class="btn-primary">OK</button>
+    </div>
+  </div>
+</div>
+<div id="lockOverlay" class="lock-overlay">
+  <div class="lock-card">
+    <div class="lock-icon">🔒</div>
+    <h2>Code d'accès</h2>
+    <p id="lockAppName">État des lieux numérique</p>
+
+    <button type="button" id="lockBiometricBtn" class="btn-primary hidden" style="width:100%;margin-bottom:14px;">👆 Déverrouiller avec Face ID / empreinte</button>
+    <p id="lockBiometricError" class="lock-error"></p>
+    <p id="lockOrPin" class="lock-or hidden">— ou entrez votre code —</p>
+
+    <div id="lockPinBlock">
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="6" id="lockInput" placeholder="••••••" autocomplete="off">
+      <p class="lock-error" id="lockError"></p>
+      <button type="button" id="lockUnlockBtn" class="btn-primary" style="width:100%;">Déverrouiller</button>
+      <button type="button" id="lockForgotBtn" class="btn-backup" style="width:100%;margin-top:12px;">Code oublié ? Utiliser mon code de récupération</button>
+    </div>
+    <div id="lockRecoveryBlock" class="hidden" style="margin-top:14px;">
+      <p class="config-intro" style="margin:0 0 8px;">Entrez votre code de récupération (24 caractères).</p>
+      <input type="text" id="lockRecoveryInput" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:1px;font-size:15px;">
+      <p class="lock-error" id="lockRecoveryError"></p>
+      <button type="button" id="lockRecoveryUnlockBtn" class="btn-primary" style="width:100%;">Déverrouiller avec ce code</button>
+      <button type="button" id="lockRecoveryCancelBtn" class="btn-backup" style="width:100%;margin-top:10px;">Annuler</button>
+    </div>
+  </div>
+</div>
+<div id="appBgLayer"></div>
+<div id="autoLockWarning" class="auto-lock-warning hidden">⏱ Verrouillage automatique dans <span id="autoLockWarningSeconds">30</span>s — touchez l'écran pour continuer</div>
+<div id="app">
+
+  <header class="topbar">
+    <button class="back" id="backBtn" aria-label="Retour">‹</button>
+    <div style="flex:1">
+      <h1 id="screenTitle">État des lieux numérique</h1>
+      <div class="sub" id="screenSub">États des lieux numériques</div>
+    </div>
+    <button class="help-btn show" id="helpBtn" aria-label="Aide">?</button>
+    <button class="help-btn show" id="sallesBtn" aria-label="Mes salles">🏛</button>
+    <button class="help-btn show" id="configBtn" aria-label="Configuration">⚙</button>
+  </header>
+
+  <!-- ÉCRAN LISTE -->
+  <div class="screen active" id="screen-list">
+    <div class="backup-reminder" id="backupReminder"></div>
+    <div id="salleSelectRow" style="margin-bottom:14px;">
+      <label for="salleSelect" style="display:block;font-size:12.5px;color:var(--muted);margin:0 0 5px;font-weight:600;">Salle</label>
+      <select id="salleSelect"></select>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Rechercher par nom, objet, n° EDL, date...">
+      <div class="filter-chips">
+        <button type="button" class="filter-chip active" data-filter="tous">Tous</button>
+        <button type="button" class="filter-chip" data-filter="entree">Entrée à faire</button>
+        <button type="button" class="filter-chip" data-filter="sortie">Sortie à faire</button>
+        <button type="button" class="filter-chip" data-filter="problemes">Avec points signalés</button>
+      </div>
+    </div>
+    <div id="recordList"></div>
+    <div class="backup-bar">
+      <button type="button" class="btn-backup" id="backupExportBtn">Sauvegarder toutes les données</button>
+      <label class="btn-backup" id="backupImportLabel">Restaurer une sauvegarde
+        <input type="file" accept="application/json" id="backupImportInput" style="display:none">
+      </label>
+    </div>
+    <p class="app-footer">Application conçue par François Liéveaux — 06 68 17 04 33 — lieveaux@aol.com</p>
+  </div>
+
+  <!-- ÉCRAN AIDE -->
+  <div class="screen" id="screen-help">
+    <div class="help-content">
+      <div class="help-block">
+        <h3>1. Créer un état des lieux</h3>
+        <p>Depuis l'écran d'accueil, appuyez sur le bouton bleu « + Nouvel état des lieux » en bas de l'écran. Un même dossier contient à la fois l'état d'entrée et l'état de sortie.</p>
+      </div>
+      <div class="help-block">
+        <h3>2. Passer de l'entrée à la sortie</h3>
+        <p>En haut du formulaire, les boutons « État d'entrée » et « État de sortie » permettent de basculer entre les deux dans le même dossier. La première fois que vous ouvrez « État de sortie », les quantités de matériel prévues et les informations de clés sont automatiquement reprises de l'entrée, sans tout ressaisir.</p>
+      </div>
+      <div class="help-block">
+        <h3>3. Remplir les sections</h3>
+        <p>Chaque section (Informations générales, pièces...) s'ouvre en appuyant dessus. Pour chaque élément, appuyez sur <b>Bon</b>, <b>Moyen</b> ou <b>Mauvais</b>. Un champ d'observation apparaît automatiquement si vous choisissez Moyen ou Mauvais. Le compteur sous les boutons Entrée/Sortie indique combien de sections sont complètes.</p>
+      </div>
+      <div class="help-block">
+        <h3>4. Ajouter des photos</h3>
+        <p>Dans chaque pièce, appuyez sur « + Photo » pour prendre une photo d'une dégradation. La date et l'heure sont enregistrées automatiquement avec chaque photo. Appuyez sur ✕ pour supprimer une photo.</p>
+      </div>
+      <div class="help-block">
+        <h3>5. Signaler une fenêtre abîmée</h3>
+        <p>Pour les pièces suivies (grande salle, petite salle...), choisissez le numéro de la fenêtre ou porte-fenêtre concernée dans le menu déroulant puis appuyez sur « + Signaler ». Les fenêtres non signalées sont considérées en bon état.</p>
+      </div>
+      <div class="help-block">
+        <h3>6. Mobilier et matériel</h3>
+        <p>Indiquez la quantité prévue et la quantité constatée pour chaque objet (tables, chaises, vaisselle...). Un écart s'affiche automatiquement s'il manque des éléments.</p>
+      </div>
+      <div class="help-block">
+        <h3>7. Signatures</h3>
+        <p>Faites signer avec le doigt directement sur l'écran, pour la commune et pour le locataire. Appuyez sur « Effacer la signature » pour recommencer.</p>
+      </div>
+      <div class="help-block">
+        <h3>8. Terminer un état des lieux</h3>
+        <p>Appuyez sur <b>Terminer</b> pour enregistrer. <b>Exporter / imprimer</b> ouvre un aperçu dans l'appli avec un bouton « ✕ Fermer » pour revenir, et un bouton « Imprimer / PDF ». <b>Partager</b> ouvre le menu de partage de l'appareil (Mail, Messages, AirDrop, Fichiers, WhatsApp...) avec le document complet et un résumé.</p>
+      </div>
+      <div class="help-block">
+        <h3>9. Retrouver un état des lieux</h3>
+        <p>Sur l'écran d'accueil, utilisez la barre de recherche (par nom, objet, numéro EDL ou date) ou les filtres (Tous / Entrée à faire / Sortie à faire / Avec points signalés) pour retrouver un dossier. Appuyez sur une fiche pour la rouvrir, ou sur ✕ pour la supprimer.</p>
+      </div>
+      <div class="help-block">
+        <h3>10. Gérer plusieurs salles</h3>
+        <p>Le bouton 🏛 en haut de l'écran d'accueil ouvre « Mes salles ». Chaque salle a ses propres pièces suivies, son propre matériel et son propre historique, entièrement indépendants. Utilisez « + Ajouter une salle » pour en créer une nouvelle (activée automatiquement), et le bouton − pour en supprimer une (au moins une salle doit toujours rester). Dès que vous avez 2 salles ou plus, un menu déroulant apparaît en haut de l'écran d'accueil pour basculer rapidement de l'une à l'autre.</p>
+      </div>
+      <div class="help-block">
+        <h3>11. Code d'accès et sécurité</h3>
+        <p>Le code à 6 chiffres demandé à l'ouverture n'est pas qu'un simple verrou : vos données (noms, téléphones, photos, signatures) sont réellement chiffrées avec. <b>Sans ce code, personne ne peut les lire — y compris vous.</b> Dans Configuration, générez un <b>code de récupération</b> (24 caractères, imprimable) et conservez-le ailleurs que sur ce téléphone : c'est le seul moyen de tout récupérer si le code du quotidien est oublié. Sur l'écran de verrouillage, le lien « Code oublié ? » permet de l'utiliser. Vous pouvez aussi régler un <b>verrouillage automatique</b> après quelques minutes d'inactivité (Configuration) : un bandeau vous prévient juste avant qu'il ne se déclenche.</p>
+      </div>
+      <div class="help-block">
+        <h3>12. Sauvegarder vos données</h3>
+        <p>Un message en haut de l'écran d'accueil indique depuis combien de temps vous n'avez pas sauvegardé (il passe en rouge après 14 jours, et une alerte s'affiche s'il n'y a jamais eu de sauvegarde ou que ça date de plus d'un mois). Appuyez directement sur ce message, ou sur « Sauvegarder toutes les données » plus bas, pour télécharger un fichier de secours (toutes les salles y compris). En cas de problème sur le téléphone, utilisez « Restaurer une sauvegarde » pour tout récupérer. Ce fichier n'est pas chiffré : conservez-le en lieu sûr.</p>
+      </div>
+      <div class="help-block">
+        <h3>Besoin d'aide ?</h3>
+        <p>Application conçue par François Liéveaux.<br>Email : lieveaux@aol.com<br>Téléphone : 06 68 17 04 33</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÉCRAN CONFIGURATION -->
+  <div class="screen" id="screen-config">
+    <div class="config-room-card">
+      <label>Nom de l'application</label>
+      <input type="text" id="configAppNameInput" placeholder="Ex : Salle des fêtes — Pasly">
+      <button type="button" class="btn-secondary" id="configAppNameSaveBtn" style="width:100%;margin-top:10px;">Modifier le nom</button>
+    </div>
+    <div class="config-room-card">
+      <label>Nom de la commune (pour les documents exportés)</label>
+      <input type="text" id="configCommuneNameInput" placeholder="Ex : Pasly">
+      <label>Nom de la salle active (pour les documents exportés)</label>
+      <input type="text" id="configSalleNameInput" placeholder="Ex : Salle des fêtes" style="margin-top:10px;">
+      <button type="button" class="btn-secondary" id="configCommuneNameSaveBtn" style="width:100%;margin-top:10px;">Modifier ces noms</button>
+      <p class="config-intro" style="margin:10px 0 0;">Pour ajouter, activer ou supprimer une salle, utilisez le bouton 🏛 sur l'écran d'accueil.</p>
+    </div>
+    <div class="config-room-card">
+      <label>Code utilisateur — accès à l'application et chiffrement des données (6 chiffres)</label>
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="6" id="configPinInput" placeholder="000000">
+      <button type="button" class="btn-secondary" id="configPinSaveBtn" style="width:100%;margin-top:10px;">Modifier le code utilisateur</button>
+      <p class="config-intro" style="margin:10px 0 0;">Ce code protège réellement vos données. En cas de perte, seul un code de récupération (à configurer ci-dessous) permet de les déchiffrer — sans lui, elles sont perdues définitivement.</p>
+      <p class="config-intro" style="margin:14px 0 6px;">Ce code reste toujours disponible en plus de Face ID / empreinte. Comme les données sont chiffrées avec ce code, il redevient nécessaire de le taper après une fermeture complète de l'application (Face ID seul ne suffit pas dans ce cas).</p>
+      <label class="checkbox-label" style="margin-top:10px;">
+        <input type="checkbox" id="configBiometricToggle">
+        Utiliser Face ID / empreinte digitale en plus du code
+      </label>
+      <p id="configBiometricStatus" class="config-intro" style="margin:8px 0 0;"></p>
+    </div>
+    <div class="config-room-card">
+      <label>Code administrateur — accès à cette page de Configuration (4 chiffres)</label>
+      <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" id="configAdminPinInput" placeholder="0000">
+      <button type="button" class="btn-secondary" id="configAdminPinSaveBtn" style="width:100%;margin-top:10px;">Modifier le code administrateur</button>
+      <p class="config-intro" style="margin:10px 0 0;">Distinct du code utilisateur. Requis pour modifier les pièces, le matériel et les réglages ci-dessous — Face ID / empreinte ne donne jamais accès à cette page.</p>
+    </div>
+    <div class="config-room-card">
+      <label>Code de récupération</label>
+      <p class="config-intro" id="recoveryStatusText" style="margin:0 0 10px;">…</p>
+      <button type="button" class="btn-secondary" id="setupRecoveryBtn" style="width:100%;">Générer un code de récupération</button>
+      <p class="config-intro" style="margin:10px 0 0;">Permet de déchiffrer vos données si vous oubliez le code utilisateur. À noter et conserver ailleurs que sur ce téléphone (papier, coffre...). Générer un nouveau code remplace l'ancien.</p>
+    </div>
+    <div class="config-room-card">
+      <label>Verrouillage automatique après inactivité (minutes, 0 = désactivé)</label>
+      <input type="number" min="0" max="120" id="configAutoLockInput" placeholder="5">
+      <button type="button" class="btn-secondary" id="configAutoLockSaveBtn" style="width:100%;margin-top:10px;">Modifier</button>
+      <p class="config-intro" style="margin:10px 0 0;">Comme les données sont chiffrées, un verrouillage automatique efface aussi la clé de la mémoire — le code redevient alors nécessaire, Face ID/empreinte seul ne suffit plus.</p>
+    </div>
+    <div class="config-room-card">
+      <label>Photo de fond de l'application (en transparence)</label>
+      <label class="btn-backup" style="display:block;">Choisir une photo
+        <input type="file" accept="image/*" id="configBgInput" style="display:none">
+      </label>
+      <div id="configBgPreview" style="margin-top:10px;"></div>
+      <label style="margin-top:14px;">Intensité (transparence)</label>
+      <input type="range" id="configBgOpacity" min="5" max="40" step="1" style="width:100%;">
+      <button type="button" class="btn-secondary" id="configBgRemoveBtn" style="width:100%;margin-top:10px;">Retirer la photo de fond</button>
+    </div>
+    <p class="config-intro">Modifiez les pièces suivies dans l'état des lieux : nom, éléments à vérifier, et suivi des fenêtres/portes-fenêtres pour les grandes surfaces.</p>
+    <div id="configRoomsList"></div>
+    <button type="button" class="btn-secondary" id="configAddRoomBtn" style="width:100%;margin-top:6px;">+ Ajouter une pièce</button>
+
+    <p class="config-intro" style="margin-top:26px;">Modifiez la liste du mobilier et matériel suivi (avec quantité prévue/constatée). Cochez "Vaisselle" pour les articles qui doivent disparaître quand la vaisselle n'est pas incluse dans la location.</p>
+    <div id="configMaterielList"></div>
+    <button type="button" class="btn-secondary" id="configAddMaterielBtn" style="width:100%;margin-top:6px;">+ Ajouter un article</button>
+
+    <div class="save-bar">
+      <button class="btn-secondary" id="configCancelBtn">Annuler</button>
+      <button class="btn-primary" id="configSaveBtn">Enregistrer la configuration</button>
+    </div>
+  </div>
+
+  <!-- ÉCRAN MES SALLES -->
+  <div class="screen" id="screen-salles">
+    <p class="config-intro">Chaque salle a son propre nom, ses propres pièces suivies, son propre matériel et son propre historique d'états des lieux, entièrement indépendants des autres salles.</p>
+    <div id="sallesList"></div>
+    <div class="config-room-card">
+      <label>Nom de la nouvelle salle</label>
+      <input type="text" id="newSalleNameInput" placeholder="Ex : Salle des sports">
+      <button type="button" class="btn-secondary" id="addSalleBtn" style="width:100%;margin-top:10px;">+ Ajouter une salle</button>
+    </div>
+  </div>
+
+  <!-- ÉCRAN FORMULAIRE -->
+  <div class="screen" id="screen-form">
+    <div class="type-toggle">
+      <button type="button" data-type="entree" id="btnEntree">État d'entrée</button>
+      <button type="button" data-type="sortie" id="btnSortie">État de sortie</button>
+    </div>
+
+    <div class="locked-banner hidden" id="lockedBanner">🔒 Document verrouillé<span id="lockedBannerDate"></span> — toute modification créera une nouvelle version</div>
+    <p id="lockedEntreeSortieHint" class="locked-banner hidden" style="background:#E3F0E9;color:#2E9E5B;">➜ Pour continuer, appuyez sur "État de sortie" ci-dessus.</p>
+    <div id="historyBanner" class="locked-banner hidden" style="background:#E5E9F0;color:#1F4E79;display:flex;justify-content:space-between;align-items:center;gap:10px;">
+      <span id="historyBannerText"></span>
+      <button type="button" id="historyViewBtn" class="btn-secondary" style="padding:6px 12px;flex:none;">Voir</button>
+    </div>
+
+    <div class="section open" data-key="infos">
+      <div class="section-head"><h3 data-title="Informations générales">Informations générales</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <label>Nom / organisme locataire</label>
+        <input type="text" id="f_nom" placeholder="Nom de l'association ou de la famille">
+        <label>Téléphone</label>
+        <input type="text" id="f_tel" placeholder="06 12 34 56 78">
+        <label>Objet de la location</label>
+        <input type="text" id="f_objet" placeholder="Mariage, assemblée générale...">
+        <label>Date de la location</label>
+        <input type="date" id="f_date">
+        <label>Heure</label>
+        <input type="time" id="f_heure">
+        <label>Représentant de la commune</label>
+        <input type="text" id="f_representant" placeholder="Nom du représentant">
+        <label>Statut du dossier</label>
+        <select id="f_statut">
+          <option value="attente">En attente de sortie</option>
+          <option value="cloture">Clôturé</option>
+          <option value="litige">Litige en cours</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="roomSectionsContainer"></div>
+
+    <div class="section" data-key="materiel">
+      <div class="section-head"><h3 data-title="Mobilier et matériel">Mobilier et matériel</h3><span class="chev">▾</span></div>
+      <div class="section-body" id="body-materiel"></div>
+    </div>
+
+    <div class="section" data-key="cles">
+      <div class="section-head"><h3 data-title="Clés et accès">Clés et accès</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <label>Nombre de clés remises</label>
+        <input type="number" id="f_cles" min="0">
+        <label>Nombre de badges remis</label>
+        <input type="number" id="f_badges" min="0">
+        <label>Code d'accès / alarme communiqué</label>
+        <input type="text" id="f_code">
+      </div>
+    </div>
+
+    <div class="section" data-key="obs">
+      <div class="section-head"><h3 data-title="Observations générales">Observations générales</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <textarea id="f_obsGenerales" placeholder="Remarques complémentaires..." style="min-height:90px"></textarea>
+      </div>
+    </div>
+
+    <div class="section" data-key="signatures">
+      <div class="section-head"><h3 data-title="Signatures">Signatures</h3><span class="chev">▾</span></div>
+      <div class="section-body">
+        <div class="sig-label" id="sigCommuneLabel">Pour la commune</div>
+        <canvas class="sig-box" id="sigCommune"></canvas>
+        <div class="sig-actions"><button type="button" data-clear="sigCommune">Effacer la signature</button></div>
+
+        <div class="sig-label">Le locataire / l'organisateur</div>
+        <canvas class="sig-box" id="sigLocataire"></canvas>
+        <div class="sig-actions"><button type="button" data-clear="sigLocataire">Effacer la signature</button></div>
+      </div>
+    </div>
+
+    <div class="global-progress" id="globalProgress"></div>
+    <div class="save-bar">
+      <button class="btn-secondary" id="exportBtn">Exporter / imprimer</button>
+      <button class="btn-secondary" id="shareBtn">Partager</button>
+      <button class="btn-primary" id="doneBtn">Terminer</button>
+      <button class="btn-lock hidden" id="clotureBtn">🔒 Clôturer l'état des lieux</button>
+      <button class="btn-secondary hidden" id="newVersionBtn" style="flex-basis:100%;">Créer une nouvelle version pour modifier</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/*
+ * ============================================================================
+ * État des lieux numérique — notes d'architecture (à lire avant de modifier)
+ * ============================================================================
+ * Application 100% locale (aucun serveur, aucune donnée transmise), un seul
+ * fichier HTML/CSS/JS, stockage IndexedDB (base 'edl_db', stores 'records' et
+ * 'meta'). Testée via tests/app.test.js (Playwright) — le lancer après toute
+ * modification : `node tests/app.test.js index.html`.
+ *
+ * MULTI-SALLES
+ *   Une commune peut gérer plusieurs salles indépendantes (voir écran "Mes
+ *   salles"). Chaque salle a son propre roomsConfig/materielConfig/edlCounter,
+ *   stockés sous des clés meta suffixées par son id : 'roomsConfig_<salleId>',
+ *   'materielConfig_<salleId>', 'edlCounter_<salleId>'. La liste des salles vit
+ *   dans meta['salles'], la salle active dans meta['currentSalleId'] et la
+ *   variable currentSalleId. Chaque dossier (record) et chaque entrée de
+ *   l'index porte un champ salleId ; renderList() filtre dessus. Changer de
+ *   salle (activateSalle) recharge roomsConfig/materielConfig puis renderList().
+ *
+ * CHIFFREMENT (voir le bloc "Chiffrement des données" plus bas)
+ *   Les dossiers (store 'records') et l'index des résumés (meta['index']) sont
+ *   chiffrés en bloc (AES-GCM) avec une clé maîtresse aléatoire, gardée
+ *   uniquement en mémoire (variable encKey) pendant la session — jamais écrite
+ *   en clair sur le disque. Cette clé maîtresse est elle-même "enveloppée"
+ *   (chiffrée) de façon indépendante par deux mots de passe possibles :
+ *     - le code d'accès à 6 chiffres (meta['encSaltPin'] + meta['encWrappedByPin'])
+ *     - un code de récupération optionnel à 24 caractères
+ *       (meta['encSaltRecovery'] + meta['encWrappedByRecovery'])
+ *   Changer le code d'accès (rewrapMasterKeyWithNewPin) ne fait donc que
+ *   ré-envelopper la clé maîtresse : aucun rechiffrement des dossiers.
+ *   Migration : une installation créée par une version antérieure (où le code
+ *   chiffrait directement les données, sans clé maîtresse séparée — clés
+ *   meta['encSalt']/meta['encVerifier']) est migrée à la volée au moment du
+ *   déverrouillage, voir unlockWithPin().
+ *   Le fichier de sauvegarde JSON exporté (bouton "Sauvegarder toutes les
+ *   données") reste volontairement en clair, pour rester restaurable sur un
+ *   autre appareil sans dépendre de la même clé.
+ *
+ * DÉMARRAGE EN DEUX PHASES
+ *   initPhase1() charge les réglages non sensibles (noms, salles, config des
+ *   pièces/matériel...) et affiche l'écran de verrouillage. Les dossiers ne
+ *   sont chargés/déchiffrés que dans finishUnlockedInit(), appelée seulement
+ *   après un déverrouillage réussi (code, code de récupération, ou Face ID si
+ *   la clé est déjà en mémoire). La variable appInitialized distingue un
+ *   démarrage à froid (première fois, tout se charge) d'un redéverrouillage
+ *   après verrouillage automatique pour inactivité (on garde juste l'écran en
+ *   cours, voir resetInactivityTimer()/lockAppNow()).
+ * ============================================================================
+ */
+// Échappe le texte avant toute injection dans du HTML (innerHTML, srcdoc de l'export...).
+// À utiliser systématiquement pour toute donnée saisie par l'utilisateur ou
+// l'administrateur (noms, observations, libellés de pièces/matériel...) — sans ça,
+// un texte contenant des caractères HTML (ex: "<script>") pourrait casser l'affichage
+// ou s'exécuter dans l'aperçu d'export ou le document partagé.
+function escapeHtml(str){
+  if(str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+const DEFAULT_ROOMS_CONFIG = [
+  { key:'grande', label:'Grande salle', items:["Sol","Murs","Plafond","Éclairage","Prises électriques","Chauffage","Issues de secours / signalétique"], windows:{ fenetres:15, portesFenetres:4 } },
+  { key:'petite', label:'Petite salle', items:["Sol","Murs","Plafond","Éclairage","Prises électriques","Chauffage","Issues de secours / signalétique"], windows:{ fenetres:10, portesFenetres:2 } },
+  { key:'cuisine', label:'Cuisine / office', items:["Sol","Murs","Plafond","Plan de travail","Évier / robinetterie","Four / plaques de cuisson","Réfrigérateur","Hotte aspirante","Micro-ondes 1","Micro-ondes 2","Rangements"], windows:null },
+  { key:'sanitaires', label:'Sanitaires', items:["Sol","Murs","Lavabos / robinetterie","WC","Miroirs","Distributeurs (savon, essuie-mains)"], windows:null },
+  { key:'exterieurs', label:'Extérieurs / abords', items:["Parking","Accès / voirie","Espaces verts","Éclairage extérieur","Poubelles / conteneurs"], windows:null }
+];
+
+function showConfirm(message){
+  return new Promise((resolve)=>{
+    const overlay = document.getElementById('appModalOverlay');
+    const actions = overlay.querySelector('.app-modal-actions');
+    actions.classList.remove('alert-only');
+    document.getElementById('appModalMessage').textContent = message;
+    overlay.classList.remove('hidden');
+    const okBtn = document.getElementById('appModalOkBtn');
+    const cancelBtn = document.getElementById('appModalCancelBtn');
+    function cleanup(result){
+      overlay.classList.add('hidden');
+      okBtn.removeEventListener('click', onOk);
+      cancelBtn.removeEventListener('click', onCancel);
+      resolve(result);
+    }
+    function onOk(){ cleanup(true); }
+    function onCancel(){ cleanup(false); }
+    okBtn.addEventListener('click', onOk);
+    cancelBtn.addEventListener('click', onCancel);
+  });
+}
+
+function showAlert(message){
+  return new Promise((resolve)=>{
+    const overlay = document.getElementById('appModalOverlay');
+    const actions = overlay.querySelector('.app-modal-actions');
+    actions.classList.add('alert-only');
+    document.getElementById('appModalMessage').textContent = message;
+    overlay.classList.remove('hidden');
+    const okBtn = document.getElementById('appModalOkBtn');
+    function onOk(){
+      overlay.classList.add('hidden');
+      okBtn.removeEventListener('click', onOk);
+      resolve();
+    }
+    okBtn.addEventListener('click', onOk);
+  });
+}
+
+function showPrompt(message, defaultValue){
+  return new Promise((resolve)=>{
+    const overlay = document.getElementById('appModalOverlay');
+    const actions = overlay.querySelector('.app-modal-actions');
+    actions.classList.remove('alert-only');
+    document.getElementById('appModalMessage').textContent = message;
+    const input = document.getElementById('appModalInput');
+    input.classList.remove('hidden');
+    input.value = defaultValue || '';
+    overlay.classList.remove('hidden');
+    setTimeout(()=>{ input.focus(); input.select(); }, 50);
+    const okBtn = document.getElementById('appModalOkBtn');
+    const cancelBtn = document.getElementById('appModalCancelBtn');
+    function cleanup(result){
+      overlay.classList.add('hidden');
+      input.classList.add('hidden');
+      okBtn.removeEventListener('click', onOk);
+      cancelBtn.removeEventListener('click', onCancel);
+      input.removeEventListener('keydown', onKeydown);
+      resolve(result);
+    }
+    function onOk(){ cleanup(input.value.trim() || null); }
+    function onCancel(){ cleanup(null); }
+    function onKeydown(e){ if(e.key==='Enter'){ e.preventDefault(); onOk(); } }
+    okBtn.addEventListener('click', onOk);
+    cancelBtn.addEventListener('click', onCancel);
+    input.addEventListener('keydown', onKeydown);
+  });
+}
+
+let appName = '';
+let communeName = '';
+let salleName = '';
+let salles = [];
+let currentSalleId = null;
+
+async function loadAppName(){
+  try{
+    const v = await idbGet('meta', 'appName');
+    appName = (typeof v === 'string' && v.trim()) ? v.trim() : '';
+  }catch(e){ appName = ''; }
+}
+async function saveAppName(newName){
+  appName = newName;
+  try{ await idbPut('meta', newName, 'appName'); }catch(e){}
+}
+
+async function loadCommuneAndSalleName(){
+  try{
+    const c = await idbGet('meta', 'communeName');
+    communeName = (typeof c === 'string' && c.trim()) ? c.trim() : '';
+  }catch(e){ communeName = ''; }
+}
+async function saveCommuneAndSalleName(newCommune, newSalle){
+  communeName = newCommune;
+  try{ await idbPut('meta', newCommune, 'communeName'); }catch(e){}
+  const cur = getCurrentSalle();
+  if(cur){
+    cur.name = newSalle;
+    salleName = newSalle;
+    await saveSalles();
+  }
+}
+
+// --- Gestion multi-salles ---
+// Chaque salle a ses propres pièces suivies (roomsConfig_<id>), son propre matériel
+// (materielConfig_<id>), son propre compteur EDL (edlCounter_<id>) et son propre
+// historique (records/index filtrés par salleId). communeName et les réglages généraux
+// (PIN, biométrie, photo de fond) restent communs à toute l'application.
+function getCurrentSalle(){
+  return salles.find(s=>s.id===currentSalleId) || salles[0] || null;
+}
+async function saveSalles(){
+  try{ await idbPut('meta', salles, 'salles'); }catch(e){}
+}
+function newSalleId(){
+  return 'salle_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,8);
+}
+async function loadSalles(){
+  try{
+    const val = await idbGet('meta', 'salles');
+    salles = Array.isArray(val) ? val : [];
+  }catch(e){ salles = []; }
+  try{
+    const cur = await idbGet('meta', 'currentSalleId');
+    currentSalleId = (typeof cur === 'string' && cur) ? cur : null;
+  }catch(e){ currentSalleId = null; }
+
+  if(salles.length === 0){
+    // Migration : reprise des anciennes données mono-salle vers une première salle
+    let existingName = '';
+    try{
+      const s = await idbGet('meta', 'salleName');
+      existingName = (typeof s === 'string' && s.trim()) ? s.trim() : '';
+    }catch(e){}
+    const id = newSalleId();
+    salles = [{ id, name: existingName || 'Salle 1', createdAt: new Date().toISOString() }];
+    currentSalleId = id;
+    try{
+      const rc = await idbGet('meta', 'roomsConfig');
+      if(Array.isArray(rc) && rc.length) await idbPut('meta', rc, 'roomsConfig_'+id);
+    }catch(e){}
+    try{
+      const mc = await idbGet('meta', 'materielConfig');
+      if(Array.isArray(mc) && mc.length) await idbPut('meta', mc, 'materielConfig_'+id);
+    }catch(e){}
+    try{
+      const ec = await idbGet('meta', 'edlCounter');
+      if(typeof ec === 'number') await idbPut('meta', ec, 'edlCounter_'+id);
+    }catch(e){}
+    try{
+      const idx = await idbGet('meta', 'index');
+      if(Array.isArray(idx) && idx.length){
+        idx.forEach(m=>{ if(!m.salleId) m.salleId = id; });
+        await idbPut('meta', idx, 'index');
+      }
+    }catch(e){}
+    await saveSalles();
+    try{ await idbPut('meta', id, 'currentSalleId'); }catch(e){}
+  } else if(!currentSalleId || !salles.find(s=>s.id===currentSalleId)){
+    currentSalleId = salles[0].id;
+    try{ await idbPut('meta', currentSalleId, 'currentSalleId'); }catch(e){}
+  }
+  salleName = (getCurrentSalle() || {}).name || '';
+}
+async function activateSalle(id){
+  if(!salles.find(s=>s.id===id)) return;
+  currentSalleId = id;
+  try{ await idbPut('meta', id, 'currentSalleId'); }catch(e){}
+  salleName = (getCurrentSalle() || {}).name || '';
+  await loadRoomsConfig();
+  await loadMaterielConfig();
+  renderList();
+  if(currentScreen === 'list'){
+    document.getElementById('screenSub').textContent = salleName ? `${salleName} — États des lieux numériques` : 'États des lieux numériques';
+  }
+}
+async function createSalle(name){
+  const id = newSalleId();
+  salles.push({ id, name, createdAt: new Date().toISOString() });
+  await saveSalles();
+  await activateSalle(id);
+  return id;
+}
+async function deleteSalle(id){
+  if(salles.length <= 1) return false;
+  const toDeleteIds = index.filter(m=>m.salleId===id).map(m=>m.id);
+  for(const rid of toDeleteIds){
+    try{ await idbDelete('records', rid); }catch(e){}
+  }
+  index = index.filter(m=>m.salleId!==id);
+  await saveIndex();
+  salles = salles.filter(s=>s.id!==id);
+  await saveSalles();
+  try{ await idbDelete('meta', 'roomsConfig_'+id); }catch(e){}
+  try{ await idbDelete('meta', 'materielConfig_'+id); }catch(e){}
+  try{ await idbDelete('meta', 'edlCounter_'+id); }catch(e){}
+  if(currentSalleId === id){
+    await activateSalle(salles[0].id);
+  } else {
+    renderList();
+  }
+  return true;
+}
+function renderSallesScreen(){
+  const wrap = document.getElementById('sallesList');
+  wrap.innerHTML = salles.map(s=>{
+    const nb = index.filter(m=>m.salleId===s.id).length;
+    const active = s.id === currentSalleId;
+    return `<div class="config-room-card"${active ? ' style="border-color:var(--navy);"' : ''}>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
+        <div>
+          <div style="font-weight:700;font-size:15px;">${escapeHtml(s.name)}${active?' <span style="color:var(--navy);font-size:12px;font-weight:600;">(active)</span>':''}</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px;">${nb} état${nb>1?'s':''} des lieux enregistré${nb>1?'s':''}</div>
+        </div>
+        <button type="button" class="config-mat-remove" data-salle-del="${s.id}" aria-label="Supprimer cette salle" style="font-size:22px;line-height:1;">−</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        ${!active ? `<button type="button" class="btn-secondary" data-salle-use="${s.id}" style="flex:1;">Utiliser cette salle</button>` : ''}
+        <button type="button" class="btn-secondary" data-salle-rename="${s.id}" style="flex:1;">Renommer</button>
+      </div>
+    </div>`;
+  }).join('');
+  wrap.querySelectorAll('[data-salle-use]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      await activateSalle(btn.dataset.salleUse);
+      renderSallesScreen();
+      showToast('Salle activée : ' + salleName);
+    });
+  });
+  wrap.querySelectorAll('[data-salle-rename]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const s = salles.find(x=>x.id===btn.dataset.salleRename);
+      if(!s) return;
+      const val = await showPrompt('Nouveau nom de la salle :', s.name);
+      if(!val) return;
+      s.name = val;
+      await saveSalles();
+      if(s.id === currentSalleId) salleName = val;
+      renderSalleSelect();
+      renderSallesScreen();
+      showToast('Salle renommée');
+    });
+  });
+  wrap.querySelectorAll('[data-salle-del]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      if(salles.length <= 1){ await showAlert('Il doit rester au moins une salle.'); return; }
+      const s = salles.find(x=>x.id===btn.dataset.salleDel);
+      const nb = index.filter(m=>m.salleId===btn.dataset.salleDel).length;
+      const ok = await showConfirm(`Supprimer la salle « ${s ? s.name : ''} » ?\n\n${nb} état${nb>1?'s':''} des lieux enregistré${nb>1?'s':''} pour cette salle ${nb>1?'seront':'sera'} définitivement supprimé${nb>1?'s':''}. Cette action est irréversible.`);
+      if(!ok) return;
+      await deleteSalle(btn.dataset.salleDel);
+      renderSallesScreen();
+      showToast('Salle supprimée');
+    });
+  });
+}
+document.getElementById('sallesBtn').addEventListener('click', ()=>{
+  renderSallesScreen();
+  switchScreen('salles');
+});
+document.getElementById('addSalleBtn').addEventListener('click', async ()=>{
+  const input = document.getElementById('newSalleNameInput');
+  const val = input.value.trim();
+  if(!val){ await showAlert('Indiquez un nom pour la nouvelle salle.'); return; }
+  await createSalle(val);
+  input.value = '';
+  renderSallesScreen();
+  showToast('Salle ajoutée et activée : ' + val);
+});
+
+// --- Photo de fond de l'application (en transparence) ---
+let bgImage = null;
+let bgOpacity = 15;
+
+async function loadBgSettings(){
+  try{
+    const img = await idbGet('meta', 'bgImage');
+    bgImage = (typeof img === 'string' && img) ? img : null;
+  }catch(e){ bgImage = null; }
+  try{
+    const op = await idbGet('meta', 'bgOpacity');
+    bgOpacity = (typeof op === 'number' && op >= 5 && op <= 40) ? op : 15;
+  }catch(e){ bgOpacity = 15; }
+}
+async function saveBgImage(dataUrl){
+  bgImage = dataUrl;
+  try{ await idbPut('meta', dataUrl, 'bgImage'); }catch(e){}
+}
+async function saveBgOpacity(val){
+  bgOpacity = val;
+  try{ await idbPut('meta', val, 'bgOpacity'); }catch(e){}
+}
+async function removeBgImage(){
+  bgImage = null;
+  try{ await idbPut('meta', '', 'bgImage'); }catch(e){}
+}
+function applyBgLayer(){
+  const layer = document.getElementById('appBgLayer');
+  if(!layer) return;
+  if(bgImage){
+    layer.style.backgroundImage = `url(${bgImage})`;
+    layer.style.opacity = String(bgOpacity/100);
+  }else{
+    layer.style.backgroundImage = 'none';
+    layer.style.opacity = '0';
+  }
+}
+
+let adminPin = '0000';
+let adminUnlockedThisSession = false;
+
+async function loadAdminPin(){
+  try{
+    const v = await idbGet('meta', 'adminPin');
+    adminPin = (typeof v === 'string' && /^\d{4}$/.test(v)) ? v : '0000';
+  }catch(e){ adminPin = '0000'; }
+}
+async function saveAdminPin(newPin){
+  adminPin = newPin;
+  try{ await idbPut('meta', newPin, 'adminPin'); }catch(e){}
+}
+
+// --- Numéro d'état des lieux (EDL-AAAA-NNNN), séquentiel sur cet appareil ---
+async function nextEdlNumber(){
+  let counter = 0;
+  try{
+    const v = await idbGet('meta', 'edlCounter_'+currentSalleId);
+    counter = (typeof v === 'number' && v >= 0) ? v : 0;
+  }catch(e){ counter = 0; }
+  counter += 1;
+  try{ await idbPut('meta', counter, 'edlCounter_'+currentSalleId); }catch(e){}
+  const year = new Date().getFullYear();
+  return `EDL-${year}-${String(counter).padStart(4,'0')}`;
+}
+
+// --- Biométrie (Face ID / empreinte) via WebAuthn, en complément du code PIN ---
+let biometricEnabled = false;
+let biometricCredentialId = null;
+
+function bufToBase64(buf){
+  return btoa(String.fromCharCode(...new Uint8Array(buf)));
+}
+function base64ToBuf(b64){
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+  return bytes.buffer;
+}
+
+// --- Chiffrement des données (AES-GCM, clé maîtresse enveloppée) ---
+// Les dossiers sont chiffrés avec une clé maîtresse aléatoire ("masterKey"), gardée
+// uniquement en mémoire pendant la session (jamais écrite en clair sur le disque).
+// Cette clé maîtresse est elle-même enveloppée (chiffrée) de deux façons indépendantes :
+// une fois avec une clé dérivée du code d'accès (PBKDF2), et — si configuré — une fois
+// avec une clé dérivée d'un code de récupération. Changer le code d'accès ne fait donc
+// que ré-envelopper la clé maîtresse (rapide), sans toucher aux dossiers eux-mêmes.
+// Sans le code ET sans code de récupération, les données restent définitivement
+// illisibles : il n'existe aucune porte dérobée.
+const ENC_ITERATIONS = 250000;
+const DEFAULT_ENC_PIN = '000000';
+let justInitializedEncryption = false;
+let encKey = null; // la clé maîtresse une fois déverrouillée (CryptoKey), null si verrouillé
+let appInitialized = false; // true une fois le premier déverrouillage "à froid" terminé
+
+async function deriveEncKey(passphrase, saltB64, extractable){
+  const salt = base64ToBuf(saltB64);
+  const baseKey = await crypto.subtle.importKey('raw', new TextEncoder().encode(passphrase), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    { name:'PBKDF2', salt, iterations: ENC_ITERATIONS, hash:'SHA-256' },
+    baseKey,
+    { name:'AES-GCM', length:256 },
+    !!extractable,
+    ['encrypt','decrypt']
+  );
+}
+async function encryptJSON(key, obj){
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const data = new TextEncoder().encode(JSON.stringify(obj));
+  const cipherBuf = await crypto.subtle.encrypt({ name:'AES-GCM', iv }, key, data);
+  return { iv: bufToBase64(iv), data: bufToBase64(cipherBuf) };
+}
+async function decryptJSON(key, payload){
+  const iv = new Uint8Array(base64ToBuf(payload.iv));
+  const cipherBuf = base64ToBuf(payload.data);
+  const plainBuf = await crypto.subtle.decrypt({ name:'AES-GCM', iv }, key, cipherBuf);
+  return JSON.parse(new TextDecoder().decode(plainBuf));
+}
+async function generateMasterKey(){
+  return crypto.subtle.generateKey({ name:'AES-GCM', length:256 }, true, ['encrypt','decrypt']);
+}
+async function exportKeyRawB64(key){
+  const raw = await crypto.subtle.exportKey('raw', key);
+  return bufToBase64(raw);
+}
+async function importKeyRawB64(b64){
+  return crypto.subtle.importKey('raw', base64ToBuf(b64), { name:'AES-GCM' }, true, ['encrypt','decrypt']);
+}
+async function wrapMasterKey(masterKey, passphrase, saltB64){
+  const wrappingKey = await deriveEncKey(passphrase, saltB64, false);
+  const rawB64 = await exportKeyRawB64(masterKey);
+  return encryptJSON(wrappingKey, { k: rawB64 });
+}
+async function unwrapMasterKey(payload, passphrase, saltB64){
+  const wrappingKey = await deriveEncKey(passphrase, saltB64, false);
+  const obj = await decryptJSON(wrappingKey, payload); // lève une exception si le mot de passe est incorrect
+  return importKeyRawB64(obj.k);
+}
+
+// Prépare le chiffrement au tout premier lancement : si aucune clé (nouveau ou ancien
+// format) n'existe encore, crée une clé maîtresse aléatoire enveloppée avec le code
+// par défaut 000000. Ne fait rien si un schéma existe déjà (la migration éventuelle
+// depuis l'ancien format se fait au moment du déverrouillage, avec le code entré).
+async function loadOrInitEncryption(){
+  const wrappedByPin = await idbGet('meta', 'encWrappedByPin').catch(()=>null);
+  const saltPin = await idbGet('meta', 'encSaltPin').catch(()=>null);
+  const oldSalt = await idbGet('meta', 'encSalt').catch(()=>null);
+  const oldVerifier = await idbGet('meta', 'encVerifier').catch(()=>null);
+  if((wrappedByPin && saltPin) || (oldSalt && oldVerifier)) return;
+  const masterKey = await generateMasterKey();
+  const newSaltPin = bufToBase64(crypto.getRandomValues(new Uint8Array(16)));
+  const wrapped = await wrapMasterKey(masterKey, DEFAULT_ENC_PIN, newSaltPin);
+  try{ await idbPut('meta', newSaltPin, 'encSaltPin'); }catch(e){}
+  try{ await idbPut('meta', wrapped, 'encWrappedByPin'); }catch(e){}
+  justInitializedEncryption = true;
+}
+
+// Migre une installation encore sur l'ancien format (une version antérieure, où le
+// code chiffrait directement les données) vers le nouveau schéma à clé maîtresse —
+// sans avoir besoin de toucher aux dossiers déjà enregistrés : la clé déjà en usage
+// devient simplement la clé maîtresse, désormais enveloppée par le code.
+async function migrateOldSchemeToMasterKey(oldKey, pin){
+  const newSaltPin = bufToBase64(crypto.getRandomValues(new Uint8Array(16)));
+  const wrapped = await wrapMasterKey(oldKey, pin, newSaltPin);
+  try{ await idbPut('meta', newSaltPin, 'encSaltPin'); }catch(e){}
+  try{ await idbPut('meta', wrapped, 'encWrappedByPin'); }catch(e){}
+  try{ await idbDelete('meta', 'encSalt'); }catch(e){}
+  try{ await idbDelete('meta', 'encVerifier'); }catch(e){}
+}
+
+async function unlockWithPin(pin){
+  const wrappedByPin = await idbGet('meta', 'encWrappedByPin').catch(()=>null);
+  const saltPin = await idbGet('meta', 'encSaltPin').catch(()=>null);
+  if(wrappedByPin && saltPin){
+    return unwrapMasterKey(wrappedByPin, pin, saltPin); // lève une exception si le code est incorrect
+  }
+  // Ancien format (version précédente) : migration à la volée, sans toucher aux dossiers
+  const oldSalt = await idbGet('meta', 'encSalt').catch(()=>null);
+  const oldVerifier = await idbGet('meta', 'encVerifier').catch(()=>null);
+  if(oldSalt && oldVerifier){
+    const oldKey = await deriveEncKey(pin, oldSalt, true);
+    const check = await decryptJSON(oldKey, oldVerifier); // lève une exception si le code est incorrect
+    if(!check || check.check !== 'ok') throw new Error('code incorrect');
+    await migrateOldSchemeToMasterKey(oldKey, pin);
+    return oldKey;
+  }
+  throw new Error('aucun schéma de chiffrement initialisé');
+}
+
+async function rewrapMasterKeyWithNewPin(newPin){
+  const newSaltPin = bufToBase64(crypto.getRandomValues(new Uint8Array(16)));
+  const wrapped = await wrapMasterKey(encKey, newPin, newSaltPin);
+  await idbPutManyAtomic([
+    { store:'meta', key:'encSaltPin', value:newSaltPin },
+    { store:'meta', key:'encWrappedByPin', value:wrapped },
+  ]);
+}
+
+// --- Code de récupération ---
+// Chaîne de 24 caractères alphanumériques (sans caractères ambigus 0/O/1/I), affichée
+// une seule fois lors de sa génération. Enveloppe la clé maîtresse indépendamment du
+// code d'accès : permet de déchiffrer les données même si le code du quotidien est
+// oublié, sans jamais affaiblir la protection contre un accès physique au téléphone.
+const RECOVERY_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+function generateRecoveryCodeString(){
+  const bytes = crypto.getRandomValues(new Uint8Array(24));
+  let raw = '';
+  for(let i=0;i<24;i++) raw += RECOVERY_ALPHABET[bytes[i] % RECOVERY_ALPHABET.length];
+  return raw.match(/.{1,4}/g).join('-');
+}
+function normalizeRecoveryCode(code){
+  return (code || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+}
+async function hasRecoveryCode(){
+  try{ return !!(await idbGet('meta', 'encWrappedByRecovery')); }catch(e){ return false; }
+}
+async function setupRecoveryCode(){
+  const code = generateRecoveryCodeString();
+  const saltRecovery = bufToBase64(crypto.getRandomValues(new Uint8Array(16)));
+  const wrapped = await wrapMasterKey(encKey, normalizeRecoveryCode(code), saltRecovery);
+  await idbPutManyAtomic([
+    { store:'meta', key:'encSaltRecovery', value:saltRecovery },
+    { store:'meta', key:'encWrappedByRecovery', value:wrapped },
+  ]);
+  return code;
+}
+async function unlockWithRecoveryCode(code){
+  const saltRecovery = await idbGet('meta', 'encSaltRecovery').catch(()=>null);
+  const wrapped = await idbGet('meta', 'encWrappedByRecovery').catch(()=>null);
+  if(!saltRecovery || !wrapped) throw new Error('aucun code de récupération configuré');
+  return unwrapMasterKey(wrapped, normalizeRecoveryCode(code), saltRecovery); // lève une exception si le code est incorrect
+}
+
+// --- Verrouillage automatique après inactivité ---
+const AUTO_LOCK_MINUTES_DEFAULT = 5;
+let autoLockMinutes = AUTO_LOCK_MINUTES_DEFAULT;
+let inactivityTimer = null;
+async function loadAutoLockMinutes(){
+  try{
+    const v = await idbGet('meta', 'autoLockMinutes');
+    autoLockMinutes = (typeof v === 'number' && v >= 0) ? v : AUTO_LOCK_MINUTES_DEFAULT;
+  }catch(e){ autoLockMinutes = AUTO_LOCK_MINUTES_DEFAULT; }
+}
+async function saveAutoLockMinutes(v){
+  autoLockMinutes = v;
+  try{ await idbPut('meta', v, 'autoLockMinutes'); }catch(e){}
+}
+let warningTimer = null;
+let warningInterval = null;
+const AUTO_LOCK_WARNING_MS = 30000;
+function showAutoLockWarning(seconds){
+  const el = document.getElementById('autoLockWarning');
+  const secEl = document.getElementById('autoLockWarningSeconds');
+  if(!el || !secEl) return;
+  let remaining = Math.max(1, Math.round(seconds));
+  secEl.textContent = remaining;
+  el.classList.remove('hidden');
+  if(warningInterval) clearInterval(warningInterval);
+  warningInterval = setInterval(()=>{
+    remaining -= 1;
+    if(remaining <= 0){ clearInterval(warningInterval); warningInterval = null; return; }
+    secEl.textContent = remaining;
+  }, 1000);
+}
+function hideAutoLockWarning(){
+  const el = document.getElementById('autoLockWarning');
+  if(el) el.classList.add('hidden');
+  if(warningInterval){ clearInterval(warningInterval); warningInterval = null; }
+}
+function resetInactivityTimer(){
+  if(inactivityTimer){ clearTimeout(inactivityTimer); inactivityTimer = null; }
+  if(warningTimer){ clearTimeout(warningTimer); warningTimer = null; }
+  hideAutoLockWarning();
+  if(!encKey || !autoLockMinutes) return; // rien à verrouiller, ou fonction désactivée (0)
+  const totalMs = autoLockMinutes * 60 * 1000;
+  const warnLeadMs = Math.min(AUTO_LOCK_WARNING_MS, totalMs * 0.3);
+  const warnDelay = Math.max(0, totalMs - warnLeadMs);
+  warningTimer = setTimeout(()=> showAutoLockWarning(warnLeadMs/1000), warnDelay);
+  inactivityTimer = setTimeout(lockAppNow, totalMs);
+}
+function lockAppNow(){
+  if(!encKey) return; // déjà verrouillé
+  encKey = null;
+  if(inactivityTimer){ clearTimeout(inactivityTimer); inactivityTimer = null; }
+  if(warningTimer){ clearTimeout(warningTimer); warningTimer = null; }
+  hideAutoLockWarning();
+  document.getElementById('lockError').textContent = '';
+  document.getElementById('lockInput').value = '';
+  document.getElementById('lockOverlay').classList.remove('hidden');
+  setupLockScreen();
+}
+['click','touchstart','keydown','input'].forEach(evt=>{
+  window.addEventListener(evt, resetInactivityTimer, { passive:true });
+});
+
+async function isBiometricAvailable(){
+  try{
+    if(!window.PublicKeyCredential || !PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable) return false;
+    return await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
+  }catch(e){ return false; }
+}
+
+async function loadBiometricState(){
+  try{
+    const en = await idbGet('meta', 'biometricEnabled');
+    biometricEnabled = en === true;
+  }catch(e){ biometricEnabled = false; }
+  try{
+    const cred = await idbGet('meta', 'biometricCredentialId');
+    biometricCredentialId = (typeof cred === 'string' && cred) ? cred : null;
+  }catch(e){ biometricCredentialId = null; }
+  if(!biometricCredentialId) biometricEnabled = false;
+}
+
+async function registerBiometric(){
+  const challenge = crypto.getRandomValues(new Uint8Array(32));
+  const userId = crypto.getRandomValues(new Uint8Array(16));
+  const cred = await navigator.credentials.create({
+    publicKey: {
+      challenge,
+      rp: { name: appName || 'État des lieux numérique' },
+      user: { id: userId, name: 'agent-mairie', displayName: 'Agent' },
+      pubKeyCredParams: [{ type: 'public-key', alg: -7 }, { type: 'public-key', alg: -257 }],
+      authenticatorSelection: { authenticatorAttachment: 'platform', userVerification: 'required' },
+      timeout: 60000,
+    }
+  });
+  if(!cred) throw new Error('Aucun identifiant créé');
+  biometricCredentialId = bufToBase64(cred.rawId);
+  biometricEnabled = true;
+  try{ await idbPut('meta', biometricCredentialId, 'biometricCredentialId'); }catch(e){}
+  try{ await idbPut('meta', true, 'biometricEnabled'); }catch(e){}
+}
+
+async function disableBiometric(){
+  biometricEnabled = false;
+  biometricCredentialId = null;
+  try{ await idbPut('meta', false, 'biometricEnabled'); }catch(e){}
+  try{ await idbPut('meta', '', 'biometricCredentialId'); }catch(e){}
+}
+
+async function verifyBiometric(){
+  if(!biometricCredentialId) return false;
+  const challenge = crypto.getRandomValues(new Uint8Array(32));
+  try{
+    const assertion = await navigator.credentials.get({
+      publicKey: {
+        challenge,
+        allowCredentials: [{ id: base64ToBuf(biometricCredentialId), type: 'public-key' }],
+        userVerification: 'required',
+        timeout: 60000,
+      }
+    });
+    return !!assertion;
+  }catch(e){
+    return false;
+  }
+}
+
+let roomsConfig = [];
+let ROOMS = {};
+let ROOM_LABELS = {};
+let WINDOW_CONFIG = {};
+
+function rebuildRoomMaps(){
+  ROOMS = {}; ROOM_LABELS = {}; WINDOW_CONFIG = {};
+  roomsConfig.forEach(rm=>{
+    ROOMS[rm.key] = rm.items;
+    ROOM_LABELS[rm.key] = rm.label;
+    if(rm.windows) WINDOW_CONFIG[rm.key] = rm.windows;
+  });
+}
+
+async function loadRoomsConfig(){
+  try{
+    const val = await idbGet('meta', 'roomsConfig_'+currentSalleId);
+    roomsConfig = Array.isArray(val) && val.length ? val : JSON.parse(JSON.stringify(DEFAULT_ROOMS_CONFIG));
+  }catch(e){
+    roomsConfig = JSON.parse(JSON.stringify(DEFAULT_ROOMS_CONFIG));
+  }
+  rebuildRoomMaps();
+}
+async function saveRoomsConfigToDB(){
+  try{ await idbPut('meta', roomsConfig, 'roomsConfig_'+currentSalleId); }catch(e){}
+  rebuildRoomMaps();
+}
+
+function fenetreOptions(room){
+  const cfg = WINDOW_CONFIG[room];
+  if(!cfg) return [];
+  const opts = [];
+  for(let i=1;i<=cfg.fenetres;i++) opts.push('Fenêtre '+i);
+  for(let i=1;i<=cfg.portesFenetres;i++) opts.push('Porte-fenêtre '+i);
+  return opts;
+}
+const DEFAULT_MATERIEL_CONFIG = [
+  { name:"Tables", vaisselle:false, defaultQty:'' },
+  { name:"Chaises", vaisselle:false, defaultQty:'' },
+  { name:"Grandes assiettes", vaisselle:true, defaultQty:'' },
+  { name:"Petites assiettes", vaisselle:true, defaultQty:'' },
+  { name:"Verres", vaisselle:true, defaultQty:'' },
+  { name:"Couteaux", vaisselle:true, defaultQty:'' },
+  { name:"Fourchettes", vaisselle:true, defaultQty:'' },
+  { name:"Petites cuillères", vaisselle:true, defaultQty:'' },
+  { name:"Grandes cuillères", vaisselle:true, defaultQty:'' },
+  { name:"Extincteurs", vaisselle:false, defaultQty:'' }
+];
+let materielConfig = [];
+let MATERIEL = [];
+let VAISSELLE_ITEMS = [];
+let MATERIEL_DEFAULT_QTY = {};
+
+function rebuildMaterielMaps(){
+  MATERIEL = materielConfig.map(m=>m.name);
+  VAISSELLE_ITEMS = materielConfig.filter(m=>m.vaisselle).map(m=>m.name);
+  MATERIEL_DEFAULT_QTY = {};
+  materielConfig.forEach(m=>{ MATERIEL_DEFAULT_QTY[m.name] = (m.defaultQty !== undefined ? m.defaultQty : ''); });
+}
+async function loadMaterielConfig(){
+  try{
+    const val = await idbGet('meta', 'materielConfig_'+currentSalleId);
+    materielConfig = Array.isArray(val) && val.length ? val : JSON.parse(JSON.stringify(DEFAULT_MATERIEL_CONFIG));
+  }catch(e){
+    materielConfig = JSON.parse(JSON.stringify(DEFAULT_MATERIEL_CONFIG));
+  }
+  rebuildMaterielMaps();
+}
+async function saveMaterielConfigToDB(){
+  try{ await idbPut('meta', materielConfig, 'materielConfig_'+currentSalleId); }catch(e){}
+  rebuildMaterielMaps();
+}
+const MAX_PHOTO_DIM = 900;
+const JPEG_QUALITY = 0.6;
+
+let currentRecord = null;
+let index = [];
+let currentScreen = 'list';
+
+function uid(){ return 'edl_' + Date.now() + '_' + Math.random().toString(36).slice(2,8); }
+
+function blankPhase(){
+  const p = {
+    etats:{}, photos:{}, fenetres:{}, materiel:{}, cles:{cles:'',badges:'',code:''},
+    obsGenerales:'', signatures:{commune:null, locataire:null},
+    locked:false, lockedAt:null, version:1, history:[]
+  };
+  Object.keys(ROOMS).forEach(room=>{ p.photos[room] = []; });
+  Object.keys(ROOMS).forEach(room=>{
+    p.etats[room] = ROOMS[room].map(name=>({name, etat:'', obs:''}));
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{ p.fenetres[room] = []; });
+  MATERIEL.forEach(name=>{ p.materiel[name] = {prevue: (MATERIEL_DEFAULT_QTY[name] !== undefined ? String(MATERIEL_DEFAULT_QTY[name]) : ''), constatee:'', etat:'', obs:''}; });
+  return p;
+}
+
+function blankRecord(){
+  return {
+    id: uid(), edlNumber: null, createdAt: new Date().toISOString(), salleId: currentSalleId,
+    infos:{nom:'',tel:'',objet:'',date:'',heure:'',representant:'',statut:'attente'},
+    vaisselleIncluse:true, currentPhase:'entree',
+    phases: { entree: blankPhase(), sortie: null }
+  };
+}
+
+function activePhase(){
+  return currentRecord.phases[currentRecord.currentPhase];
+}
+
+function ensurePhase(rec, name){
+  if(!rec.phases[name]){
+    const p = blankPhase();
+    if(name==='sortie' && rec.phases.entree){
+      Object.keys(p.materiel).forEach(k=>{
+        if(rec.phases.entree.materiel[k]) p.materiel[k].prevue = rec.phases.entree.materiel[k].prevue;
+      });
+      p.cles = Object.assign({}, rec.phases.entree.cles);
+    }
+    rec.phases[name] = p;
+  }
+  return rec.phases[name];
+}
+
+// --- Couche de stockage : IndexedDB (bien plus de capacité que localStorage) ---
+const DB_NAME = 'edl_db';
+const DB_VERSION = 1;
+let dbPromise = null;
+
+function openDB(){
+  if(dbPromise) return dbPromise;
+  dbPromise = new Promise((resolve, reject)=>{
+    if(!window.indexedDB){ reject(new Error('IndexedDB non supporté')); return; }
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = (e)=>{
+      const db = e.target.result;
+      if(!db.objectStoreNames.contains('records')) db.createObjectStore('records', { keyPath: 'id' });
+      if(!db.objectStoreNames.contains('meta')) db.createObjectStore('meta');
+    };
+    req.onsuccess = ()=> resolve(req.result);
+    req.onerror = ()=> reject(req.error);
+  });
+  return dbPromise;
+}
+function idbGet(storeName, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const req = db.transaction(storeName, 'readonly').objectStore(storeName).get(key);
+    req.onsuccess = ()=> resolve(req.result);
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+function idbPut(storeName, value, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const store = db.transaction(storeName, 'readwrite').objectStore(storeName);
+    const req = key!==undefined ? store.put(value, key) : store.put(value);
+    req.onsuccess = ()=> resolve();
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+function idbDelete(storeName, key){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const req = db.transaction(storeName, 'readwrite').objectStore(storeName).delete(key);
+    req.onsuccess = ()=> resolve();
+    req.onerror = ()=> reject(req.error);
+  }));
+}
+// Écrit plusieurs valeurs dans une seule transaction IndexedDB (tout ou rien) —
+// utilisé pour le rechiffrement lors d'un changement de code d'accès, afin de ne
+// jamais se retrouver avec une partie des données chiffrée avec l'ancien code et
+// une autre avec le nouveau.
+function idbPutManyAtomic(items){
+  return openDB().then(db=> new Promise((resolve, reject)=>{
+    const storeNames = [...new Set(items.map(it=>it.store))];
+    const tx = db.transaction(storeNames, 'readwrite');
+    tx.oncomplete = ()=> resolve();
+    tx.onerror = ()=> reject(tx.error);
+    tx.onabort = ()=> reject(tx.error);
+    items.forEach(it=>{
+      const store = tx.objectStore(it.store);
+      if(it.key !== undefined) store.put(it.value, it.key);
+      else store.put(it.value);
+    });
+  }));
+}
+
+async function migrateFromLocalStorageIfNeeded(){
+  let raw;
+  try{ raw = localStorage.getItem('edl_index'); }catch(e){ return; }
+  if(!raw) return;
+  let oldIndex;
+  try{ oldIndex = JSON.parse(raw); }catch(e){ oldIndex = []; }
+  const list = Array.isArray(oldIndex) ? oldIndex : [];
+  const newIndex = [];
+  for(const meta of list){
+    try{
+      const raw2 = localStorage.getItem('rec_'+meta.id);
+      if(!raw2) continue;
+      const rec = ensureRecordShape(JSON.parse(raw2));
+      await saveRecordEncrypted(rec);
+      rec.salleId = rec.salleId || currentSalleId;
+      newIndex.push({
+        id:rec.id, nom:rec.infos.nom||'Sans nom', objet:rec.infos.objet||'', date:rec.infos.date||'',
+        statut: rec.infos.statut||'attente', createdAt:rec.createdAt, nbProblemes: countProblemes(rec),
+        edlNumber: rec.edlNumber || null, salleId: rec.salleId,
+        entreeDone: !!(rec.phases.entree && rec.phases.entree.locked),
+        sortieStarted: !!rec.phases.sortie,
+        sortieDone: !!(rec.phases.sortie && rec.phases.sortie.locked)
+      });
+    }catch(e){}
+  }
+  if(newIndex.length){
+    index = newIndex;
+    await saveIndex();
+  }
+  try{
+    list.forEach(m=> localStorage.removeItem('rec_'+m.id));
+    localStorage.removeItem('edl_index');
+  }catch(e){}
+  if(newIndex.length) showToast('Données migrées vers un stockage plus performant');
+}
+
+function ensurePhaseShape(p){
+  if(!p.etats) p.etats = {};
+  if(!p.photos) p.photos = {};
+  if(!p.fenetres) p.fenetres = {};
+  if(!p.materiel) p.materiel = {};
+  Object.keys(ROOMS).forEach(room=>{
+    if(!Array.isArray(p.etats[room])){
+      p.etats[room] = ROOMS[room].map(name=>({name, etat:'', obs:''}));
+    }
+    if(!Array.isArray(p.photos[room])) p.photos[room] = [];
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    if(!Array.isArray(p.fenetres[room])) p.fenetres[room] = [];
+  });
+  MATERIEL.forEach(name=>{
+    if(!p.materiel[name]) p.materiel[name] = {prevue:'',constatee:'',etat:'',obs:''};
+  });
+  if(!p.cles) p.cles = {cles:'',badges:'',code:''};
+  if(typeof p.obsGenerales !== 'string') p.obsGenerales = '';
+  if(!p.signatures) p.signatures = {commune:null, locataire:null};
+  if(typeof p.locked !== 'boolean') p.locked = false;
+  if(p.lockedAt === undefined) p.lockedAt = null;
+  if(typeof p.version !== 'number') p.version = 1;
+  if(!Array.isArray(p.history)) p.history = [];
+  return p;
+}
+
+function ensureRecordShape(rec){
+  if(!rec) return rec;
+  if(!rec.phases){
+    // Migration d'un ancien document (avant la fusion entrée/sortie en un seul dossier)
+    const oldType = rec.type === 'sortie' ? 'sortie' : 'entree';
+    const oldPhase = {
+      etats: rec.etats, photos: rec.photos, fenetres: rec.fenetres, materiel: rec.materiel,
+      cles: rec.cles, obsGenerales: rec.obsGenerales, signatures: rec.signatures,
+      locked: !!rec.locked, lockedAt: rec.lockedAt || null,
+      version: rec.version || 1, history: []
+    };
+    rec.phases = { entree: null, sortie: null };
+    rec.phases[oldType] = oldPhase;
+    rec.currentPhase = oldType;
+    delete rec.etats; delete rec.photos; delete rec.fenetres; delete rec.materiel;
+    delete rec.cles; delete rec.obsGenerales; delete rec.signatures;
+    delete rec.locked; delete rec.lockedAt; delete rec.version; delete rec.previousVersionId; delete rec.type;
+  }
+  if(typeof rec.vaisselleIncluse !== 'boolean') rec.vaisselleIncluse = true;
+  if(rec.currentPhase !== 'entree' && rec.currentPhase !== 'sortie') rec.currentPhase = rec.phases.entree ? 'entree' : 'sortie';
+  if(!rec.phases.entree && !rec.phases.sortie) rec.phases.entree = blankPhase();
+  if(rec.phases.entree) ensurePhaseShape(rec.phases.entree);
+  if(rec.phases.sortie) ensurePhaseShape(rec.phases.sortie);
+  if(!rec.edlNumber) rec.edlNumber = 'EDL-ANTÉRIEUR';
+  if(!rec.salleId) rec.salleId = currentSalleId;
+  return rec;
+}
+
+// --- Lecture/écriture chiffrées des dossiers et de l'index ---
+// Le store 'records' garde 'id' en clair (nécessaire pour keyPath:'id') ; tout le
+// reste du dossier (nom, téléphone, photos, signatures...) est chiffré en un seul
+// bloc. L'index (résumés affichés sur l'écran d'accueil) est chiffré en bloc lui aussi.
+async function saveRecordEncrypted(rec){
+  const payload = await encryptJSON(encKey, rec);
+  await idbPut('records', { id: rec.id, iv: payload.iv, data: payload.data });
+}
+async function loadRecordEncrypted(id){
+  const stored = await idbGet('records', id);
+  if(!stored) return null;
+  return decryptJSON(encKey, stored);
+}
+async function loadIndex(){
+  try{
+    const raw = await idbGet('meta', 'index');
+    if(!raw){ index = []; return; }
+    const val = await decryptJSON(encKey, raw);
+    index = Array.isArray(val) ? val : [];
+  }catch(e){ index = []; }
+}
+async function saveIndex(){
+  try{
+    const payload = await encryptJSON(encKey, index);
+    await idbPut('meta', payload, 'index');
+  }catch(e){}
+}
+
+// Convertit les données en clair d'une version antérieure au chiffrement (index et
+// dossiers) vers le nouveau format chiffré. Sans effet si tout est déjà chiffré ou
+// s'il n'y a aucune donnée existante — peut donc être appelée sans risque à chaque
+// démarrage.
+async function migratePlaintextDataToEncrypted(){
+  let rawIndex;
+  try{ rawIndex = await idbGet('meta', 'index'); }catch(e){ return; }
+  if(!Array.isArray(rawIndex) || rawIndex.length === 0) return;
+  for(const meta of rawIndex){
+    try{
+      const raw = await idbGet('records', meta.id);
+      if(raw && raw.infos){ // encore au format en clair (pas encore {id, iv, data})
+        const shaped = ensureRecordShape(raw);
+        await saveRecordEncrypted(shaped);
+      }
+    }catch(e){}
+  }
+  index = rawIndex;
+  await saveIndex();
+}
+
+async function loadRecord(id){
+  try{
+    const rec = await loadRecordEncrypted(id);
+    return rec ? ensureRecordShape(rec) : null;
+  }catch(e){ return null; }
+}
+function countProblemesPhase(p){
+  if(!p) return 0;
+  let n = 0;
+  Object.keys(ROOMS).forEach(room=>{
+    (p.etats[room]||[]).forEach(item=>{ if(item.etat==='moyen'||item.etat==='mauvais') n++; });
+  });
+  MATERIEL.forEach(name=>{
+    const m = p.materiel[name];
+    if(m && (m.etat==='moyen'||m.etat==='mauvais')) n++;
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    n += (p.fenetres && p.fenetres[room]) ? p.fenetres[room].length : 0;
+  });
+  return n;
+}
+function countProblemes(rec){
+  return countProblemesPhase(rec.phases.entree) + countProblemesPhase(rec.phases.sortie);
+}
+
+async function saveRecord(rec){
+  try{
+    await saveRecordEncrypted(rec);
+  }catch(e){
+    showToast("Échec de l'enregistrement (stockage plein ou indisponible)");
+  }
+  const meta = index.find(m=>m.id===rec.id);
+  const summary = {
+    id:rec.id, nom:rec.infos.nom||'Sans nom', objet:rec.infos.objet||'', date:rec.infos.date||'',
+    statut: rec.infos.statut || 'attente', createdAt:rec.createdAt, nbProblemes: countProblemes(rec),
+    edlNumber: rec.edlNumber || null, salleId: rec.salleId || currentSalleId,
+    entreeDone: !!(rec.phases.entree && rec.phases.entree.locked),
+    sortieStarted: !!rec.phases.sortie,
+    sortieDone: !!(rec.phases.sortie && rec.phases.sortie.locked)
+  };
+  if(meta){ Object.assign(meta, summary); } else { index.unshift(summary); }
+  await saveIndex();
+}
+async function deleteRecord(id){
+  index = index.filter(m=>m.id!==id);
+  await saveIndex();
+  try{ await idbDelete('records', id); }catch(e){}
+}
+
+async function getLastBackupAt(){
+  try{ return await idbGet('meta', 'lastBackupAt'); }catch(e){ return null; }
+}
+async function setLastBackupAt(iso){
+  try{ await idbPut('meta', iso, 'lastBackupAt'); }catch(e){}
+}
+function daysSince(iso){
+  if(!iso) return null;
+  return Math.floor((Date.now() - new Date(iso).getTime()) / (1000*60*60*24));
+}
+async function renderBackupReminder(){
+  const el = document.getElementById('backupReminder');
+  if(!el) return false;
+  const last = await getLastBackupAt();
+  const days = daysSince(last);
+  let overdue = false;
+  if(days === null){
+    el.innerHTML = '<span class="backup-warn" id="backupReminderAction">⚠️ Aucune sauvegarde effectuée — touchez ici pour sauvegarder maintenant</span>';
+    overdue = true;
+  } else if(days === 0){
+    el.innerHTML = '<span class="backup-ok">Dernière sauvegarde : aujourd\'hui</span>';
+  } else if(days >= 14){
+    el.innerHTML = `<span class="backup-warn" id="backupReminderAction">⚠️ Dernière sauvegarde : il y a ${days} jours — touchez ici pour sauvegarder maintenant</span>`;
+    overdue = days >= 30;
+  } else {
+    el.innerHTML = `<span class="backup-ok">Dernière sauvegarde : il y a ${days} jour${days>1?'s':''}</span>`;
+  }
+  const actionEl = document.getElementById('backupReminderAction');
+  if(actionEl){
+    actionEl.style.cursor = 'pointer';
+    actionEl.style.textDecoration = 'underline';
+    actionEl.addEventListener('click', ()=> document.getElementById('backupExportBtn').click());
+  }
+  return overdue;
+}
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 1600);
+}
+
+function switchScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  document.getElementById('backBtn').classList.toggle('show', name==='form' || name==='help' || name==='config' || name==='salles');
+  document.getElementById('helpBtn').classList.toggle('show', name==='list');
+  document.getElementById('sallesBtn').classList.toggle('show', name==='list');
+  document.getElementById('configBtn').classList.toggle('show', name==='list');
+  const fabEl = document.querySelector('.fab');
+  if(fabEl) fabEl.classList.toggle('show', name==='list');
+  const titles = { form:"État des lieux", help:"Notice d'utilisation", config:"Configuration des pièces", salles:"Mes salles", list:appName };
+  document.getElementById('screenTitle').textContent = titles[name] || titles.list;
+  document.getElementById('screenSub').textContent = name==='form'
+    ? ((currentRecord && currentRecord.edlNumber ? currentRecord.edlNumber + ' — ' : '') + (currentRecord && currentRecord.infos.nom ? currentRecord.infos.nom : "Nouveau document"))
+    : (name==='list' ? (salleName ? `${salleName} — États des lieux numériques` : "États des lieux numériques") : "");
+  currentScreen = name;
+}
+
+let listFilter = 'tous';
+let listSearch = '';
+
+function renderSalleSelect(){
+  const row = document.getElementById('salleSelectRow');
+  const sel = document.getElementById('salleSelect');
+  if(!sel || !row) return;
+  row.style.display = salles.length > 1 ? 'block' : 'none';
+  sel.innerHTML = salles.map(s=>`<option value="${s.id}"${s.id===currentSalleId?' selected':''}>${escapeHtml(s.name)}</option>`).join('');
+}
+document.getElementById('salleSelect').addEventListener('change', async (e)=>{
+  await activateSalle(e.target.value);
+  showToast('Salle activée : ' + salleName);
+});
+
+function renderList(){
+  renderSalleSelect();
+  const wrap = document.getElementById('recordList');
+  const salleItems = index.filter(m=> (m.salleId||currentSalleId)===currentSalleId);
+  if(salleItems.length===0){
+    wrap.innerHTML = '<div class="empty">Aucun état des lieux enregistré pour cette salle.<br>Appuyez sur "Nouvel état des lieux" pour commencer.</div>';
+    return;
+  }
+  let items = salleItems
+    .slice().sort((a,b)=> (b.date||'').localeCompare(a.date||'') || (b.createdAt||'').localeCompare(a.createdAt||''));
+  if(listFilter==='entree'){
+    items = items.filter(m=>!m.entreeDone);
+  } else if(listFilter==='sortie'){
+    items = items.filter(m=>m.entreeDone && !m.sortieDone);
+  } else if(listFilter==='problemes'){
+    items = items.filter(m=>(m.nbProblemes||0)>0);
+  }
+  if(listSearch.trim()){
+    const q = listSearch.trim().toLowerCase();
+    items = items.filter(m=>
+      (m.nom||'').toLowerCase().includes(q) ||
+      (m.objet||'').toLowerCase().includes(q) ||
+      (m.edlNumber||'').toLowerCase().includes(q) ||
+      (m.date||'').toLowerCase().includes(q)
+    );
+  }
+  if(items.length===0){
+    wrap.innerHTML = '<div class="no-results">Aucun état des lieux ne correspond à cette recherche.</div>';
+    return;
+  }
+  const statutLabel = { attente:'En attente de sortie', cloture:'Clôturé', litige:'Litige en cours' };
+  const statutClass = { attente:'statut-attente', cloture:'statut-cloture', litige:'statut-litige' };
+  wrap.innerHTML = items.map(m=>{
+    const dateStr = m.date ? new Date(m.date).toLocaleDateString('fr-FR') : 'Date non renseignée';
+    const statut = m.statut || 'attente';
+    const nb = m.nbProblemes || 0;
+    const problemeChip = nb>0
+      ? `<span class="problem-chip some">${nb} point${nb>1?'s':''} signalé${nb>1?'s':''}</span>`
+      : `<span class="problem-chip none">Aucun point signalé</span>`;
+    const entreeChip = `<span class="badge entree">Entrée${m.entreeDone?' 🔒':''}</span>`;
+    const sortieChip = m.sortieStarted
+      ? `<span class="badge sortie">Sortie${m.sortieDone?' 🔒':''}</span>`
+      : `<span class="badge sortie-pending">Sortie non commencée</span>`;
+    return `<div class="record-card" data-id="${m.id}">
+      <div class="info" data-open="${m.id}">
+        <p class="name">${escapeHtml(m.nom) || 'Sans nom'}${m.objet?` — ${escapeHtml(m.objet)}`:''}</p>
+        <p class="meta">${m.edlNumber ? escapeHtml(m.edlNumber) + ' — ' : ''}${dateStr}</p>
+        <span class="statut-pill ${statutClass[statut]}">${statutLabel[statut]}</span>${problemeChip}
+      </div>
+      <div class="record-actions">
+        ${entreeChip}
+        ${sortieChip}
+        <button class="del-btn" data-del="${m.id}" aria-label="Supprimer">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+document.getElementById('searchInput').addEventListener('input', e=>{
+  listSearch = e.target.value;
+  renderList();
+});
+document.querySelectorAll('.filter-chip').forEach(chip=>{
+  chip.addEventListener('click', ()=>{
+    document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+    chip.classList.add('active');
+    listFilter = chip.dataset.filter;
+    renderList();
+  });
+});
+
+function setType(type){
+  currentRecord.currentPhase = type;
+  ensurePhase(currentRecord, type);
+  document.getElementById('btnEntree').classList.toggle('active', type==='entree');
+  document.getElementById('btnEntree').classList.toggle('entree', type==='entree');
+  document.getElementById('btnSortie').classList.toggle('active', type==='sortie');
+  document.getElementById('btnSortie').classList.toggle('sortie', type==='sortie');
+}
+
+function resizeImage(file){
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = ()=>{
+      const img = new Image();
+      img.onload = ()=>{
+        let { width, height } = img;
+        if(width > height && width > MAX_PHOTO_DIM){
+          height = Math.round(height * MAX_PHOTO_DIM / width); width = MAX_PHOTO_DIM;
+        } else if(height > MAX_PHOTO_DIM){
+          width = Math.round(width * MAX_PHOTO_DIM / height); height = MAX_PHOTO_DIM;
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', JPEG_QUALITY));
+      };
+      img.onerror = reject;
+      img.src = reader.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function photoTsLabel(ts){
+  if(!ts) return '';
+  try{
+    const d = new Date(ts);
+    return d.toLocaleDateString('fr-FR') + ' ' + d.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit'});
+  }catch(e){ return ''; }
+}
+
+function renderPhotos(room){
+  const el = document.getElementById('photos-'+room);
+  if(!el) return;
+  const photos = activePhase().photos[room] || [];
+  el.innerHTML = photos.map((p, idx)=>{
+    const src = typeof p === 'string' ? p : p.src;
+    const ts = typeof p === 'string' ? null : p.ts;
+    const tsLabel = photoTsLabel(ts);
+    return `<div class="photo-thumb"><img src="${src}" alt="Photo dégradation">${tsLabel?`<div class="photo-ts">${tsLabel}</div>`:''}<button type="button" class="photo-del" data-photo-room="${room}" data-photo-idx="${idx}" aria-label="Supprimer la photo">✕</button></div>`;
+  }).join('') + `<label class="photo-add">
+      <span>+ Photo</span>
+      <input type="file" accept="image/*" capture="environment" data-photo-input="${room}">
+    </label>`;
+  el.querySelectorAll('[data-photo-input]').forEach(inp=>{
+    inp.addEventListener('change', async ()=>{
+      const file = inp.files && inp.files[0];
+      if(!file) return;
+      try{
+        const dataUrl = await resizeImage(file);
+        activePhase().photos[room].push({ src: dataUrl, ts: new Date().toISOString() });
+        renderPhotos(room);
+      }catch(e){ showToast("Impossible de charger la photo"); }
+    });
+  });
+  el.querySelectorAll('[data-photo-idx]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      activePhase().photos[btn.dataset.photoRoom].splice(+btn.dataset.photoIdx, 1);
+      renderPhotos(btn.dataset.photoRoom);
+    });
+  });
+}
+
+function updateProgress(room){
+  const items = activePhase().etats[room];
+  const done = items.filter(i=>i.etat).length;
+  const el = document.querySelector(`[data-prog="${room}"]`);
+  if(el) el.textContent = `${done}/${items.length}`;
+}
+
+function renderRoom(room){
+  const el = document.getElementById('body-'+room);
+  el.innerHTML = activePhase().etats[room].map((item, idx)=>{
+    const showObs = item.etat==='moyen' || item.etat==='mauvais' || (item.obs && item.obs.trim());
+    return `<div class="elem-row">
+      <div class="elem-name">${escapeHtml(item.name)}</div>
+      <div class="state-btns">
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="bon" class="${item.etat==='bon'?'sel-bon':''}">Bon</button>
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="moyen" class="${item.etat==='moyen'?'sel-moyen':''}">Moyen</button>
+        <button type="button" data-room="${room}" data-idx="${idx}" data-val="mauvais" class="${item.etat==='mauvais'?'sel-mauvais':''}">Mauvais</button>
+      </div>
+      ${showObs ? `<textarea placeholder="Observation (optionnel)" data-room="${room}" data-idx="${idx}" data-obs>${escapeHtml(item.obs)}</textarea>` : ''}
+    </div>`;
+  }).join('')
+  + (WINDOW_CONFIG[room] ? `<div class="fenetre-section" id="fenetres-${room}"></div>` : '')
+  + `<div class="photo-section">
+      <div class="photo-label">Photos des dégradations constatées</div>
+      <div class="photo-grid" id="photos-${room}"></div>
+    </div>`;
+  el.querySelectorAll('.state-btns button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const {room, idx, val} = btn.dataset;
+      activePhase().etats[room][idx].etat = val;
+      renderRoom(room);
+      updateProgress(room);
+      updateGlobalProgress();
+    });
+  });
+  el.querySelectorAll('textarea[data-obs]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      activePhase().etats[ta.dataset.room][ta.dataset.idx].obs = ta.value;
+    });
+  });
+  if(WINDOW_CONFIG[room]) renderFenetres(room);
+  renderPhotos(room);
+  updateProgress(room);
+}
+
+function renderFenetres(room){
+  const cfg = WINDOW_CONFIG[room];
+  if(!cfg) return;
+  const wrap = document.getElementById('fenetres-'+room);
+  if(!wrap) return;
+  const list = activePhase().fenetres[room] || [];
+  const usedLabels = new Set(list.map(f=>f.label));
+  const available = fenetreOptions(room).filter(l=>!usedLabels.has(l));
+  const listHtml = list.map((f,idx)=>`
+    <div class="elem-row">
+      <div class="elem-name">${escapeHtml(f.label)}</div>
+      <div class="state-btns">
+        <button type="button" data-fen-room="${room}" data-fen-idx="${idx}" data-fen-val="moyen" class="${f.etat==='moyen'?'sel-moyen':''}">Moyen</button>
+        <button type="button" data-fen-room="${room}" data-fen-idx="${idx}" data-fen-val="mauvais" class="${f.etat==='mauvais'?'sel-mauvais':''}">Mauvais</button>
+        <button type="button" class="fen-del" data-fen-del-room="${room}" data-fen-del-idx="${idx}" aria-label="Retirer">✕</button>
+      </div>
+      <textarea placeholder="Observation" data-fen-obs-room="${room}" data-fen-obs-idx="${idx}">${escapeHtml(f.obs)}</textarea>
+    </div>`).join('');
+  const selectHtml = available.length
+    ? `<div class="fenetre-add-row">
+         <select id="fenetreSelect-${room}">${available.map(l=>`<option value="${l}">${l}</option>`).join('')}</select>
+         <button type="button" data-add-fenetre="${room}">+ Signaler</button>
+       </div>`
+    : (list.length ? '<p class="fenetre-empty">Toutes les fenêtres et portes-fenêtres ont été signalées.</p>' : '');
+  wrap.innerHTML = `<div class="fenetre-label">Fenêtres / portes-fenêtres avec anomalie<span class="fenetre-hint">(non listées ci-dessous = en bon état)</span></div>${listHtml}${selectHtml}`;
+
+  const addBtn = wrap.querySelector('[data-add-fenetre]');
+  if(addBtn){
+    addBtn.addEventListener('click', ()=>{
+      const sel = document.getElementById('fenetreSelect-'+room);
+      if(!sel || !sel.value) return;
+      activePhase().fenetres[room].push({ label: sel.value, etat:'moyen', obs:'' });
+      renderFenetres(room);
+    });
+  }
+  wrap.querySelectorAll('[data-fen-val]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const {fenRoom, fenIdx, fenVal} = btn.dataset;
+      activePhase().fenetres[fenRoom][fenIdx].etat = fenVal;
+      renderFenetres(fenRoom);
+    });
+  });
+  wrap.querySelectorAll('[data-fen-del-idx]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      activePhase().fenetres[btn.dataset.fenDelRoom].splice(+btn.dataset.fenDelIdx,1);
+      renderFenetres(btn.dataset.fenDelRoom);
+    });
+  });
+  wrap.querySelectorAll('[data-fen-obs-idx]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      activePhase().fenetres[ta.dataset.fenObsRoom][ta.dataset.fenObsIdx].obs = ta.value;
+    });
+  });
+}
+
+function ecartLabel(name){
+  const m = activePhase().materiel[name];
+  const prevue = parseFloat(m.prevue);
+  const constatee = parseFloat(m.constatee);
+  if(isNaN(prevue) || isNaN(constatee)) return '';
+  const ecart = constatee - prevue;
+  if(ecart === 0) return '<span class="ecart ecart-ok">Complet</span>';
+  if(ecart < 0) return `<span class="ecart ecart-bad">${Math.abs(ecart)} manquant${Math.abs(ecart)>1?'s':''}</span>`;
+  return `<span class="ecart ecart-info">+${ecart} en trop</span>`;
+}
+
+function renderMateriel(){
+  const el = document.getElementById('body-materiel');
+  const inclus = currentRecord.vaisselleIncluse !== false;
+  const toggleHtml = `<div class="vaisselle-toggle">
+      <label class="checkbox-label">
+        <input type="checkbox" id="f_vaisselleIncluse" ${inclus?'checked':''}>
+        Vaisselle incluse dans cette location
+      </label>
+    </div>`;
+  const rowsHtml = MATERIEL.map(name=>{
+    const isVaisselle = VAISSELLE_ITEMS.includes(name);
+    if(isVaisselle && !inclus) return '';
+    const m = activePhase().materiel[name];
+    return `<div class="mat-row">
+      <div class="mat-name">${escapeHtml(name)}</div>
+      <div class="mat-grid">
+        <div><label>Qté prévue</label><input type="number" min="0" data-mat="${escapeHtml(name)}" data-f="prevue" value="${escapeHtml(m.prevue)}"></div>
+        <div><label>Qté constatée</label><input type="number" min="0" data-mat="${escapeHtml(name)}" data-f="constatee" value="${escapeHtml(m.constatee)}"></div>
+      </div>
+      <div class="ecart-slot" data-ecart-slot="${escapeHtml(name)}">${ecartLabel(name)}</div>
+      <label>État</label>
+      <select data-mat="${escapeHtml(name)}" data-f="etat">
+        <option value="">—</option>
+        <option value="bon" ${m.etat==='bon'?'selected':''}>Bon</option>
+        <option value="moyen" ${m.etat==='moyen'?'selected':''}>Moyen</option>
+        <option value="mauvais" ${m.etat==='mauvais'?'selected':''}>Mauvais</option>
+      </select>
+      <label>Observations</label>
+      <textarea data-mat="${escapeHtml(name)}" data-f="obs">${escapeHtml(m.obs)}</textarea>
+    </div>`;
+  }).join('');
+  el.innerHTML = toggleHtml + rowsHtml;
+  document.getElementById('f_vaisselleIncluse').addEventListener('change', (e)=>{
+    currentRecord.vaisselleIncluse = e.target.checked;
+    renderMateriel();
+    updateGlobalProgress();
+  });
+  el.querySelectorAll('[data-mat]').forEach(inp=>{
+    const update = ()=>{
+      activePhase().materiel[inp.dataset.mat][inp.dataset.f] = inp.value;
+      if(inp.dataset.f === 'prevue' || inp.dataset.f === 'constatee'){
+        const slot = el.querySelector(`[data-ecart-slot="${inp.dataset.mat}"]`);
+        if(slot) slot.innerHTML = ecartLabel(inp.dataset.mat);
+      }
+      if(inp.dataset.f === 'etat') updateGlobalProgress();
+    };
+    inp.addEventListener('input', update);
+    inp.addEventListener('change', update);
+  });
+}
+
+function fillInfoFields(){
+  const i = currentRecord.infos;
+  document.getElementById('f_nom').value = i.nom;
+  document.getElementById('f_tel').value = i.tel;
+  document.getElementById('f_objet').value = i.objet;
+  document.getElementById('f_date').value = i.date;
+  document.getElementById('f_heure').value = i.heure;
+  document.getElementById('f_representant').value = i.representant;
+  document.getElementById('f_statut').value = i.statut || 'attente';
+  document.getElementById('f_cles').value = activePhase().cles.cles;
+  document.getElementById('f_badges').value = activePhase().cles.badges;
+  document.getElementById('f_code').value = activePhase().cles.code;
+  document.getElementById('f_obsGenerales').value = activePhase().obsGenerales;
+}
+
+['f_nom','f_tel','f_objet','f_date','f_heure','f_representant'].forEach(id=>{
+  document.getElementById(id).addEventListener('input', e=>{
+    const key = id.replace('f_','');
+    currentRecord.infos[key] = e.target.value;
+    if(id==='f_nom') updateGlobalProgress();
+  });
+});
+document.getElementById('f_statut').addEventListener('change', e=> currentRecord.infos.statut = e.target.value);
+document.getElementById('f_cles').addEventListener('input', e=> activePhase().cles.cles = e.target.value);
+document.getElementById('f_badges').addEventListener('input', e=> activePhase().cles.badges = e.target.value);
+document.getElementById('f_code').addEventListener('input', e=> activePhase().cles.code = e.target.value);
+document.getElementById('f_obsGenerales').addEventListener('input', e=> activePhase().obsGenerales = e.target.value);
+
+document.getElementById('screen-form').addEventListener('click', (e)=>{
+  const head = e.target.closest('.section-head');
+  if(head) head.closest('.section').classList.toggle('open');
+});
+
+document.getElementById('btnEntree').addEventListener('click', ()=>{ setType('entree'); renderForm(); });
+document.getElementById('btnSortie').addEventListener('click', ()=>{ setType('sortie'); renderForm(); });
+
+// --- Signature pads ---
+function setupSignaturePad(canvas, getInitial){
+  const ctx = canvas.getContext('2d');
+  function resize(){
+    const rect = canvas.getBoundingClientRect();
+    if(rect.width === 0 || rect.height === 0) return;
+    const ratio = window.devicePixelRatio || 1;
+    canvas.width = rect.width * ratio;
+    canvas.height = rect.height * ratio;
+    ctx.scale(ratio, ratio);
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#20262E';
+    const init = getInitial();
+    if(init){
+      const img = new Image();
+      img.onload = ()=> ctx.drawImage(img, 0, 0, rect.width, rect.height);
+      img.src = init;
+    }
+  }
+  let drawing = false, last = null;
+  function pos(e){
+    const rect = canvas.getBoundingClientRect();
+    const t = e.touches ? e.touches[0] : e;
+    return { x: t.clientX - rect.left, y: t.clientY - rect.top };
+  }
+  function start(e){ e.preventDefault(); drawing = true; last = pos(e); }
+  function move(e){
+    if(!drawing) return;
+    e.preventDefault();
+    const p = pos(e);
+    ctx.beginPath(); ctx.moveTo(last.x,last.y); ctx.lineTo(p.x,p.y); ctx.stroke();
+    last = p;
+    canvas.dataset.dirty = '1';
+  }
+  function end(){
+    drawing = false;
+    if(canvas.dataset.dirty){ captureSignatures(); updateGlobalProgress(); updateLockUI(); }
+  }
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', move);
+  window.addEventListener('mouseup', end);
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', move, {passive:false});
+  canvas.addEventListener('touchend', end);
+  if(canvas.__sigResizeObserver) canvas.__sigResizeObserver.disconnect();
+  if('ResizeObserver' in window){
+    const ro = new ResizeObserver(()=> resize());
+    ro.observe(canvas);
+    canvas.__sigResizeObserver = ro;
+  }
+  setTimeout(resize, 50);
+  return { clear(){ ctx.clearRect(0,0,canvas.width,canvas.height); canvas.dataset.dirty=''; }, resize };
+}
+
+let padCommune, padLocataire;
+document.querySelectorAll('[data-clear]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    if(btn.dataset.clear==='sigCommune'){ padCommune.clear(); activePhase().signatures.commune = null; }
+    else { padLocataire.clear(); activePhase().signatures.locataire = null; }
+    updateLockUI();
+  });
+});
+
+function captureSignatures(){
+  const c1 = document.getElementById('sigCommune');
+  const c2 = document.getElementById('sigLocataire');
+  if(c1.dataset.dirty) activePhase().signatures.commune = c1.toDataURL('image/png');
+  if(c2.dataset.dirty) activePhase().signatures.locataire = c2.toDataURL('image/png');
+}
+
+// --- Navigation ---
+async function openRecord(id){
+  currentRecord = await loadRecord(id);
+  if(!currentRecord) return;
+  renderForm();
+  switchScreen('form');
+}
+
+function computeSectionCompletion(){
+  const results = {};
+  results.infos = !!(currentRecord.infos.nom && currentRecord.infos.nom.trim());
+  Object.keys(ROOMS).forEach(room=>{
+    const items = activePhase().etats[room];
+    results[room] = items.length>0 && items.every(i=>i.etat);
+  });
+  const visibleMateriel = MATERIEL.filter(name=> currentRecord.vaisselleIncluse!==false || !VAISSELLE_ITEMS.includes(name));
+  results.materiel = visibleMateriel.length>0 && visibleMateriel.every(name=> activePhase().materiel[name] && activePhase().materiel[name].etat);
+  results.signatures = !!(activePhase().signatures.commune && activePhase().signatures.locataire);
+  return results;
+}
+
+function updateGlobalProgress(){
+  const el = document.getElementById('globalProgress');
+  if(!el || !currentRecord) return;
+  const res = computeSectionCompletion();
+  const keys = Object.keys(res);
+  const done = keys.filter(k=>res[k]).length;
+  el.textContent = `${done}/${keys.length} sections complétées`;
+}
+
+function renderRoomSectionsContainer(){
+  const container = document.getElementById('roomSectionsContainer');
+  container.innerHTML = roomsConfig.map(rm => `
+    <div class="section" data-key="${rm.key}">
+      <div class="section-head"><h3 data-title="${escapeHtml(rm.label)}">${escapeHtml(rm.label)}</h3><span class="section-progress" data-prog="${rm.key}"></span></div>
+      <div class="section-body" id="body-${rm.key}"></div>
+    </div>`).join('');
+}
+
+function renumberSections(){
+  document.querySelectorAll('#screen-form .section-head h3[data-title]').forEach((h3, idx)=>{
+    h3.textContent = `${idx+1}. ${h3.dataset.title}`;
+  });
+}
+
+function updateLockUI(){
+  const locked = !!activePhase().locked;
+  document.getElementById('screen-form').classList.toggle('form-locked', locked);
+  const banner = document.getElementById('lockedBanner');
+  banner.classList.toggle('hidden', !locked);
+  const dateSpan = document.getElementById('lockedBannerDate');
+  dateSpan.textContent = (locked && activePhase().lockedAt) ? ` le ${new Date(activePhase().lockedAt).toLocaleDateString('fr-FR')}` : '';
+  document.getElementById('lockedEntreeSortieHint').classList.toggle('hidden', !(locked && currentRecord.currentPhase==='entree'));
+  const bothSignatures = !!(activePhase().signatures.commune && activePhase().signatures.locataire);
+  document.getElementById('doneBtn').classList.toggle('hidden', locked);
+  document.getElementById('clotureBtn').classList.toggle('hidden', locked || !bothSignatures);
+  document.getElementById('newVersionBtn').classList.toggle('hidden', !locked);
+  const history = activePhase().history || [];
+  const historyBanner = document.getElementById('historyBanner');
+  historyBanner.classList.toggle('hidden', history.length === 0);
+  if(history.length > 0){
+    const last = history[history.length-1];
+    const dateTxt = last.lockedAt ? new Date(last.lockedAt).toLocaleDateString('fr-FR') : '';
+    document.getElementById('historyBannerText').textContent = `Version ${last.version || (activePhase().version-1)} clôturée${dateTxt ? ' le '+dateTxt : ''} — conservée dans l'historique`;
+  }
+}
+
+function renderForm(){
+  renderRoomSectionsContainer();
+  setType(currentRecord.currentPhase);
+  fillInfoFields();
+  document.getElementById('sigCommuneLabel').textContent = communeName ? `Pour la commune de ${communeName}` : 'Pour la commune';
+  Object.keys(ROOMS).forEach(room=>{
+    try{ renderRoom(room); }catch(e){ console.error('Erreur affichage pièce', room, e); }
+  });
+  try{ renderMateriel(); }catch(e){ console.error('Erreur affichage matériel', e); }
+  padCommune = setupSignaturePad(document.getElementById('sigCommune'), ()=>activePhase().signatures.commune);
+  padLocataire = setupSignaturePad(document.getElementById('sigLocataire'), ()=>activePhase().signatures.locataire);
+  updateGlobalProgress();
+  renumberSections();
+  updateLockUI();
+}
+
+function getMissingFields(){
+  const missing = [];
+  if(!currentRecord.infos.nom.trim()) missing.push('le nom du locataire');
+  if(!activePhase().signatures.commune) missing.push('la signature de la commune');
+  if(!activePhase().signatures.locataire) missing.push('la signature du locataire');
+  return missing;
+}
+
+document.getElementById('backBtn').addEventListener('click', async ()=>{
+  if(currentScreen === 'help' || currentScreen === 'config' || currentScreen === 'salles'){
+    switchScreen('list');
+    return;
+  }
+  captureSignatures();
+  const missing = getMissingFields();
+  if(missing.length){
+    const ok = await showConfirm(`Il manque : ${missing.join(', ')}.\n\nQuitter quand même ? L'état des lieux sera enregistré en brouillon.`);
+    if(!ok) return;
+  }
+  await saveRecord(currentRecord);
+  renderList();
+  switchScreen('list');
+});
+
+document.getElementById('helpBtn').addEventListener('click', ()=>{
+  switchScreen('help');
+});
+
+let configDraft = [];
+
+function renderConfigScreen(){
+  const wrap = document.getElementById('configRoomsList');
+  wrap.innerHTML = configDraft.map((rm, idx) => `
+    <div class="config-room-card" data-cfg-idx="${idx}">
+      <label>Nom de la pièce</label>
+      <input type="text" data-cfg-field="label" data-cfg-idx="${idx}" value="${escapeHtml(rm.label)}">
+      <label>Éléments à vérifier (un par ligne)</label>
+      <textarea data-cfg-field="items" data-cfg-idx="${idx}">${escapeHtml(rm.items.join('\n'))}</textarea>
+      <label class="checkbox-label" style="margin-top:12px;">
+        <input type="checkbox" data-cfg-field="windowsToggle" data-cfg-idx="${idx}" ${rm.windows ? 'checked':''}>
+        Suivre les fenêtres / portes-fenêtres
+      </label>
+      ${rm.windows ? `
+      <div class="config-window-grid" style="margin-top:8px;">
+        <div><label>Nb de fenêtres</label><input type="number" min="0" data-cfg-field="fenetres" data-cfg-idx="${idx}" value="${rm.windows.fenetres}"></div>
+        <div><label>Nb de portes-fenêtres</label><input type="number" min="0" data-cfg-field="portesFenetres" data-cfg-idx="${idx}" value="${rm.windows.portesFenetres}"></div>
+      </div>` : ''}
+      <button type="button" class="config-room-remove" data-cfg-remove="${idx}">Supprimer cette pièce</button>
+    </div>`).join('');
+
+  wrap.querySelectorAll('[data-cfg-field="label"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].label = inp.value; });
+  });
+  wrap.querySelectorAll('[data-cfg-field="items"]').forEach(ta=>{
+    ta.addEventListener('input', ()=>{
+      configDraft[+ta.dataset.cfgIdx].items = ta.value.split('\n').map(s=>s.trim()).filter(Boolean);
+    });
+  });
+  wrap.querySelectorAll('[data-cfg-field="windowsToggle"]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const idx = +cb.dataset.cfgIdx;
+      configDraft[idx].windows = cb.checked ? { fenetres:10, portesFenetres:2 } : null;
+      renderConfigScreen();
+    });
+  });
+  wrap.querySelectorAll('[data-cfg-field="fenetres"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].windows.fenetres = parseInt(inp.value)||0; });
+  });
+  wrap.querySelectorAll('[data-cfg-field="portesFenetres"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ configDraft[+inp.dataset.cfgIdx].windows.portesFenetres = parseInt(inp.value)||0; });
+  });
+  wrap.querySelectorAll('[data-cfg-remove]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      if(configDraft.length <= 1){ await showAlert("Il doit rester au moins une pièce."); return; }
+      const ok = await showConfirm("Supprimer cette pièce ? Les états des lieux déjà enregistrés ne seront pas modifiés, mais cette pièce n'apparaîtra plus dans les nouveaux formulaires.");
+      if(!ok) return;
+      configDraft.splice(+btn.dataset.cfgRemove, 1);
+      renderConfigScreen();
+    });
+  });
+}
+
+let materielDraft = [];
+
+function renderConfigMaterielList(){
+  const wrap = document.getElementById('configMaterielList');
+  wrap.innerHTML = materielDraft.map((m, idx) => `
+    <div class="config-mat-row" data-matcfg-idx="${idx}">
+      <input type="text" data-matcfg-field="name" data-matcfg-idx="${idx}" value="${escapeHtml(m.name)}">
+      <input type="number" min="0" data-matcfg-field="defaultQty" data-matcfg-idx="${idx}" value="${escapeHtml(m.defaultQty!==undefined?m.defaultQty:'')}" placeholder="Qté" style="width:64px;">
+      <label><input type="checkbox" data-matcfg-field="vaisselle" data-matcfg-idx="${idx}" ${m.vaisselle?'checked':''}> Vaisselle</label>
+      <button type="button" class="config-mat-remove" data-matcfg-remove="${idx}" aria-label="Supprimer">✕</button>
+    </div>`).join('');
+
+  wrap.querySelectorAll('[data-matcfg-field="name"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ materielDraft[+inp.dataset.matcfgIdx].name = inp.value; });
+  });
+  wrap.querySelectorAll('[data-matcfg-field="defaultQty"]').forEach(inp=>{
+    inp.addEventListener('input', ()=>{ materielDraft[+inp.dataset.matcfgIdx].defaultQty = inp.value; });
+  });
+  wrap.querySelectorAll('[data-matcfg-field="vaisselle"]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{ materielDraft[+cb.dataset.matcfgIdx].vaisselle = cb.checked; });
+  });
+  wrap.querySelectorAll('[data-matcfg-remove]').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      if(materielDraft.length <= 1){ await showAlert("Il doit rester au moins un article."); return; }
+      const ok = await showConfirm("Supprimer cet article ? Les états des lieux déjà enregistrés ne seront pas modifiés.");
+      if(!ok) return;
+      materielDraft.splice(+btn.dataset.matcfgRemove, 1);
+      renderConfigMaterielList();
+    });
+  });
+}
+
+document.getElementById('configAddMaterielBtn').addEventListener('click', ()=>{
+  materielDraft.push({ name: 'Nouvel article', vaisselle: false, defaultQty: '' });
+  renderConfigMaterielList();
+});
+
+function openConfigScreen(){
+  configDraft = JSON.parse(JSON.stringify(roomsConfig));
+  materielDraft = JSON.parse(JSON.stringify(materielConfig));
+  document.getElementById('configAppNameInput').value = appName;
+  document.getElementById('configCommuneNameInput').value = communeName;
+  document.getElementById('configSalleNameInput').value = salleName;
+  document.getElementById('configAutoLockInput').value = autoLockMinutes;
+  renderConfigScreen();
+  renderConfigMaterielList();
+  refreshBiometricConfigUI();
+  refreshRecoveryStatusUI();
+  document.getElementById('configBgOpacity').value = bgOpacity;
+  document.getElementById('configBgPreview').innerHTML = bgImage
+    ? `<img src="${bgImage}" style="width:100%;max-height:120px;object-fit:cover;border-radius:9px;border:1px solid var(--border);">`
+    : '<p class="config-intro" style="margin:0;">Aucune photo définie.</p>';
+  switchScreen('config');
+}
+
+document.getElementById('configBtn').addEventListener('click', ()=>{
+  if(adminUnlockedThisSession){
+    openConfigScreen();
+    return;
+  }
+  const overlay = document.getElementById('adminPinOverlay');
+  const input = document.getElementById('adminPinInput');
+  document.getElementById('adminPinError').textContent = '';
+  input.value = '';
+  overlay.classList.remove('hidden');
+  input.focus();
+});
+
+function tryAdminUnlock(){
+  const input = document.getElementById('adminPinInput');
+  const err = document.getElementById('adminPinError');
+  if(input.value === adminPin){
+    adminUnlockedThisSession = true;
+    document.getElementById('adminPinOverlay').classList.add('hidden');
+    input.value = '';
+    err.textContent = '';
+    openConfigScreen();
+  }else{
+    err.textContent = 'Code incorrect';
+    input.value = '';
+    input.focus();
+  }
+}
+document.getElementById('adminPinConfirmBtn').addEventListener('click', tryAdminUnlock);
+document.getElementById('adminPinInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') tryAdminUnlock();
+});
+document.getElementById('adminPinInput').addEventListener('input', (e)=>{
+  e.target.value = e.target.value.replace(/\D/g,'').slice(0,4);
+});
+document.getElementById('adminPinCancelBtn').addEventListener('click', ()=>{
+  document.getElementById('adminPinOverlay').classList.add('hidden');
+  document.getElementById('adminPinInput').value = '';
+  document.getElementById('adminPinError').textContent = '';
+});
+
+document.getElementById('configAddRoomBtn').addEventListener('click', ()=>{
+  const base = 'piece_' + Date.now().toString(36);
+  configDraft.push({ key: base, label: 'Nouvelle pièce', items: ['Sol','Murs','Plafond'], windows: null });
+  renderConfigScreen();
+});
+
+document.getElementById('configCancelBtn').addEventListener('click', ()=>{
+  switchScreen('list');
+});
+
+document.getElementById('configSaveBtn').addEventListener('click', async ()=>{
+  const invalid = configDraft.some(rm => !rm.label.trim() || rm.items.length === 0);
+  if(invalid){
+    await showAlert("Chaque pièce doit avoir un nom et au moins un élément à vérifier.");
+    return;
+  }
+  const invalidMat = materielDraft.some(m => !m.name.trim());
+  if(invalidMat){
+    await showAlert("Chaque article de matériel doit avoir un nom.");
+    return;
+  }
+  roomsConfig = configDraft;
+  await saveRoomsConfigToDB();
+  materielConfig = materielDraft;
+  await saveMaterielConfigToDB();
+  showToast('Configuration enregistrée');
+  switchScreen('list');
+});
+
+
+document.getElementById('doneBtn').addEventListener('click', async ()=>{
+  captureSignatures();
+  const missing = getMissingFields();
+  if(missing.length){
+    const ok = await showConfirm(`Il manque : ${missing.join(', ')}.\n\nTerminer quand même ?`);
+    if(!ok) return;
+  }
+  await saveRecord(currentRecord);
+  showToast('État des lieux enregistré');
+  renderList();
+  setTimeout(()=>switchScreen('list'), 400);
+});
+
+document.getElementById('clotureBtn').addEventListener('click', async ()=>{
+  captureSignatures();
+  if(!activePhase().signatures.commune || !activePhase().signatures.locataire){
+    await showAlert('Les deux signatures sont nécessaires avant de clôturer le document.');
+    return;
+  }
+  if(currentRecord.currentPhase==='sortie' && currentRecord.infos.statut === 'attente'){
+    await showAlert('Avant de clôturer la sortie, choisissez le statut du dossier ("Clôturé" ou "Litige en cours") dans la section "Informations générales".');
+    return;
+  }
+  const ok = await showConfirm("Clôturer définitivement ce document ?\n\nIl passera en lecture seule. Toute modification ultérieure nécessitera de créer une nouvelle version.");
+  if(!ok) return;
+  activePhase().locked = true;
+  activePhase().lockedAt = new Date().toISOString();
+  await saveRecord(currentRecord);
+  updateLockUI();
+  renderList();
+  showToast('Document verrouillé');
+});
+
+document.getElementById('newVersionBtn').addEventListener('click', async ()=>{
+  const ok = await showConfirm("Créer une nouvelle version modifiable de cette phase ?\n\nL'état signé actuel sera conservé dans l'historique. Les signatures seront réinitialisées.");
+  if(!ok) return;
+  const phase = activePhase();
+  const archived = JSON.parse(JSON.stringify(phase));
+  delete archived.history;
+  const newVersion = (phase.version || 1) + 1;
+  phase.history.push(archived);
+  phase.locked = false;
+  phase.lockedAt = null;
+  phase.version = newVersion;
+  phase.signatures = { commune: null, locataire: null };
+  await saveRecord(currentRecord);
+  renderForm();
+  renderList();
+  showToast('Nouvelle version créée (v' + newVersion + ')');
+});
+
+document.getElementById('historyViewBtn').addEventListener('click', ()=>{
+  const history = activePhase().history || [];
+  if(!history.length) return;
+  const last = history[history.length-1];
+  const htmlDoc = buildExportHtml(currentRecord, currentRecord.currentPhase, last);
+  showExportOverlay(htmlDoc);
+});
+
+document.getElementById('recordList').addEventListener('click', async (e)=>{
+  const openEl = e.target.closest('[data-open]');
+  const delEl = e.target.closest('[data-del]');
+  if(delEl){
+    e.stopPropagation();
+    const ok = await showConfirm('Supprimer cet état des lieux ?');
+    if(ok){
+      await deleteRecord(delEl.dataset.del);
+      renderList();
+    }
+    return;
+  }
+  if(openEl){ openRecord(openEl.dataset.open); }
+});
+
+function buildRecoveryCodeHtml(code){
+  const now = new Date();
+  return `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
+  <style>
+    body{font-family:-apple-system,Helvetica,Arial,sans-serif;padding:40px;color:#20262E;}
+    h1{font-size:19px;margin:0 0 4px;color:#1F4E79;}
+    p.commune{color:#6B7480;font-size:13px;margin:0 0 28px;}
+    .code-box{border:2px solid #1F4E79;border-radius:12px;padding:32px;text-align:center;margin:24px 0;}
+    .code-label{font-size:11px;color:#6B7480;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+    .code{font-size:26px;font-weight:700;letter-spacing:2px;font-family:'Courier New',monospace;color:#1F4E79;}
+    .warn{background:#FBF1DD;border-radius:8px;padding:16px 18px;font-size:13px;line-height:1.5;margin-top:24px;}
+    .meta{font-size:11px;color:#9aa2ab;margin-top:36px;text-align:center;}
+  </style></head><body>
+    <h1>Code de récupération — ${escapeHtml(appName) || 'État des lieux numérique'}</h1>
+    <p class="commune">Commune de ${escapeHtml(communeName) || '[à renseigner]'}${salleName ? ' — ' + escapeHtml(salleName) : ''}</p>
+    <div class="code-box">
+      <div class="code-label">Code de récupération</div>
+      <div class="code">${code}</div>
+    </div>
+    <div class="warn"><b>À conserver précieusement, ailleurs que sur ce téléphone</b> (papier, coffre, classeur administratif...). Ce code permet de déchiffrer les données de l'application en cas d'oubli du code d'accès habituel. Il ne sera plus jamais réaffiché ensuite — générez-en un nouveau si celui-ci est perdu ou compromis.</div>
+    <p class="meta">Généré le ${now.toLocaleDateString('fr-FR')} à ${now.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}</p>
+    </body></html>
+  `;
+}
+
+function buildExportHtml(rec, phaseName, phaseOverride){
+  const p = phaseOverride || rec.phases[phaseName];
+  const etatLabel = {bon:'Bon', moyen:'Moyen', mauvais:'Mauvais', '':'—'};
+  const roomHtml = (roomKey, title) => {
+    const photos = p.photos[roomKey] || [];
+    const photosHtml = photos.length ? `<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;">
+      ${photos.map(ph=>{
+        const src = typeof ph === 'string' ? ph : ph.src;
+        const ts = typeof ph === 'string' ? null : ph.ts;
+        const label = photoTsLabel(ts);
+        return `<div style="text-align:center;"><img src="${src}" style="width:120px;height:120px;object-fit:cover;border:1px solid #ccc;border-radius:6px;display:block;">${label?`<div style="font-size:10px;color:#6B7480;margin-top:3px;">${escapeHtml(label)}</div>`:''}</div>`;
+      }).join('')}
+    </div>` : '';
+    const fenetresList = (p.fenetres && p.fenetres[roomKey]) ? p.fenetres[roomKey] : null;
+    const fenetresHtml = fenetresList ? (fenetresList.length
+      ? `<table><tr><th>Fenêtre / porte-fenêtre</th><th>État</th><th>Observations</th></tr>
+         ${fenetresList.map(f=>`<tr><td>${escapeHtml(f.label)}</td><td>${etatLabel[f.etat]}</td><td>${escapeHtml(f.obs)}</td></tr>`).join('')}
+         </table>`
+      : `<p><i>Aucune fenêtre ou porte-fenêtre signalée (toutes en bon état).</i></p>`) : '';
+    return `
+    <h3>${escapeHtml(title)}</h3>
+    <table><tr><th>Élément</th><th>État</th><th>Observations</th></tr>
+    ${p.etats[roomKey].map(i=>`<tr><td>${escapeHtml(i.name)}</td><td>${etatLabel[i.etat]}</td><td>${escapeHtml(i.obs)}</td></tr>`).join('')}
+    </table>
+    ${fenetresList ? `<p style="margin-top:10px;"><b>Fenêtres et portes-fenêtres :</b></p>${fenetresHtml}` : ''}
+    ${photosHtml}`;
+  };
+  const matHtml = `<h3>Mobilier et matériel</h3>
+    ${rec.vaisselleIncluse===false ? '<p><i>Vaisselle non incluse dans cette location.</i></p>' : ''}
+    <table><tr><th>Désignation</th><th>Qté prévue</th><th>Qté constatée</th><th>État</th><th>Observations</th></tr>
+    ${MATERIEL.filter(name=> rec.vaisselleIncluse!==false || !VAISSELLE_ITEMS.includes(name)).map(name=>{const m=p.materiel[name]; return `<tr><td>${escapeHtml(name)}</td><td>${escapeHtml(m.prevue)}</td><td>${escapeHtml(m.constatee)}</td><td>${etatLabel[m.etat]||''}</td><td>${escapeHtml(m.obs)}</td></tr>`;}).join('')}
+    </table>`;
+  const sigHtml = `<h3>Signatures</h3>
+    <div style="display:flex;gap:20px;">
+      <div style="flex:1"><p><b>Pour la commune de ${escapeHtml(communeName)}</b></p>${p.signatures.commune?`<img src="${p.signatures.commune}" style="max-width:100%;border:1px solid #ccc">`:'<p>(non signé)</p>'}</div>
+      <div style="flex:1"><p><b>Le locataire / l'organisateur</b></p>${p.signatures.locataire?`<img src="${p.signatures.locataire}" style="max-width:100%;border:1px solid #ccc">`:'<p>(non signé)</p>'}</div>
+    </div>`;
+  return `
+    <html><head><title>${escapeHtml(rec.edlNumber || 'État des lieux')}</title>
+    <style>
+      @page { margin: 18mm 16mm; }
+      body{font-family:'Helvetica Neue',Arial,sans-serif;color:#20262E;padding:0;max-width:800px;margin:0 auto;font-size:13px;}
+      .doc-header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #1F4E79;padding-bottom:14px;margin-bottom:18px;}
+      .doc-header .commune{font-size:12px;color:#6B7480;text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px;}
+      .doc-header h1{color:#1F4E79;font-size:20px;margin:0;}
+      .doc-header .type-badge{display:inline-block;margin-top:6px;padding:3px 11px;border-radius:20px;font-size:11.5px;font-weight:700;background:${phaseName==='entree'?'#E3F0E9':'#FBE9E9'};color:${phaseName==='entree'?'#2E9E5B':'#D64545'};}
+      .doc-header .meta-box{text-align:right;font-size:12px;color:#6B7480;}
+      .doc-header .meta-box .num{font-size:15px;font-weight:700;color:#1F4E79;font-family:monospace;}
+      h2{color:#1F4E79;font-size:15px;margin-top:4px;}
+      h3{color:#1F4E79;font-size:14px;margin-top:24px;border-bottom:1px solid #ccc;padding-bottom:4px;}
+      table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px;}
+      th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;}
+      th{background:#1F4E79;color:#fff;font-size:11.5px;}
+      p{font-size:13px;}
+      .info-table{width:100%;border-collapse:collapse;margin-bottom:4px;}
+      .info-table td{border:none;padding:3px 0;font-size:13px;}
+      .info-table td.label{color:#6B7480;width:170px;}
+      .doc-footer{margin-top:32px;padding-top:10px;border-top:1px solid #ccc;font-size:10.5px;color:#9aa2ab;text-align:center;}
+    </style></head><body>
+    <div class="doc-header">
+      <div>
+        <p class="commune">Commune de ${escapeHtml(communeName) || '[à renseigner dans Configuration]'}</p>
+        <h1>${escapeHtml(salleName) || '[nom de la salle à renseigner]'}</h1>
+        <span class="type-badge">${phaseName==='entree'?'ÉTAT D’ENTRÉE':'ÉTAT DE SORTIE'}</span>
+      </div>
+      <div class="meta-box">
+        <div class="num">${escapeHtml(rec.edlNumber) || '—'}</div>
+        ${p.version>1 ? `<div>Version ${p.version}</div>` : ''}
+        ${p.locked ? `<div>🔒 Verrouillé${p.lockedAt ? ' le ' + new Date(p.lockedAt).toLocaleDateString('fr-FR') : ''}</div>` : ''}
+      </div>
+    </div>
+    <table class="info-table">
+      <tr><td class="label">Locataire</td><td>${escapeHtml(rec.infos.nom)}</td><td class="label">Téléphone</td><td>${escapeHtml(rec.infos.tel)}</td></tr>
+      <tr><td class="label">Objet</td><td>${escapeHtml(rec.infos.objet)}</td><td class="label">Date</td><td>${escapeHtml(rec.infos.date)} ${rec.infos.heure?'à '+escapeHtml(rec.infos.heure):''}</td></tr>
+      <tr><td class="label">Représentant de la commune</td><td colspan="3">${escapeHtml(rec.infos.representant)}</td></tr>
+    </table>
+    ${roomsConfig.map(rm => roomHtml(rm.key, rm.label)).join('')}
+    ${matHtml}
+    <h3>Clés et accès</h3>
+    <p>Clés remises : ${escapeHtml(p.cles.cles)} — Badges remis : ${escapeHtml(p.cles.badges)} — Code communiqué : ${escapeHtml(p.cles.code)}</p>
+    <h3>Observations générales</h3>
+    <p>${escapeHtml(p.obsGenerales).replace(/\n/g,'<br>')||'—'}</p>
+    ${sigHtml}
+    <div class="doc-footer">${escapeHtml(rec.edlNumber) || ''} — Document généré le ${new Date().toLocaleDateString('fr-FR')} à ${new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})} via ${escapeHtml(appName) || 'État des lieux numérique'}</div>
+    </body></html>
+  `;
+}
+
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  captureSignatures();
+  const htmlDoc = buildExportHtml(currentRecord, currentRecord.currentPhase);
+  showExportOverlay(htmlDoc);
+});
+
+function showExportOverlay(htmlContent){
+  const overlay = document.createElement('div');
+  overlay.className = 'export-overlay';
+  overlay.innerHTML = `
+    <div class="export-bar">
+      <button type="button" id="exportCloseBtn">✕ Fermer</button>
+      <button type="button" id="exportPrintBtn">Imprimer / PDF</button>
+    </div>
+    <iframe id="exportFrame" class="export-frame" title="Aperçu de l'état des lieux"></iframe>
+  `;
+  document.body.appendChild(overlay);
+  const frame = overlay.querySelector('#exportFrame');
+  frame.srcdoc = htmlContent;
+  overlay.querySelector('#exportCloseBtn').addEventListener('click', ()=>{
+    overlay.remove();
+  });
+  overlay.querySelector('#exportPrintBtn').addEventListener('click', ()=>{
+    try{
+      frame.contentWindow.focus();
+      frame.contentWindow.print();
+    }catch(e){
+      showToast("Impossible de lancer l'impression sur cet appareil");
+    }
+  });
+}
+
+// --- Sauvegarde / restauration JSON ---
+document.getElementById('backupExportBtn').addEventListener('click', async ()=>{
+  const allRecords = {};
+  for(const meta of index){
+    const rec = await loadRecord(meta.id);
+    if(rec) allRecords[meta.id] = rec;
+  }
+  const roomsConfigBySalle = {};
+  const materielConfigBySalle = {};
+  const edlCounterBySalle = {};
+  for(const s of salles){
+    try{ roomsConfigBySalle[s.id] = await idbGet('meta', 'roomsConfig_'+s.id) || null; }catch(e){}
+    try{ materielConfigBySalle[s.id] = await idbGet('meta', 'materielConfig_'+s.id) || null; }catch(e){}
+    try{ edlCounterBySalle[s.id] = await idbGet('meta', 'edlCounter_'+s.id) || 0; }catch(e){}
+  }
+  const payload = {
+    exportedAt: new Date().toISOString(), index, records: allRecords,
+    salles, currentSalleId, roomsConfigBySalle, materielConfigBySalle, edlCounterBySalle
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const dateStr = new Date().toISOString().slice(0,10);
+  a.href = url;
+  a.download = `sauvegarde_etats_des_lieux_${dateStr}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  await setLastBackupAt(new Date().toISOString());
+  renderBackupReminder();
+  showToast('Sauvegarde téléchargée');
+});
+
+document.getElementById('backupImportInput').addEventListener('change', async (e)=>{
+  const file = e.target.files && e.target.files[0];
+  if(!file) return;
+  try{
+    const text = await file.text();
+    const payload = JSON.parse(text);
+    if(!payload.records || !payload.index) throw new Error('format invalide');
+    const wasEmptyBefore = index.length === 0;
+    for(const [id, rec] of Object.entries(payload.records)){
+      const shaped = ensureRecordShape(rec);
+      shaped.id = shaped.id || id;
+      await saveRecordEncrypted(shaped);
+    }
+    const existingIds = new Set(index.map(m=>m.id));
+    payload.index.forEach(m=>{ if(!existingIds.has(m.id)){ index.push(m); } });
+    await saveIndex();
+    if(Array.isArray(payload.salles) && payload.salles.length){
+      // Sur un appareil vierge (aucun dossier avant restauration), la salle par défaut
+      // auto-créée au premier lancement est vide : on la retire pour éviter un doublon,
+      // puis on reprend intégralement la liste de salles de la sauvegarde.
+      if(wasEmptyBefore){
+        salles = salles.filter(s => index.some(m=>m.salleId===s.id));
+      }
+      const existingSalleIds = new Set(salles.map(s=>s.id));
+      payload.salles.forEach(s=>{ if(!existingSalleIds.has(s.id)){ salles.push(s); existingSalleIds.add(s.id); } });
+      await saveSalles();
+      if(payload.roomsConfigBySalle){
+        for(const [sid, cfg] of Object.entries(payload.roomsConfigBySalle)){
+          if(Array.isArray(cfg) && cfg.length){ try{ await idbPut('meta', cfg, 'roomsConfig_'+sid); }catch(e){} }
+        }
+      }
+      if(payload.materielConfigBySalle){
+        for(const [sid, cfg] of Object.entries(payload.materielConfigBySalle)){
+          if(Array.isArray(cfg) && cfg.length){ try{ await idbPut('meta', cfg, 'materielConfig_'+sid); }catch(e){} }
+        }
+      }
+      if(payload.edlCounterBySalle){
+        for(const [sid, ctr] of Object.entries(payload.edlCounterBySalle)){
+          if(typeof ctr === 'number'){ try{ await idbPut('meta', ctr, 'edlCounter_'+sid); }catch(e){} }
+        }
+      }
+      if(wasEmptyBefore && payload.currentSalleId && salles.find(s=>s.id===payload.currentSalleId)){
+        await activateSalle(payload.currentSalleId);
+      } else {
+        await loadRoomsConfig();
+        await loadMaterielConfig();
+      }
+    }
+    renderList();
+    showToast('Sauvegarde restaurée');
+  }catch(err){
+    showToast('Fichier de sauvegarde invalide');
+  }
+  e.target.value = '';
+});
+
+// --- Envoi par email ---
+document.getElementById('shareBtn').addEventListener('click', async ()=>{
+  captureSignatures();
+  const r = currentRecord;
+  const p = activePhase();
+  const phaseName = r.currentPhase;
+  const etatLabel = {bon:'Bon', moyen:'Moyen', mauvais:'Mauvais', '':'non renseigné'};
+  const lignesPb = [];
+  Object.keys(ROOMS).forEach(room=>{
+    p.etats[room].forEach(item=>{
+      if(item.etat === 'moyen' || item.etat === 'mauvais'){
+        lignesPb.push(`- ${ROOM_LABELS[room]} / ${item.name} : ${etatLabel[item.etat]}${item.obs ? ' — ' + item.obs : ''}`);
+      }
+    });
+  });
+  Object.keys(WINDOW_CONFIG).forEach(room=>{
+    (p.fenetres && p.fenetres[room] ? p.fenetres[room] : []).forEach(f=>{
+      lignesPb.push(`- ${ROOM_LABELS[room]} / ${f.label} : ${etatLabel[f.etat]}${f.obs ? ' — ' + f.obs : ''}`);
+    });
+  });
+  const sujet = `${r.edlNumber ? r.edlNumber + ' — ' : ''}État des lieux ${salleName} — ${r.infos.nom || 'sans nom'} (${phaseName==='entree'?'entrée':'sortie'})`;
+  const corps = [
+    `État des lieux — ${salleName || '[nom de la salle à renseigner]'} (Commune de ${communeName || '[à renseigner]'})`,
+    `Type : ${phaseName==='entree'?'Entrée':'Sortie'}`,
+    `Locataire : ${r.infos.nom || ''}`,
+    `Objet : ${r.infos.objet || ''}`,
+    `Date : ${r.infos.date || ''} à ${r.infos.heure || ''}`,
+    `Représentant de la commune : ${r.infos.representant || ''}`,
+    p.locked ? `🔒 Document verrouillé${p.lockedAt ? ' le ' + new Date(p.lockedAt).toLocaleDateString('fr-FR') : ''}${p.version>1 ? ' — Version ' + p.version : ''}` : (p.version>1 ? `Version ${p.version}` : ''),
+    '',
+    lignesPb.length ? 'Points relevés (moyen / mauvais état) :' : 'Aucun point particulier relevé (tout est en bon état).',
+    ...lignesPb,
+    '',
+    'Observations générales :',
+    p.obsGenerales || '—',
+  ].join('\n');
+
+  // 1) Partage natif avec le document complet (photos, signatures) en pièce jointe —
+  //    ouvre le menu de partage iOS (Mail, Messages, AirDrop, Fichiers, WhatsApp...).
+  if(navigator.share){
+    try{
+      const htmlDoc = buildExportHtml(r, phaseName);
+      const fileName = `${(r.edlNumber||'etat_des_lieux').replace(/[^\w-]/g,'_')}_${phaseName}.html`;
+      const file = new File([htmlDoc], fileName, { type:'text/html' });
+      if(navigator.canShare && navigator.canShare({ files:[file] })){
+        await navigator.share({ title: sujet, text: corps, files:[file] });
+        return; // partagé (ou annulé volontairement par l'utilisateur)
+      }
+    }catch(e){
+      if(e && e.name === 'AbortError') return; // annulé par l'utilisateur : on n'insiste pas
+      // sinon (fichier refusé, erreur inattendue...), on retente en texte seul ci-dessous
+    }
+
+    // 2) Partage natif du texte seul si le partage de fichier n'est pas disponible
+    try{
+      await navigator.share({ title: sujet, text: corps });
+      return;
+    }catch(e){
+      if(e && e.name === 'AbortError') return;
+      // sinon (Web Share API absente de fait malgré sa détection), on bascule sur mailto
+    }
+  }
+
+  // 3) Dernier recours (navigateur sans partage natif) : brouillon dans l'app Mail
+  const MAX_BODY = 1500;
+  let corpsMailto = corps + '\n\nPour le document complet avec photos et signatures, utilisez le bouton "Exporter / imprimer".';
+  if(corpsMailto.length > MAX_BODY){
+    corpsMailto = corpsMailto.slice(0, MAX_BODY) + '\n\n[Message tronqué — utilisez "Exporter / imprimer" pour le document complet]';
+  }
+  const mailto = `mailto:?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corpsMailto)}`;
+  const a = document.createElement('a');
+  a.href = mailto;
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+// --- Init ---
+(async function initPhase1(){
+  await loadAdminPin();
+  await loadBiometricState();
+  await loadBgSettings();
+  applyBgLayer();
+  await loadAppName();
+  await loadCommuneAndSalleName();
+  await loadSalles();
+  document.getElementById('lockAppName').textContent = appName || 'État des lieux numérique';
+  document.getElementById('screenTitle').textContent = appName || 'État des lieux numérique';
+  if(appName) document.getElementById('configAppNameInput').placeholder = appName;
+  if(communeName) document.getElementById('configCommuneNameInput').placeholder = communeName;
+  if(salleName) document.getElementById('configSalleNameInput').placeholder = salleName;
+  await loadRoomsConfig();
+  await loadMaterielConfig();
+  await loadAutoLockMinutes();
+  await loadOrInitEncryption();
+  setupLockScreen();
+})();
+
+// Ne s'exécute qu'une fois le bon code (ou code de récupération) confirmé : c'est
+// seulement à partir d'ici que les dossiers peuvent être déchiffrés et affichés.
+// Ne fait rien de plus qu'ouvrir l'accès si l'appli avait déjà été initialisée dans
+// cette même session (ex. après un verrouillage automatique pour inactivité), pour
+// ne pas perdre l'écran ou le dossier en cours d'édition.
+async function finishUnlockedInit(){
+  if(appInitialized){
+    resetInactivityTimer();
+    return;
+  }
+  await migrateFromLocalStorageIfNeeded();
+  await migratePlaintextDataToEncrypted();
+  await loadIndex();
+  renderList();
+  const backupOverdue = await renderBackupReminder();
+  if(!document.querySelector('.fab')){
+    const fab = document.createElement('button');
+    fab.className = 'fab';
+    fab.textContent = '+ Nouvel état des lieux';
+    fab.addEventListener('click', async ()=>{
+      currentRecord = blankRecord();
+      currentRecord.edlNumber = await nextEdlNumber();
+      renderForm();
+      switchScreen('form');
+    });
+    document.getElementById('app').appendChild(fab);
+  }
+  switchScreen('list');
+  appInitialized = true;
+  resetInactivityTimer();
+  if(justInitializedEncryption){
+    justInitializedEncryption = false;
+    await showAlert("Sécurité renforcée : vos données sont désormais chiffrées.\n\nCode d'accès par défaut : 000000\n\nPensez à le changer immédiatement dans Configuration.");
+  }else if(backupOverdue && index.length > 0){
+    await showAlert("⚠️ Cela fait longtemps que vous n'avez pas sauvegardé vos données (ou jamais).\n\nUtilisez « Sauvegarder toutes les données » en bas de l'écran d'accueil pour éviter toute perte en cas de souci avec le téléphone.");
+  }
+}
+
+async function tryUnlock(){
+  const input = document.getElementById('lockInput');
+  const err = document.getElementById('lockError');
+  const candidate = input.value;
+  if(!/^\d{6}$/.test(candidate)){
+    err.textContent = 'Le code doit contenir 6 chiffres';
+    return;
+  }
+  try{
+    encKey = await unlockWithPin(candidate);
+    document.getElementById('lockOverlay').classList.add('hidden');
+    err.textContent = '';
+    input.value = '';
+    await finishUnlockedInit();
+  }catch(e){
+    err.textContent = 'Code incorrect';
+    input.value = '';
+    input.focus();
+  }
+}
+document.getElementById('lockUnlockBtn').addEventListener('click', tryUnlock);
+document.getElementById('lockInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') tryUnlock();
+});
+document.getElementById('lockInput').addEventListener('input', (e)=>{
+  e.target.value = e.target.value.replace(/\D/g,'').slice(0,6);
+});
+
+document.getElementById('lockForgotBtn').addEventListener('click', ()=>{
+  document.getElementById('lockPinBlock').classList.add('hidden');
+  document.getElementById('lockRecoveryBlock').classList.remove('hidden');
+  document.getElementById('lockRecoveryError').textContent = '';
+  document.getElementById('lockRecoveryInput').value = '';
+  document.getElementById('lockRecoveryInput').focus();
+});
+document.getElementById('lockRecoveryCancelBtn').addEventListener('click', ()=>{
+  document.getElementById('lockRecoveryBlock').classList.add('hidden');
+  document.getElementById('lockPinBlock').classList.remove('hidden');
+  document.getElementById('lockInput').focus();
+});
+document.getElementById('lockRecoveryUnlockBtn').addEventListener('click', async ()=>{
+  const input = document.getElementById('lockRecoveryInput');
+  const err = document.getElementById('lockRecoveryError');
+  try{
+    encKey = await unlockWithRecoveryCode(input.value);
+  }catch(e){
+    err.textContent = 'Code de récupération incorrect';
+    return;
+  }
+  err.textContent = '';
+  input.value = '';
+  // Le code du quotidien est par définition oublié à ce stade : on force la
+  // définition d'un nouveau code avant de rentrer dans l'application.
+  let newPin = null;
+  while(!newPin){
+    const candidate = await showPrompt('Code de récupération accepté.\n\nDéfinissez un nouveau code d\'accès à 6 chiffres :', '');
+    if(candidate === null) continue; // impossible d'annuler ici, un code est requis
+    if(/^\d{6}$/.test(candidate.trim())) newPin = candidate.trim();
+    else await showAlert('Le code doit contenir exactement 6 chiffres.');
+  }
+  await rewrapMasterKeyWithNewPin(newPin);
+  document.getElementById('lockOverlay').classList.add('hidden');
+  document.getElementById('lockRecoveryBlock').classList.add('hidden');
+  document.getElementById('lockPinBlock').classList.remove('hidden');
+  await finishUnlockedInit();
+  await showAlert('Nouveau code d\'accès défini. Pensez à générer un nouveau code de récupération dans Configuration, l\'ancien reste aussi valable mais autant repartir propre.');
+});
+
+async function tryBiometricUnlock(){
+  const errEl = document.getElementById('lockBiometricError');
+  errEl.textContent = '';
+  const ok = await verifyBiometric();
+  if(ok){
+    if(encKey){
+      // La clé est déjà en mémoire (l'application n'a pas été totalement fermée) :
+      // Face ID/empreinte suffit à revenir dans l'appli.
+      document.getElementById('lockOverlay').classList.add('hidden');
+      resetInactivityTimer();
+      if(currentScreen !== 'list' && !currentRecord) switchScreen('list');
+    }else{
+      // Premier déverrouillage depuis une fermeture complète (ou après un
+      // verrouillage automatique) : les données sont chiffrées avec le code,
+      // Face ID/empreinte ne peut pas s'y substituer ici.
+      errEl.textContent = "Identité confirmée — entrez votre code pour déchiffrer vos données.";
+      document.getElementById('lockInput').focus();
+    }
+  }else{
+    errEl.textContent = 'Échec — utilisez votre code d\'accès.';
+    document.getElementById('lockInput').focus();
+  }
+}
+document.getElementById('lockBiometricBtn').addEventListener('click', tryBiometricUnlock);
+
+function setupLockScreen(){
+  document.getElementById('lockRecoveryBlock').classList.add('hidden');
+  document.getElementById('lockPinBlock').classList.remove('hidden');
+  const bioBtn = document.getElementById('lockBiometricBtn');
+  const orEl = document.getElementById('lockOrPin');
+  if(biometricEnabled && biometricCredentialId){
+    bioBtn.classList.remove('hidden');
+    orEl.classList.remove('hidden');
+    tryBiometricUnlock();
+  }else{
+    bioBtn.classList.add('hidden');
+    orEl.classList.add('hidden');
+    document.getElementById('lockInput').focus();
+  }
+}
+
+document.getElementById('configAppNameSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configAppNameInput').value.trim();
+  if(!val){
+    await showAlert('Le nom ne peut pas être vide.');
+    return;
+  }
+  await saveAppName(val);
+  document.getElementById('lockAppName').textContent = appName;
+  if(currentScreen === 'list') document.getElementById('screenTitle').textContent = appName;
+  showToast('Nom de l\'application modifié');
+});
+
+document.getElementById('configCommuneNameSaveBtn').addEventListener('click', async ()=>{
+  const valCommune = document.getElementById('configCommuneNameInput').value.trim();
+  const valSalle = document.getElementById('configSalleNameInput').value.trim();
+  if(!valCommune || !valSalle){
+    await showAlert('Le nom de la commune et le nom de la salle ne peuvent pas être vides.');
+    return;
+  }
+  await saveCommuneAndSalleName(valCommune, valSalle);
+  showToast('Noms de la commune et de la salle modifiés');
+});
+
+document.getElementById('configPinSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configPinInput').value.trim();
+  if(!/^\d{6}$/.test(val)){
+    await showAlert('Le code doit contenir exactement 6 chiffres.');
+    return;
+  }
+  try{
+    await rewrapMasterKeyWithNewPin(val);
+    document.getElementById('configPinInput').value = '';
+    showToast('Code utilisateur modifié');
+  }catch(e){
+    showToast('Échec du changement de code — réessayez.');
+  }
+});
+
+document.getElementById('setupRecoveryBtn').addEventListener('click', async ()=>{
+  const already = await hasRecoveryCode();
+  if(already){
+    const ok = await showConfirm('Un code de récupération existe déjà. Le remplacer par un nouveau ? L\'ancien ne fonctionnera plus.');
+    if(!ok) return;
+  }
+  const code = await setupRecoveryCode();
+  showExportOverlay(buildRecoveryCodeHtml(code));
+  await refreshRecoveryStatusUI();
+});
+async function refreshRecoveryStatusUI(){
+  const el = document.getElementById('recoveryStatusText');
+  if(!el) return;
+  el.textContent = (await hasRecoveryCode())
+    ? 'Un code de récupération est configuré.'
+    : 'Aucun code de récupération configuré pour l\'instant.';
+}
+
+document.getElementById('configAutoLockSaveBtn').addEventListener('click', async ()=>{
+  const val = parseInt(document.getElementById('configAutoLockInput').value, 10);
+  if(isNaN(val) || val < 0 || val > 120){
+    await showAlert('Indiquez un nombre de minutes entre 0 et 120 (0 pour désactiver).');
+    return;
+  }
+  await saveAutoLockMinutes(val);
+  resetInactivityTimer();
+  showToast('Verrouillage automatique modifié');
+});
+
+document.getElementById('configAdminPinSaveBtn').addEventListener('click', async ()=>{
+  const val = document.getElementById('configAdminPinInput').value.trim();
+  if(!/^\d{4}$/.test(val)){
+    await showAlert('Le code doit contenir exactement 4 chiffres.');
+    return;
+  }
+  await saveAdminPin(val);
+  document.getElementById('configAdminPinInput').value = '';
+  showToast('Code administrateur modifié');
+});
+
+document.getElementById('configBgInput').addEventListener('change', async ()=>{
+  const inp = document.getElementById('configBgInput');
+  const file = inp.files && inp.files[0];
+  if(!file) return;
+  try{
+    const dataUrl = await resizeImage(file);
+    await saveBgImage(dataUrl);
+    applyBgLayer();
+    document.getElementById('configBgPreview').innerHTML = `<img src="${dataUrl}" style="width:100%;max-height:120px;object-fit:cover;border-radius:9px;border:1px solid var(--border);">`;
+    showToast('Photo de fond enregistrée');
+  }catch(e){
+    showToast("Impossible de charger cette photo");
+  }
+  inp.value = '';
+});
+
+document.getElementById('configBgOpacity').addEventListener('input', async (e)=>{
+  await saveBgOpacity(parseInt(e.target.value, 10));
+  applyBgLayer();
+});
+
+document.getElementById('configBgRemoveBtn').addEventListener('click', async ()=>{
+  if(!bgImage){ showToast('Aucune photo de fond définie'); return; }
+  const ok = await showConfirm('Retirer la photo de fond ?');
+  if(!ok) return;
+  await removeBgImage();
+  applyBgLayer();
+  document.getElementById('configBgPreview').innerHTML = '<p class="config-intro" style="margin:0;">Aucune photo définie.</p>';
+  showToast('Photo de fond retirée');
+});
+
+async function refreshBiometricConfigUI(){
+  const toggle = document.getElementById('configBiometricToggle');
+  const status = document.getElementById('configBiometricStatus');
+  const available = await isBiometricAvailable();
+  toggle.checked = biometricEnabled;
+  if(!available){
+    toggle.disabled = true;
+    status.textContent = "Non disponible sur cet appareil ou ce navigateur.";
+  }else{
+    toggle.disabled = false;
+    status.textContent = biometricEnabled ? "Activé sur cet appareil." : "";
+  }
+}
+
+document.getElementById('configBiometricToggle').addEventListener('change', async (e)=>{
+  const status = document.getElementById('configBiometricStatus');
+  if(e.target.checked){
+    try{
+      await registerBiometric();
+      status.textContent = "Activé sur cet appareil.";
+      showToast('Face ID / empreinte activé');
+    }catch(err){
+      e.target.checked = false;
+      status.textContent = "Échec de l'activation — réessayez.";
+    }
+  }else{
+    await disableBiometric();
+    status.textContent = "";
+    showToast('Face ID / empreinte désactivé');
+  }
+});
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
